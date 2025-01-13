@@ -1,0 +1,21 @@
+.menu li a{
+    transition: all .1s linear;
+}
+
+nav{
+    border-bottom: 1px solid #484848;
+}
+
+.footer-about-desc{
+    color: #b4b4b4;
+}
+
+.dropdown{
+    transition: all .3s ease-in-out;
+}
+
+.dropdown-link:hover .dropdown{
+    /* top: 170% !important;/ */
+    visibility: visible !important;
+    opacity: 1 !important;
+}
