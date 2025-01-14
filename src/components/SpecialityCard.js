@@ -1,15 +1,29 @@
-import React from 'react'
+import React from 'react';
 
-function SpecialityCard({title, description}) {
+function SpecialityCard({ title, description }) {
   return (
-    <div className='text-white mr-14 border flex flex-col items-center px-3 py-4 w-1/3 rounded-md cursor-pointer'>
-      <div className="icon">
-        <img src="http://localhost:3000/cyber-security.png" style={{width: 120}} alt="" />
+    <div
+      className="text-white mr-14 border border-gray-700 flex flex-col items-center px-3 py-4 w-1/3 rounded-md cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:bg-gray-800 group"
+    >
+      {/* Icon */}
+      <div className="icon mb-4 transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:rotate-360">
+        <img
+          src="http://localhost:3000/cyber-security.png"
+          style={{ width: 120 }}
+          alt=""
+          className="transition-all duration-300 ease-in-out group-hover:scale-110"
+        />
       </div>
-      <h1 className='text-foreground font-semibold text-xl mb-2'>{title}</h1>
-      <p className='text-center'>{description}</p>
+      {/* Title */}
+      <h1 className="text-foreground font-semibold text-xl mb-2 transition-colors duration-300 ease-in-out">
+        {title}
+      </h1>
+      {/* Description */}
+      <p className="text-center transition-colors duration-300 ease-in-out group-hover:text-white">
+        {description}
+      </p>
     </div>
-  )
+  );
 }
 
-export default SpecialityCard
+export default SpecialityCard;

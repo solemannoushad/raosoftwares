@@ -6,7 +6,7 @@ function BlogsSection() {
   return (
     <div>
       <Heading title="Our" heighlight={"Blogs"} />
-      <div className='my-10 flex'>
+      <div className='mt-10 mb-20 flex'>
         <BlogCard />
         <BlogCard />
         <BlogCard />

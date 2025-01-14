@@ -1,14 +1,33 @@
-import React from 'react'
+import React from 'react';
 
-function Card({title, description, icon}) {
+function Card({ title, description, icon }) {
   return (
-    <div className='cursor-pointer py-7 px-10 bg-background inline-block w-1/2 mr-6 my-6 text-white border border-gray-700'>
-      {icon ? <img className='w-24 mb-4' src={`/icons/${icon}.svg`} alt="" /> : <img className='w-24 mb-4' src={`/icons/laravel.svg`} alt="" />}
-      <h1 className='uppercase text-lg font-semibold my-2'>{title}</h1>
-      <p>{description}</p>
-      <button className='mt-4 text-foreground text-lg'>Read more <span><i className="iconoir-arrow-up-right"></i></span></button>
+    <div className="cursor-pointer py-7 px-10 bg-background inline-block w-1/2 mr-6 my-6 text-white border border-gray-700 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg group relative overflow-hidden">
+      {/* Icon */}
+      {icon ? (
+        <img className="w-24 mb-4 transition-transform duration-300 ease-in-out group-hover:scale-110" src={`/icons/${icon}.svg`} alt="" />
+      ) : (
+        <img className="w-24 mb-4 transition-transform duration-300 ease-in-out group-hover:scale-110" src={`/icons/laravel.svg`} alt="" />
+      )}
+      {/* Title */}
+      <h1 className="uppercase text-lg font-semibold my-2 transition-colors duration-300 ease-in-out group-hover:text-white">
+        {title}
+      </h1>
+      {/* Description */}
+      <p className="transition-colors duration-300 ease-in-out group-hover:text-white">
+        {description}
+      </p>
+      {/* Button */}
+      <button className="mt-4 text-foreground text-lg flex items-center transition-all duration-300 ease-in-out hover:text-white">
+        Read more
+        <span className="ml-2">
+          <i className="iconoir-arrow-up-right"></i>
+        </span>
+      </button>
+      {/* ::after hover effect */}
+      <span className="absolute bottom-0 left-0 w-full h-1 bg-foreground transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
     </div>
-  )
+  );
 }
 
-export default Card
+export default Card;

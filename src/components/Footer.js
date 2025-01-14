@@ -30,22 +30,22 @@ export default function Footer() {
             </div>
             <ul className="footer-links">
               <li className="mb-4">
-                <a className="text-sm font-normal" href="">
+                <a className="text-sm font-normal hover:text-foreground" href="">
                   Terms and Conditions
                 </a>
               </li>
               <li className="mb-4">
-                <a className="text-sm font-normal" href="">
+                <a className="text-sm font-normal hover:text-foreground" href="">
                   Privacy Policy
                 </a>
               </li>
               <li className="mb-4">
-                <a className="text-sm font-normal" href="">
+                <a className="text-sm font-normal hover:text-foreground" href="">
                   Human Rights Policy
                 </a>
               </li>
               <li className="mb-4">
-                <a className="text-sm font-normal" href="">
+                <a className="text-sm font-normal hover:text-foreground" href="">
                   Careers
                 </a>
               </li>
@@ -59,7 +59,7 @@ export default function Footer() {
           <div className="footer-form w-full">
             <div className="relative">
               <input
-                className="bg-background w-full text-white placeholder-gray-400 border-b border-gray-400 focus:outline-none focus:border-gray-500 pb-3 text-xl"
+                className="bg-background w-full text-white placeholder-gray-400 border-b border-gray-400 focus:outline-none focus:border-gray-500 pb-3 text-base"
                 type="email"
                 name=""
                 id=""

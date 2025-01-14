@@ -1,6 +1,52 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Navbar() {
+  const menuItems = [
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    {
+      name: "Services",
+      // href: "/services",
+      dropdown: [
+        { name: "Social Media Marketing", href: "#social-media" },
+        { name: "Product Engineering", href: "#product-engineering" },
+        { name: "Web & Mobile App Development", href: "#web-dev" },
+        { name: "API Development", href: "#api-dev" },
+      ],
+    },
+    {
+      name: "Technologies",
+      // href: "/technologies",
+      dropdown: [
+        { name: "Flutter", href: "#flutter" },
+        { name: "Laravel", href: "#laravel" },
+        { name: "React.js", href: "#react" },
+        { name: "Python & Swift", href: "#python-swift" },
+      ],
+    },
+    {
+      name: "Solutions",
+      // href: "/solutions",
+      dropdown: [
+        { name: "Customer Relationship Management", href: "#crm" },
+        { name: "Enterprise Resource Planning", href: "#erp" },
+        { name: "Inventory Management", href: "#inventory" },
+      ],
+    },
+    {
+      name: "Industries",
+      // href: "/industries",
+      dropdown: [
+        { name: "Healthcare", href: "#healthcare" },
+        { name: "Education", href: "#education" },
+        { name: "Retail", href: "#retail" },
+        { name: "Media & Publishing", href: "#media" },
+      ],
+    },
+    { name: "Contact", href: "#contact" },
+  ];
+
   return (
     <nav
       className="px-7 py-5 flex justify-between items-center bg-background"
@@ -10,92 +56,51 @@ export default function Navbar() {
         RAOSOFTWARES<span className="text-foreground">.</span>
       </div>
       <ul className="menu flex">
-        <li>
-          <a
-            className="mx-2 text-white text-sm flex items-center font-regular hover:text-foreground"
-            href="/"
-          >
-            Home
-          </a>
-        </li>
-        <li>
-          <a
-            className="mx-2 text-white text-sm flex items-center font-regular hover:text-foreground"
-            href=""
-          >
-            About
-          </a>
-        </li>
-        <li>
-          <a
-            className="dropdown-link mx-2 relative text-white text-sm flex items-center font-regular hover:text-foreground"
-            href=""
-          >
-            Services{" "}
-            <i className="iconoir-nav-arrow-down ml-1 text-foreground text-lg"></i>{" "}
-          <ul className="dropdown absolute text-black bg-white py-3 px-5 b-10 text-left" style={{width: "17rem", left: "0%", top: "170%", visibility: "hidden", opacity: 0}}>
-            <li className="my-4 border-b pb-2"><a href="" className="text-sm hover:text-foreground">Social Media Marketing</a></li>
-            <li className="my-4 border-b pb-2"><a href="" className="text-sm hover:text-foreground">Product Engineering</a></li>
-            <li className="my-4 border-b pb-2"><a href="" className="text-sm hover:text-foreground">Web & Mobile App Development</a></li>
-            <li className="my-4 border-b pb-2"><a href="" className="text-sm hover:text-foreground">API Development</a></li>
-          </ul>
-          </a>
-        </li>
-        <li>
-          <a
-            className="dropdown-link mx-2 text-white text-sm flex items-center font-regular hover:text-foreground relative"
-            href=""
-          >
-            Technologies{" "}
-            <i className="iconoir-nav-arrow-down ml-1 text-foreground text-lg"></i>{" "}
-            <ul className="dropdown absolute text-black bg-white py-3 px-5 b-10 text-left" style={{width: "17rem", left: "0%", top: "170%", visibility: "hidden", opacity: 0}}>
-            <li className="my-4 border-b pb-2"><a href="" className="text-sm hover:text-foreground">Flutter</a></li>
-            <li className="my-4 border-b pb-2"><a href="" className="text-sm hover:text-foreground">Laravel</a></li>
-            <li className="my-4 border-b pb-2"><a href="" className="text-sm hover:text-foreground">React.js</a></li>
-            <li className="my-4 border-b pb-2"><a href="" className="text-sm hover:text-foreground">Python & Swift</a></li>
-          </ul>
-          </a>
-        </li>
-        <li>
-          <a
-            className="dropdown-link mx-2 text-white text-sm flex items-center font-regular hover:text-foreground relative"
-            href=""
-          >
-            Solutions{" "}
-            <i className="iconoir-nav-arrow-down ml-1 text-foreground text-lg"></i>{" "}
-            <ul className="dropdown absolute text-black bg-white py-3 px-5 b-10 text-left" style={{width: "17rem", left: "0%", top: "170%", visibility: "hidden", opacity: 0}}>
-            <li className="my-4 border-b pb-2"><a href="" className="text-sm hover:text-foreground">Customer Relationship Management</a></li>
-            <li className="my-4 border-b pb-2"><a href="" className="text-sm hover:text-foreground">Enterprise Resource Planning</a></li>
-            <li className="my-4 border-b pb-2"><a href="" className="text-sm hover:text-foreground">Inventory Management</a></li>
-          </ul>
-          </a>
-        </li>
-        <li>
-          <a
-            className="dropdown-link mx-2 text-white text-sm flex items-center font-regular hover:text-foreground relative"
-            href=""
-          >
-            Industries{" "}
-            <i className="iconoir-nav-arrow-down ml-1 text-foreground text-lg"></i>{" "}
-            <ul className="dropdown absolute text-black bg-white py-3 px-5 b-10 text-left" style={{width: "17rem", left: "0%", top: "170%", visibility: "hidden", opacity: 0}}>
-            <li className="my-4 border-b pb-2"><a href="" className="text-sm hover:text-foreground">Healthcare</a></li>
-            <li className="my-4 border-b pb-2"><a href="" className="text-sm hover:text-foreground">Education</a></li>
-            <li className="my-4 border-b pb-2"><a href="" className="text-sm hover:text-foreground">Retail</a></li>
-            <li className="my-4 border-b pb-2"><a href="" className="text-sm hover:text-foreground">Media & Publishing</a></li>
-          </ul>
-          </a>
-        </li>
-        <li>
-          <a
-            className="mx-2 text-white text-sm flex items-center font-regular hover:text-foreground"
-            href=""
-          >
-            Contact
-          </a>
-        </li>
+        {menuItems.map((item, index) =>
+          item.dropdown ? (
+            <li key={index} className="relative group">
+              <Link
+                className="dropdown-link mx-2 text-white text-sm flex items-center font-regular hover:text-foreground"
+                href={"#"}
+                // onClick={(e) => e.preventDefault()}
+              >
+                {item.name}{" "}
+                <i className="iconoir-nav-arrow-down ml-1 text-foreground text-lg"></i>
+              </Link>
+              <ul
+                className="dropdown absolute text-black bg-white py-3 px-5 b-10 text-left opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200"
+                style={{ width: "17rem", left: "0%", top: "170%" }}
+              >
+                {item.dropdown.map((subItem, subIndex) => (
+                  <li key={subIndex} className="my-4 border-b pb-2">
+                    <a
+                      href={subItem.href}
+                      className="text-sm hover:text-foreground"
+                    >
+                      {subItem.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          ) : (
+            <li key={index}>
+              <Link
+                className="mx-2 text-white text-sm flex items-center font-regular hover:text-foreground"
+                href={item.href}
+              >
+                {item.name}
+              </Link>
+            </li>
+          )
+        )}
       </ul>
-      <div className="border-2 rounded-full cursor-pointer border-foreground p-3">
-        <a className="text-foreground font-semibold uppercase text-sm" href="/">
+      <div className="relative group border-2 rounded-full cursor-pointer border-foreground p-3 overflow-hidden">
+        <div className="absolute inset-0 bg-foreground transform scale-0 group-hover:scale-100 transition-transform duration-300 rounded-full"></div>
+        <a
+          className="relative text-foreground font-semibold uppercase text-sm group-hover:text-white transition-colors duration-300"
+          href="/schedule"
+        >
           Schedule Free Consultation
         </a>
       </div>
