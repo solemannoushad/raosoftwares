@@ -1,3 +1,4 @@
+import BlogsSection from "@/components/BlogsSection";
 import HeroBg from "@/components/HeroBg";
 import IndustriesSection from "@/components/IndustriesSection";
 import SolutionsSection from "@/components/SolutionsSection";
@@ -10,8 +11,8 @@ export default function Home() {
       <HeroBg />
       <Specialities />
       <Technologies />
-      {/* <IndustriesSection /> */}
       <SolutionsSection />
+      <BlogsSection />
     </section>
   );
 }

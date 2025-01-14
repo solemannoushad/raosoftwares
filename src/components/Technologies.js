@@ -11,14 +11,17 @@ const Technologies = () => {
           <Card
             title={"Flutter"}
             description={"Seamless cross-platform applications."}
+            icon={"flutter"}
           />
-          <Card title={"Laravel"} description={"Powerful PHP web frameworks."} />
+          <Card title={"Laravel"} description={"Powerful PHP web frameworks."} icon={"laravel"}/>
+          
         </div>
         <div className="flex mr-16 justify-between ">
-          <Card title={"React.js"} description={"Dynamic user interfaces."} />
+          <Card title={"React.js"} description={"Dynamic user interfaces."} icon={"react"} />
           <Card
             title={"Python & Swift"}
             description={"Advanced programming solutions."}
+            icon={"python"}
           />
         </div>
       </div>

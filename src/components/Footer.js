@@ -9,8 +9,12 @@ export default function Footer() {
           <div className="footer-logo text-2xl text-white tracking-widest mb-6">
             RAOSOFTWARES<span className="text-red-500">.</span>
           </div>
-          <p className="footer-about-desc text-lg">
-          Experience the transformative power of Rao Software Solutions. We specialize in developing custom software that helps businesses thrive in today’s competitive environment. With a focus on collaboration and client satisfaction, we deliver tailored solutions that meet your unique needs.
+          <p className="footer-about-desc text-base">
+            Experience the transformative power of Rao Software Solutions. We
+            specialize in developing custom software that helps businesses
+            thrive in today’s competitive environment. With a focus on
+            collaboration and client satisfaction, we deliver tailored solutions
+            that meet your unique needs.
           </p>
           <div className="footer-contact mt-6 flex items-center">
             <i className="iconoir-message-text mr-2 text-red-500 text-lg"></i>
@@ -26,22 +30,22 @@ export default function Footer() {
             </div>
             <ul className="footer-links">
               <li className="mb-4">
-                <a className="text-lg font-normal" href="">
+                <a className="text-sm font-normal" href="">
                   Terms and Conditions
                 </a>
               </li>
               <li className="mb-4">
-                <a className="text-lg font-normal" href="">
+                <a className="text-sm font-normal" href="">
                   Privacy Policy
                 </a>
               </li>
               <li className="mb-4">
-                <a className="text-lg font-normal" href="">
+                <a className="text-sm font-normal" href="">
                   Human Rights Policy
                 </a>
               </li>
               <li className="mb-4">
-                <a className="text-lg font-normal" href="">
+                <a className="text-sm font-normal" href="">
                   Careers
                 </a>
               </li>
@@ -51,6 +55,23 @@ export default function Footer() {
         <div className="flex-1 p-5 footer-newsletter">
           <div className="footer-heading mb-6 text-xl font-semibold">
             Newsletter
+          </div>
+          <div className="footer-form w-full">
+            <div className="relative">
+              <input
+                className="bg-background w-full text-white placeholder-gray-400 border-b border-gray-400 focus:outline-none focus:border-gray-500 pb-3 text-xl"
+                type="email"
+                name=""
+                id=""
+                placeholder="Enter your email"
+              />
+              <i className="iconoir-send-diagonal text-2xl absolute text-foreground" style={{right: '10px'}}></i>
+            </div>
+            <div className="footer-icons mt-5">
+              <i className="iconoir-x text-foreground mr-2 text-2xl cursor-pointer"></i>
+              <i className="iconoir-instagram text-foreground mr-2 text-2xl cursor-pointer"></i>
+              <i className="iconoir-linkedin text-foreground mr-2 text-2xl cursor-pointer"></i>
+            </div>
           </div>
         </div>
       </secrtion>
