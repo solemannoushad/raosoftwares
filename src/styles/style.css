@@ -19,3 +19,7 @@ nav{
     visibility: visible !important;
     opacity: 1 !important;
 }
+
+.fade{
+    background-color: rgba(0, 0, 0, 0.5);
+}

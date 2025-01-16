@@ -7,7 +7,7 @@ import React from 'react'
 function page() {
   return (
     <>
-        <Hero title="about" />
+        <Hero title="our" heighlight="company" />
         <section className="mx-16">
             <Heading title="Who We" heighlight={"Are?"} />
             <p className='text-white my-8'>Rao Software Solutions stands at the forefront of custom software development, transforming intricate enterprise systems and streamlining business processes to empower success. With a steadfast commitment to collaboration and customer satisfaction, we are your trusted partner for all software-related needs. Unlock your potential with Rao Software Solutions.</p>

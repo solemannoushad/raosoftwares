@@ -1,10 +1,11 @@
+import Link from 'next/link'
 import React from 'react'
 
 function Button({ title, href }) {
   return (
-    <a
+    <Link
       className="relative cursor-pointer inline-block text-lg font-medium py-4 px-6 rounded-sm bg-foreground align-middle uppercase overflow-hidden group text-white hover:text-foreground transition-colors duration-300 ease-in-out"
-      href={href}
+      href={href || ''}
     >
       <span className="relative z-10">{title}</span>
       <span className="relative z-10">
@@ -12,7 +13,7 @@ function Button({ title, href }) {
       </span>
       {/* Background effect */}
       <div className="absolute top-0 left-0 w-full h-full bg-white transform scale-x-0 group-hover:scale-x-100 transition-all duration-300 ease-in-out origin-left z-0"></div>
-    </a>
+    </Link>
   )
 }
 

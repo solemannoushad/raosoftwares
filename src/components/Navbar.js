@@ -7,49 +7,49 @@ export default function Navbar() {
     { name: "About", href: "/about" },
     {
       name: "Services",
-      // href: "/services",
+      href: "/services", // Separate href for the dropdown-link
       dropdown: [
-        { name: "Social Media Marketing", href: "#social-media" },
-        { name: "Product Engineering", href: "#product-engineering" },
-        { name: "Web & Mobile App Development", href: "#web-dev" },
-        { name: "API Development", href: "#api-dev" },
+        { name: "Social Media Marketing", href: "/services#social-media" },
+        { name: "Product Engineering", href: "/services#product-engineering" },
+        { name: "Web & Mobile App Development", href: "/services#web-dev" },
+        { name: "API Development", href: "/services#api-dev" },
       ],
     },
     {
       name: "Technologies",
-      // href: "/technologies",
+      href: "/technologies", // Separate href for the dropdown-link
       dropdown: [
-        { name: "Flutter", href: "#flutter" },
-        { name: "Laravel", href: "#laravel" },
-        { name: "React.js", href: "#react" },
-        { name: "Python & Swift", href: "#python-swift" },
+        { name: "Flutter", href: "/technologies#flutter" },
+        { name: "Laravel", href: "/technologies#laravel" },
+        { name: "React.js", href: "/technologies#react" },
+        { name: "Python & Swift", href: "/technologies#python-swift" },
       ],
     },
     {
       name: "Solutions",
-      // href: "/solutions",
+      href: "/solutions", // Separate href for the dropdown-link
       dropdown: [
-        { name: "Customer Relationship Management", href: "#crm" },
-        { name: "Enterprise Resource Planning", href: "#erp" },
-        { name: "Inventory Management", href: "#inventory" },
+        { name: "Customer Relationship Management", href: "/solutions#crm" },
+        { name: "Enterprise Resource Planning", href: "/solutions#erp" },
+        { name: "Inventory Management", href: "/solutions#inventory" },
       ],
     },
     {
       name: "Industries",
-      // href: "/industries",
+      href: "/industries", // Separate href for the dropdown-link
       dropdown: [
-        { name: "Healthcare", href: "#healthcare" },
-        { name: "Education", href: "#education" },
-        { name: "Retail", href: "#retail" },
-        { name: "Media & Publishing", href: "#media" },
+        { name: "Healthcare", href: "/industries#healthcare" },
+        { name: "Education", href: "/industries#education" },
+        { name: "Retail", href: "/industries#retail" },
+        { name: "Media & Publishing", href: "/industries#media" },
       ],
     },
-    { name: "Contact", href: "#contact" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
     <nav
-      className="px-7 py-5 flex justify-between items-center bg-background"
+      className="px-7 py-5 flex justify-between items-center bg-background fixed w-full top-0 bg-black z-50"
       id="navbar"
     >
       <div className="logo text-xl text-white tracking-widest">
@@ -59,10 +59,10 @@ export default function Navbar() {
         {menuItems.map((item, index) =>
           item.dropdown ? (
             <li key={index} className="relative group">
+              {/* Separate href for dropdown-link */}
               <Link
                 className="dropdown-link mx-2 text-white text-sm flex items-center font-regular hover:text-foreground"
-                href={"#"}
-                // onClick={(e) => e.preventDefault()}
+                href={item.href}
               >
                 {item.name}{" "}
                 <i className="iconoir-nav-arrow-down ml-1 text-foreground text-lg"></i>
@@ -73,12 +73,12 @@ export default function Navbar() {
               >
                 {item.dropdown.map((subItem, subIndex) => (
                   <li key={subIndex} className="my-4 border-b pb-2">
-                    <a
+                    <Link
                       href={subItem.href}
                       className="text-sm hover:text-foreground"
                     >
                       {subItem.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -97,12 +97,12 @@ export default function Navbar() {
       </ul>
       <div className="relative group border-2 rounded-full cursor-pointer border-foreground p-3 overflow-hidden">
         <div className="absolute inset-0 bg-foreground transform scale-0 group-hover:scale-100 transition-transform duration-300 rounded-full"></div>
-        <a
+        <Link
           className="relative text-foreground font-semibold uppercase text-sm group-hover:text-white transition-colors duration-300"
-          href="/schedule"
+          href="/contact"
         >
           Schedule Free Consultation
-        </a>
+        </Link>
       </div>
     </nav>
   );

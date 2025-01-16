@@ -4,7 +4,7 @@ import Button from "./Button";
 
 function AboutSection() {
   return (
-    <div className="flex" style={{ height: "100vh" }}>
+    <div className="flex mt-10" style={{ height: "100vh" }}>
       <div className="about-section-left w-1/2"></div>
       <div className="about-section-right w-1/2">
         <Heading title="Our" heighlight={"Company"} />
@@ -23,7 +23,7 @@ function AboutSection() {
           presence to the next level. Contact us today to learn more.
         </p>
         <div className="mt-5">
-            <Button title="Read More" />
+            <Button title="Read More" href={'/about'} />
         </div>
       </div>
     </div>

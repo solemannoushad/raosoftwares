@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
+  const currentYear = '2024'
   return (
     <>
       <secrtion className="text-white flex justify-between py-3 px-10 mx-auto">
