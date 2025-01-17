@@ -6,17 +6,23 @@ import SolutionsSection from "@/components/SolutionsSection";
 import Specialities from "@/components/Specialities";
 import Technologies from "@/components/Technologies";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <section className="ml-16">
-      <HeroBg />
-      <AboutSection />
-      <Specialities />
-      <Technologies />
-      <SolutionsSection />
-      <TestimonialsSection />
-      <BlogsSection />
-    </section>
+    <>
+      <Head>
+        <title>Raosoftwares</title>
+      </Head>
+      <section className="ml-16">
+        <HeroBg />
+        <AboutSection />
+        <Specialities />
+        <Technologies />
+        <SolutionsSection />
+        <TestimonialsSection />
+        <BlogsSection />
+      </section>
+    </>
   );
 }

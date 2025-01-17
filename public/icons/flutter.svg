@@ -1,9 +1,13 @@
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg fill="#aa1439" width="800px" height="800px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg" stroke="#aa1439">
-<g id="SVGRepo_bgCarrier" stroke-width="0"/>
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-<g id="SVGRepo_iconCarrier">
-<path d="M14.314 0 2.3 12 6 15.7 21.684.013h-7.357zm.014 11.072L7.857 17.53l6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.37z"/>
-</g>
-</svg>
+<svg width="646" height="800" viewBox="0 0 646 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M398.866 0.00139856L0.973022 397.895L124.129 521.05L645.18 0.00139856H398.866Z" fill="#47C5FB"/>
+<path d="M396.094 366.932L183.05 579.975L306.669 705.441L429.597 582.513L645.181 366.932H396.094Z" fill="#47C5FB"/>
+<path d="M306.67 705.441L400.251 799.023H645.179L429.596 582.513L306.67 705.441Z" fill="#00569E"/>
+<path d="M181.665 581.36L304.823 458.202L429.595 582.514L306.67 705.442L181.665 581.36Z" fill="#00B5F8"/>
+<path d="M306.67 705.442L409.029 671.476L419.197 592.912L306.67 705.442Z" fill="url(#paint0_linear_1_74)" fill-opacity="0.8"/>
+<defs>
+<linearGradient id="paint0_linear_1_74" x1="751.346" y1="3630.45" x2="8847.23" y2="6547.81" gradientUnits="userSpaceOnUse">
+<stop/>
+<stop offset="1" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

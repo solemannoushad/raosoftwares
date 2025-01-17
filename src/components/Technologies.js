@@ -1,29 +1,26 @@
 import React from "react";
 import Heading from "./Heading";
 import Card from "./Card";
+import { content } from "@/constants/content";
 
 const Technologies = () => {
+  const cards = content['technologies'].cards;
   return (
     <div>
       <Heading title="Technologies We" heighlight={"Excel In"} />
-      <div className="my-10">
-        <div className="flex mr-16 justify-between ">
-          <Card
-            title={"Flutter"}
-            description={"Seamless cross-platform applications."}
-            icon={"flutter"}
+      <div className="my-10 flex flex-wrap">
+          {
+            cards.map((card) => {
+              return(
+                <Card
+            title={card.title}
+            description={card.description}
+            icon={card.icon}
           />
-          <Card title={"Laravel"} description={"Powerful PHP web frameworks."} icon={"laravel"}/>
+              )
+            })
+          }
           
-        </div>
-        <div className="flex mr-16 justify-between ">
-          <Card title={"React.js"} description={"Dynamic user interfaces."} icon={"react"} />
-          <Card
-            title={"Python & Swift"}
-            description={"Advanced programming solutions."}
-            icon={"python"}
-          />
-        </div>
       </div>
     </div>
   );

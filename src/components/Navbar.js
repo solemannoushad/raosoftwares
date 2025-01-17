@@ -9,39 +9,39 @@ export default function Navbar() {
       name: "Services",
       href: "/services", // Separate href for the dropdown-link
       dropdown: [
-        { name: "Social Media Marketing", href: "/services#social-media" },
-        { name: "Product Engineering", href: "/services#product-engineering" },
-        { name: "Web & Mobile App Development", href: "/services#web-dev" },
-        { name: "API Development", href: "/services#api-dev" },
+        { name: "Social Media Marketing", href: "/services/social-media-marketing" },
+        { name: "Product Engineering", href: "/services/product-engineering" },
+        { name: "Web & Mobile App Development", href: "/services/web-dev" },
+        { name: "API Development", href: "/services/api-dev" },
       ],
     },
     {
       name: "Technologies",
       href: "/technologies", // Separate href for the dropdown-link
       dropdown: [
-        { name: "Flutter", href: "/technologies#flutter" },
-        { name: "Laravel", href: "/technologies#laravel" },
-        { name: "React.js", href: "/technologies#react" },
-        { name: "Python & Swift", href: "/technologies#python-swift" },
+        { name: "Flutter", href: "/technologies/flutter" },
+        { name: "Laravel", href: "/technologies/laravel" },
+        { name: "React.js", href: "/technologies/react" },
+        { name: "Python & Swift", href: "/technologies/python-swift" },
       ],
     },
     {
       name: "Solutions",
       href: "/solutions", // Separate href for the dropdown-link
       dropdown: [
-        { name: "Customer Relationship Management", href: "/solutions#crm" },
-        { name: "Enterprise Resource Planning", href: "/solutions#erp" },
-        { name: "Inventory Management", href: "/solutions#inventory" },
+        { name: "Customer Relationship Management", href: "/solutions/customer-relationship-management" },
+        { name: "Enterprise Resource Planning", href: "/solutions/enterprise-resource-planning" },
+        { name: "Inventory Management", href: "/solutions/inventory-management" },
       ],
     },
     {
       name: "Industries",
       href: "/industries", // Separate href for the dropdown-link
       dropdown: [
-        { name: "Healthcare", href: "/industries#healthcare" },
-        { name: "Education", href: "/industries#education" },
-        { name: "Retail", href: "/industries#retail" },
-        { name: "Media & Publishing", href: "/industries#media" },
+        { name: "Healthcare", href: "/industries/healthcare" },
+        { name: "Education", href: "/industries/education" },
+        { name: "Retail", href: "/industries/retail" },
+        { name: "Media & Publishing", href: "/industries/media" },
       ],
     },
     { name: "Contact", href: "/contact" },
