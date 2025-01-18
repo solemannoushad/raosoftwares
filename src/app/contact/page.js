@@ -26,15 +26,15 @@ function page() {
         <div>
             <Heading title="Let’s Turn Your Vision" heighlight={"into Reality"} />
             <h2 className='text-white mt-3 italic'><span className='text-foreground'>" </span>Share your vision with us and explore tailored solutions that drive success. Connect with Rao Software Solutions today<span className='text-foreground'> "</span></h2>
-            <div>
+            <div className='my-10'>
                 <ContactForm />
             </div>
             <div className='flex my-8 justify-center'>
                 {icons.map((i) => {
                     return(
-                        <div className='flex items-center mx-2 cursor-pointer'>                        
-                            <div className='border-2 border-foreground inline-flex items-center justify-normal rounded-full cursor-pointer'>
-                                <i className={`iconoir-${i.name} text-foreground p-2 text-xl`}></i>
+                        <div className='flex items-center mx-2 cursor-pointer group'>                        
+                            <div className='border-2 border-foreground inline-flex items-center justify-normal rounded-full cursor-pointer group-hover:bg-foreground transition-all duration-100'>
+                                <i className={`iconoir-${i.name} text-foreground p-2 text-xl transition-all duration-500 group-hover:text-white`}></i>
                             </div>
                             <div className='text-white ml-3 text-sm'>{i.text}</div>
                         </div>

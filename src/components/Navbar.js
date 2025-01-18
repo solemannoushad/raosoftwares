@@ -7,17 +7,17 @@ export default function Navbar() {
     { name: "About", href: "/about" },
     {
       name: "Services",
-      href: "/services", // Separate href for the dropdown-link
+      href: "/services",
       dropdown: [
         { name: "Social Media Marketing", href: "/services/social-media-marketing" },
         { name: "Product Engineering", href: "/services/product-engineering" },
-        { name: "Web & Mobile App Development", href: "/services/web-dev" },
+        { name: "Web & Mobile App Development", href: "/services/mobile-web-dev" },
         { name: "API Development", href: "/services/api-dev" },
       ],
     },
     {
       name: "Technologies",
-      href: "/technologies", // Separate href for the dropdown-link
+      href: "/technologies",
       dropdown: [
         { name: "Flutter", href: "/technologies/flutter" },
         { name: "Laravel", href: "/technologies/laravel" },
@@ -27,7 +27,7 @@ export default function Navbar() {
     },
     {
       name: "Solutions",
-      href: "/solutions", // Separate href for the dropdown-link
+      href: "/solutions",
       dropdown: [
         { name: "Customer Relationship Management", href: "/solutions/customer-relationship-management" },
         { name: "Enterprise Resource Planning", href: "/solutions/enterprise-resource-planning" },
@@ -36,12 +36,12 @@ export default function Navbar() {
     },
     {
       name: "Industries",
-      href: "/industries", // Separate href for the dropdown-link
+      href: "/industries",
       dropdown: [
         { name: "Healthcare", href: "/industries/healthcare" },
         { name: "Education", href: "/industries/education" },
         { name: "Retail", href: "/industries/retail" },
-        { name: "Media & Publishing", href: "/industries/media" },
+        { name: "Media & Publishing", href: "/industries/media-publishing" },
       ],
     },
     { name: "Contact", href: "/contact" },

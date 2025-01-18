@@ -2,6 +2,7 @@ import Navbar from "@components/Navbar";
 import Footer from "@components/Footer";
 import "@styles/globals.css";
 import "@styles/style.css";
+import BackToTop from "@/components/BackToTop";
 
 export const metadata = {
   title: "Create Next App",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
       </head>
       <body>
+        <BackToTop />
         <Navbar />
         {children}
         <Footer/>

@@ -1,7 +1,9 @@
+import BlogsSection from "@/components/BlogsSection";
 import Card from "@/components/Card";
 import Heading from "@/components/Heading";
 import Hero from "@/components/Hero";
 import SpecialityCard from "@/components/SpecialityCard";
+import StatsBox from "@/components/StatsBox";
 import Head from "next/head";
 import React from "react";
 
@@ -91,6 +93,12 @@ function page() {
           />
         </div>
         <Heading title="Why" heighlight={"Choose Us?"} />
+        <div className="my-8">
+          <StatsBox />
+        </div>
+        <div>
+          <BlogsSection />
+        </div>
       </section>
     </>
   );

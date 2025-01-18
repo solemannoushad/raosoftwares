@@ -68,9 +68,9 @@ export default function Footer() {
               <i className="iconoir-send-diagonal text-2xl absolute text-foreground" style={{right: '10px'}}></i>
             </div>
             <div className="footer-icons mt-5">
-              <i className="iconoir-x text-foreground mr-2 text-2xl cursor-pointer"></i>
-              <i className="iconoir-instagram text-foreground mr-2 text-2xl cursor-pointer"></i>
-              <i className="iconoir-linkedin text-foreground mr-2 text-2xl cursor-pointer"></i>
+              <i className="iconoir-x text-white mr-2 text-2xl cursor-pointer hover:text-foreground transition-all duration-300"></i>
+              <i className="iconoir-instagram text-white mr-2 text-2xl cursor-pointer hover:text-foreground transition-all duration-300"></i>
+              <i className="iconoir-linkedin text-white mr-2 text-2xl cursor-pointer hover:text-foreground transition-all duration-300"></i>
             </div>
           </div>
         </div>
