@@ -49,7 +49,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className="px-7 py-5 flex justify-between items-center bg-background fixed w-full top-0 bg-black z-50"
+      className="px-7 py-5 flex justify-between items-center bg-background fixed w-full top-0 bg-black z-40"
       id="navbar"
     >
       <div className="logo text-xl text-white tracking-widest">

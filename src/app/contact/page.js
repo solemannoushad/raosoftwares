@@ -32,7 +32,7 @@ function page() {
             <div className='flex my-8 justify-center'>
                 {icons.map((i) => {
                     return(
-                        <div className='flex items-center mx-2 cursor-pointer group'>                        
+                        <div key={i.name} className='flex items-center mx-2 cursor-pointer group'>                        
                             <div className='border-2 border-foreground inline-flex items-center justify-normal rounded-full cursor-pointer group-hover:bg-foreground transition-all duration-100'>
                                 <i className={`iconoir-${i.name} text-foreground p-2 text-xl transition-all duration-500 group-hover:text-white`}></i>
                             </div>

@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
 
-function Button({ title, href }) {
+function Button({ title, href, onCLick }) {
   return (
     <Link
       className="relative cursor-pointer inline-block text-lg font-medium py-4 px-6 rounded-sm bg-foreground align-middle uppercase overflow-hidden group text-white hover:text-foreground transition-colors duration-300 ease-in-out"
       href={href || ''}
+      onClick={onCLick}
     >
       <span className="relative z-10">{title}</span>
       <span className="relative z-10">

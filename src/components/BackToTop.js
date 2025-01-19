@@ -31,7 +31,7 @@ function BackToTop() {
     <div>
       <button
         onClick={scrollToTop}
-        className={`bg-black z-50 rounded-full fixed bottom-20 right-8 flex items-center justify-center shadow-sm shadow-white hover:shadow-xl transition-all duration-300 ${
+        className={`bg-black z-40 rounded-full fixed bottom-20 right-8 flex items-center justify-center shadow-sm shadow-white hover:shadow-xl transition-all duration-300 ${
           isVisible ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
