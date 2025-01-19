@@ -24,8 +24,9 @@ function Card({ title, description, icon, href }) {
       </h1>
       {/* Description */}
       <p className="transition-colors duration-300 ease-in-out group-hover:text-white">
-        {description}
-      </p>
+  {description.substring(0, 150)}{description.length > 150 && '...'}
+</p>
+
       {/* Button */}
       <Link
         href={href || "/"}

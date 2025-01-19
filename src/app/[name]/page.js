@@ -31,6 +31,7 @@ function page() {
                 title={card.title}
                 description={card.description}
                 icon={card.icon}
+                href={card.href}
             />
             )
           })

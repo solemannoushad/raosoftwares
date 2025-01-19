@@ -61,39 +61,17 @@ function page() {
       {/* Heading & Description */}
       <div className="flex justify-between pr-10 my-10">
         <div className="w-1/2 pr-8">
-          <h1 className="text-white text-6xl">
+          <h1 className="text-white text-6xl uppercase">
             {heading} <span className="text-slate-400">{subHeading}</span>{" "}
           </h1>
           <p className="text-white leading-7 mt-5">{description}</p>
+          {content?.techUsed && (<>
+            <h3 className="text-foreground font-semibold mt-8">Technologies Used:</h3>
+            <p className="text-white text-base">{content?.techUsed}</p></>
+            )}
         </div>
         <div className="w-1/2 flex items-center">
           <img className="w-full object-contain" src={`/images/${image}`} alt="" />
-        </div>
-      </div>
-
-      {/* Headline, Points, and CTA */}
-      <div className="flex my-10">
-        {/* Headline and Points */}
-        <div className="w-4/6 pr-6">
-          <h2 className="text-white text-2xl">
-            {renderHighlightedText(headline, headlineHighlights)}
-          </h2>
-          {points.map((p, index) => (
-            <li key={index} className="text-slate-300 my-5 text-lg">
-              {p}
-            </li>
-          ))}
-        </div>
-
-        {/* Call to Action */}
-        <div className="pr-6 pt-10 w-2/6">
-          <div className="text-white capitalize text-xl">
-            {renderHighlightedText(cta, ctaHighlight)}
-          </div>
-          <button className="text-white border border-foreground px-7 py-2 mt-4 flex items-center rounded-full text-lg">
-            <p className="uppercase">Let's Talk</p>
-            <i className="iconoir-message-text text-foreground ml-4 text-xl"></i>
-          </button>
         </div>
       </div>
     </section>

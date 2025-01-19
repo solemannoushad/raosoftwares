@@ -40,5 +40,8 @@ body{
   background-color: var(--background);
   font-family: 'Poppins', 'Montserrat' , 'sans-serif';
   overflow-x: hidden;
+  user-select: none; /* Prevents text selection */
+  -webkit-user-select: none; /* For WebKit browsers */
+  -ms-user-select: none; /* For Internet Explorer/Edge */
 }
 
