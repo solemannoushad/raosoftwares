@@ -11,10 +11,10 @@ function BlogCard({blog}) {
           <i className="iconoir-calendar text-foreground"></i>
           <p className="text-background ml-3">02 Apr 2023</p>
         </div> */}
-        <div className="title text-background text-base font-medium my-4 hover:text-foreground">
+        <Link href={url} className="title text-background text-base font-medium my-4 hover:text-foreground">
           {title}
-        </div>
-        <div className="blog-btn">
+        </Link>
+        <div className="blog-btn mt-4">
             <Link href={url} className="hover:text-foreground">Read More</Link>
         </div>
       </div>

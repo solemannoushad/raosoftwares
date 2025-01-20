@@ -28,7 +28,7 @@ function Card({ title, description, icon, href }) {
 </p>
 
       {/* Button */}
-      <Link
+      { href && <Link
         href={href || "/"}
         className="mt-4 text-foreground text-lg flex items-center transition-all duration-300 ease-in-out hover:text-white"
       >
@@ -36,7 +36,7 @@ function Card({ title, description, icon, href }) {
         <span className="ml-2">
           <i className="iconoir-arrow-up-right"></i>
         </span>
-      </Link>
+      </Link>}
       {/* ::after hover effect */}
       <span className="absolute bottom-0 left-0 w-full h-1 bg-foreground transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
     </div>
