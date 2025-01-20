@@ -1,38 +1,61 @@
-// TestimonialsSection.js
-import React from 'react';
-import Heading from './Heading';
+"use client";
+
+import React, { useState } from "react";
+import { testinomials } from "@/constants/testinomials";
+import Heading from "./Heading";
 
 function TestimonialsSection() {
+  const [current, setCurrent] = useState(0);
+
+  const nextTestimonial = () => {
+    setCurrent((prev) => (prev + 1) % testinomials.length);
+  };
+
+  const prevTestimonial = () => {
+    setCurrent((prev) => (prev - 1 + testinomials.length) % testinomials.length);
+  };
+
+  const currentTestimonial = testinomials[current];
+
   return (
-    <section className="py-16 bg-background-100">
-      <Heading title={"Client"} heighlight={"Testinomials"} />
-      <div className="max-w-7xl mt-10 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
-        {/* Testimonial 1 */}
-        <div className="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
-          <p className="text-lg text-gray-700 mb-4">
-            "This company provided outstanding service. The team was professional, responsive, and delivered results beyond expectations!"
-          </p>
-          <h3 className="font-semibold text-white">John Doe</h3>
-          <p className="text-foreground">CEO, ExampleCorp</p>
+    <div className="w-full my-20">
+      <Heading title="client" heighlight={"testinomials"} />
+      <div className="relative p-6 border rounded shadow-md text-center py-10 px-20 my-14 mr-16 bg-white">
+        {/* Arrows for navigation */}
+        <div
+          className="absolute top-1/2 left-4 -translate-y-1/2 cursor-pointer"
+          onClick={prevTestimonial}
+        >
+          <span className="text-5xl text-gray-500 hover:text-foreground transition">
+            &larr;
+          </span>
         </div>
-        {/* Testimonial 2 */}
-        <div className="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
-          <p className="text-lg text-gray-700 mb-4">
-            "Amazing experience! Their expertise in our industry helped us achieve incredible growth in just a few months."
-          </p>
-          <h3 className="font-semibold text-white">Jane Smith</h3>
-          <p className="text-foreground">Founder, InnovateTech</p>
+        <div
+          className="absolute top-1/2 right-4 -translate-y-1/2 cursor-pointer"
+          onClick={nextTestimonial}
+        >
+          <span className="text-5xl text-gray-500 hover:text-foreground transition">
+            &rarr;
+          </span>
         </div>
-        {/* Testimonial 3 */}
-        <div className="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">
-          <p className="text-lg text-gray-700 mb-4">
-            "A wonderful team to work with. They understood our vision and turned it into reality, making the process smooth and enjoyable."
-          </p>
-          <h3 className="font-semibold text-white">Michael Brown</h3>
-          <p className="text-foreground">Managing Director, GreenFields</p>
-        </div>
+        {/* Testimonial Content */}
+        <h3 className="text-2xl font-semibold">{currentTestimonial.title}</h3>
+        <p className="mt-4 text-gray-600 italic text-xl">"{currentTestimonial.comment}"</p>
+        <p className="mt-6 font-medium text-gray-700">- {currentTestimonial.person}</p>
+      <div className="flex justify-center mt-8 space-x-2">
+        {testinomials.map((_, index) => (
+          <span
+            key={index}
+            className={`w-3 h-3 rounded-full cursor-pointer ${
+              index === current ? "bg-foreground" : "bg-gray-300"
+            } transition`}
+            onClick={() => setCurrent(index)}
+          />
+        ))}
       </div>
-    </section>
+      </div>
+      {/* Dots for navigation */}
+    </div>
   );
 }
 

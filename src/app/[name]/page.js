@@ -37,6 +37,9 @@ function page() {
           })
         }
       </div>
+      <div className="my-10 pr-28">
+        {pageContent?.content && pageContent.content}
+      </div>
       <BlogsSection />
     </section>
   );

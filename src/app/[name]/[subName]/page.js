@@ -110,6 +110,22 @@ function page() {
           />
         </div>
       </div>
+
+      {/* Tags */}
+
+      <div className="marquee-container my-20">
+        <div className="marquee">
+          {content?.tags &&
+            [...content.tags, ...content.tags].map((tag, index) => (
+              <p
+                key={index}
+                className="tag text-foreground font-bold text-4xl py-6 px-7 border border-foreground uppercase mx-3"
+              >
+                {tag}
+              </p>
+            ))}
+        </div>
+      </div>
     </section>
   );
 }

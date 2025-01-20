@@ -23,3 +23,39 @@ nav{
 .fade{
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #000; /* Optional background for contrast */
+  }
+  
+  .marquee {
+    display: flex;
+    animation: slide 15s linear infinite;
+    white-space: nowrap;
+  }
+  
+  .tag {
+    flex-shrink: 0;
+  }
+
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-hidden {
+    -ms-overflow-style: none;  /* for Internet Explorer 10+ */
+    scrollbar-width: none;      /* for Firefox */
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

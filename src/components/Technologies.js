@@ -4,7 +4,8 @@ import Card from "./Card";
 import { content } from "@/constants/content";
 
 const Technologies = () => {
-  const cards = content["technologies"].cards;
+  const cards = content["technologies"].cards.slice(0, 4);
+
   return (
     <div>
       <Heading title="Technologies We" heighlight={"Excel In"} />
@@ -16,6 +17,7 @@ const Technologies = () => {
               title={card.title}
               description={card.description}
               icon={card.icon}
+              href={card.href}
             />
           );
         })}
