@@ -27,10 +27,11 @@ export default function Navbar() {
         { name: "Vue.js & Nuxt.js", href: "/technologies/vue-nuxt" },
         { name: "Adonis.js", href: "/technologies/adonis-js" },
         { name: "React.js & React Native", href: "/technologies/react" },
-        { name: "Express.js", href: "/technologies/experss-js" },
+        { name: "Express.js", href: "/technologies/express-js" },
         { name: "Ionic", href: "/technologies/ionic" },
         { name: "Kotlin & Swift", href: "/technologies/kotlin-swift" },
         { name: "Python", href: "/technologies/python" },
+        { name: "WordPress, Shopify, Magento, Joomla", href: "/technologies/wordPress-shopify-magento-joomla" },
       ],
     },
     {

@@ -134,7 +134,353 @@ export const subContent = {
         "IoT"
       ]                 
     },
-  }
+  },
+  technologies: {
+    flutter: {
+      heroTitle: "",
+      heroHighlight: "Flutter",
+      heading: 'coding in flutter',
+      subHeading: 'WITH devstella',
+      type: 'icon',
+      image: 'flutter.svg',
+      description: "Flutter is a powerful cross-platform framework developed by Google, enabling us to build high-performance mobile applications for both Android and iOS with a single codebase. At DevStella, we use Flutter to create stunning mobile apps that are responsive, fast, and feature-rich. With its expressive UI components and robust performance, we ensure your app stands out in the competitive mobile market while providing a seamless user experience.",
+      contents: [
+        {
+          heading: "How We Use Flutter:",
+          points: [
+            "Cross-platform mobile app development (iOS and Android)",
+            "Real-time performance with a native-like experience",
+            "Integration of AI/ML and third-party APIs",
+            "Custom animations and smooth UI transitions"
+          ]
+        },
+        {
+          heading: "Benefits:",
+          points: [
+            "Fast development cycle and lower costs.",
+            "High-quality performance across platforms.",
+            "Future-proof with Flutter's constant updates and community support."
+          ]
+        },
+      ],
+      tags: [
+        "CrossPlatform",
+        "MobileAppDevelopment",
+        "FlutterInnovation",
+        "FutureReadyTech"
+      ]
+    },
+    laravel: {
+      heroTitle: "",
+      heroHighlight: "Laravel",
+      heading: 'coding in laravel',
+      subHeading: 'WITH devstella',
+      type: 'icon',
+      image: 'laravel.svg',
+      description: "Laravel is a PHP framework that empowers us to build secure, scalable, and efficient web applications. At DevStella, we use Laravel to create backend solutions that are clean, maintainable, and easy to scale. With features like built-in authentication, routing, and database management, Laravel ensures that we can build sophisticated web applications that perform seamlessly, even as your business grows.",
+      contents: [
+        {
+          heading: "How We Use Laravel:",
+          points: [
+            "Developing secure and scalable backend systems",
+            "Building RESTful APIs and microservices",
+            "Integrating AI, real-time features, and user authentication systems",
+            "Data-driven decision-making with advanced database management"
+          ]
+        },
+        {
+          heading: "Benefits:",
+          points: [
+            "Rapid development with built-in tools",
+            "Robust security features to protect sensitive data",
+            "Easy-to-manage backend for seamless updates and scaling"
+          ]
+        }
+      ],      
+      tags: [
+        "SecureBackend",
+        "ScalableApplications",
+        "PHP",
+        "LaravelDevelopment"
+      ]      
+    },
+    vuenuxt: {
+      heroTitle: "Vue &",
+      heroHighlight: "Nuxt",
+      heading: 'coding in vue & nuxt',
+      subHeading: 'WITH devstella',
+      type: 'icon',
+      image: 'nuxt.svg',
+      description: "Vue.js is a progressive JavaScript framework for building user interfaces, while Nuxt.js is its powerful companion for server-side rendering and generating static websites. Together, they allow us to create dynamic, fast-loading, and SEO-friendly applications. DevStella uses Vue.js and Nuxt.js to build modern, highly interactive front-end interfaces and seamless user experiences.",
+      contents: [
+        {
+          heading: "How We Use Vue.js & Nuxt.js:",
+          points: [
+            "Building dynamic Single Page Applications (SPAs) with Vue.js",
+            "Server-side rendering for optimized SEO and performance with Nuxt.js",
+            "Seamless integration with APIs and back-end systems",
+            "Scalable component-based architecture for high flexibility"
+          ]
+        },
+        {
+          heading: "Benefits:",
+          points: [
+            "Fast loading and smooth navigation",
+            "SEO optimization for higher search rankings",
+            "Scalable architecture for future growth"
+          ]
+        }
+      ]
+      ,      
+      tags: [
+        "DynamicWebApps",
+        "VueJS",
+        "NuxtJS",
+        "ServerSideRendering",
+        "SEOOptimized"
+      ]         
+    },
+    adonisjs: {
+      heroTitle: "Adonis",
+      heroHighlight: "JS",
+      heading: 'coding in Adonis.js',
+      subHeading: 'WITH devstella',
+      type: 'icon',
+      image: 'adonis.svg',
+      description: "Adonis.js is a Node.js framework for building full-stack web applications. At DevStella, we use Adonis.js to create secure and performant server-side applications. It provides an out-of-the-box, end-to-end experience with a robust ORM, validation, routing, and authentication systems.",
+      contents: [
+        {
+          heading: "How We Use Adonis.js:",
+          points: [
+            "Building RESTful APIs and server-side applications",
+            "Real-time applications with WebSockets and notifications",
+            "Scalable and secure back-end with built-in authentication and authorization"
+          ]
+        },
+        {
+          heading: "Benefits:",
+          points: [
+            "Out-of-the-box security features",
+            "Real-time updates for applications",
+            "Rapid development with full-stack capabilities"
+          ]
+        }
+      ],
+      tags: [
+        "NodeJS",
+        "BackendDevelopment",
+        "AdonisJS",
+        "RealTimeApps"
+      ]            
+    },
+    react: {
+      heroTitle: "React.js &",
+      heroHighlight: "React Native",
+      heading: 'coding in React and React Native',
+      subHeading: 'WITH devstella',
+      type: 'icon',
+      image: 'react.svg',
+      description: "React.js is a popular JavaScript library for building user interfaces, and React Native allows us to build native mobile applications using React. At DevStella, we use React.js to create highly interactive, user-friendly web applications, and React Native to build feature-rich mobile apps for both iOS and Android, ensuring a unified experience across all platforms.",
+      contents: [
+        {
+          heading: "How We Use React.js & React Native:",
+          points: [
+            "Building highly interactive web apps with React.js",
+            "Developing performant, native mobile apps with React Native",
+            "Real-time data synchronization between web and mobile platforms",
+            "Leveraging component-based architecture for better code reusability and maintainability"
+          ]
+        },
+        {
+          heading: "Benefits:",
+          points: [
+            "Seamless user experience across web and mobile",
+            "Faster development and code reuse",
+            "Access to a large community and constant updates"
+          ]
+        }
+      ],
+      tags: [
+        "ReactJS",
+        "ReactNative",
+        "CrossPlatformApps",
+        "UI/UX",
+        "FutureProofTech"
+      ]                
+    },
+    expressjs: {
+      heroTitle: "",
+      heroHighlight: "Express.js",
+      heading: 'coding in Express.js',
+      subHeading: 'WITH devstella',
+      type: 'icon',
+      image: 'express.svg',
+      description: "Express.js is a lightweight Node.js framework that helps us build fast, scalable, and modular web applications and APIs. DevStella utilizes Express.js to create lightweight back-end solutions that can easily handle high traffic and complex routing.",
+      contents: [
+        {
+          heading: "How We Use Express.js:",
+          points: [
+            "Building RESTful APIs and microservices",
+            "Integration with databases like MongoDB and PostgreSQL",
+            "Real-time applications with WebSockets"
+          ]
+        },
+        {
+          heading: "Benefits:",
+          points: [
+            "Minimalistic and fast API development",
+            "Scalable and flexible back-end solutions",
+            "Seamless integration with other technologies"
+          ]
+        }
+      ],
+      tags: [
+        "NodeJS",
+        "ExpressJS",
+        "APIDevelopment",
+        "FastBackend"
+      ]                      
+    },
+    ionic: {
+      heroTitle: "",
+      heroHighlight: "Ionic",
+      heading: 'coding in ionic',
+      subHeading: 'WITH devstella',
+      type: 'icon',
+      image: 'ionic.svg',
+      description: "Ionic is a powerful framework for building cross-platform mobile apps with a single codebase using web technologies. At DevStella, we use Ionic to create mobile apps that run smoothly on both iOS and Android, offering a high-quality native experience without compromising performance.",
+      contents: [
+        {
+          heading: "How We Use Ionic:",
+          points: [
+            "Developing cross-platform mobile apps with a native look and feel",
+            "Using Angular, React, or Vue for app development",
+            "Integrating third-party plugins for extended functionality"
+          ]
+        },
+        {
+          heading: "Benefits:",
+          points: [
+            "Cross-platform development with a native-like experience",
+            "Faster time-to-market and cost-effective solutions",
+            "Access to a wide range of plugins and integrations"
+          ]
+        }
+      ],
+      tags: [
+        "CrossPlatformMobile",
+        "IonicFramework",
+        "NativeExperience",
+        "AppDevelopment"
+      ]                        
+    },
+    kotlinswift: {
+      heroTitle: "Kotlin &",
+      heroHighlight: "Swift",
+      heading: 'coding in kotlin & swift',
+      subHeading: 'WITH devstella',
+      type: 'icon',
+      image: 'kotlin.svg',
+      description: "Kotlin and Swift are modern programming languages for Android and iOS app development, respectively. At DevStella, we use Kotlin and Swift to build high-performance, native mobile applications with advanced features and exceptional user experiences.",
+      contents: [
+        {
+          heading: "How We Use Kotlin & Swift:",
+          points: [
+            "Native mobile app development for Android and iOS",
+            "Integration of native libraries for better performance and UI design",
+            "Full access to device capabilities for optimized user experiences"
+          ]
+        },
+        {
+          heading: "Benefits:",
+          points: [
+            "High-performance apps with native speed and responsiveness",
+            "Access to the latest platform features and updates",
+            "Secure, maintainable, and efficient code"
+          ]
+        }
+      ],
+      tags: [
+        "NativeMobileApps",
+        "Kotlin",
+        "Swift",
+        "Android",
+        "iOS",
+        "HighPerformance"
+      ]                              
+    },
+    python: {
+      heroTitle: "",
+      heroHighlight: "Python",
+      heading: 'coding in Python',
+      subHeading: 'WITH devstella',
+      type: 'icon',
+      image: 'python.svg',
+      description: "Python is a versatile, high-level programming language known for its simplicity and power. DevStella uses Python for a wide range of applications, including backend development, data analysis, machine learning, and AI-driven projects.",
+      contents: [
+        {
+          heading: "How We Use Python:",
+          points: [
+            "Building scalable back-end systems and APIs",
+            "Implementing AI/ML algorithms and predictive analytics",
+            "Data processing, web scraping, and automation"
+          ]
+        },
+        {
+          heading: "Benefits:",
+          points: [
+            "Rapid development with clean and readable code",
+            "Extensive libraries for AI/ML, data science, and web development",
+            "Highly adaptable and flexible across various industries"
+          ]
+        }
+      ],
+      tags: [
+        "PythonDevelopment",
+        "AIandML",
+        "BackendDevelopment",
+        "DataScience",
+        "Automation"
+      ]                                    
+    },
+    wordPressshopifymagentojoomla: {
+      heroTitle: "WordPress, Shopify,",
+      heroHighlight: "Magento, Joomla",
+      heading: 'cms platforms',
+      subHeading: 'WITH devstella',
+      type: 'icon',
+      image: 'shopify.svg',
+      description: "At DevStella, we specialize in using popular CMS platforms like WordPress, Shopify, Magento, and Joomla to build customized websites and eCommerce solutions. Whether it's a blog, a portfolio, or a full-scale eCommerce platform, these CMSs offer flexibility and ease of use.",
+      contents: [
+        {
+          heading: "How We Use These CMS Platforms:",
+          points: [
+            "Building SEO-optimized websites and blogs with WordPress",
+            "Developing custom eCommerce stores using Shopify and Magento",
+            "Creating flexible and scalable websites with Joomla",
+            "Integrating payment gateways and third-party tools"
+          ]
+        },
+        {
+          heading: "Benefits:",
+          points: [
+            "Cost-effective and fast development",
+            "Built-in tools for SEO, marketing, and analytics",
+            "Scalable and secure websites for any business size"
+          ]
+        }
+      ],
+      tags: [
+        "ECommerceSolutions",
+        "CMSDevelopment",
+        "WordPress",
+        "Shopify",
+        "Magento",
+        "Joomla"
+      ]                                       
+    },
+  },
+
 }
 
 export const content = {
@@ -146,49 +492,64 @@ export const content = {
       cards: [
         {
           title: "Flutter",
-          description: "Seamless cross-platform applications.",
-          icon: 'flutter'
+          description: subContent['technologies']?.['flutter'].description,
+          icon: 'flutter',
+          href: 'technologies/flutter'
         },
         {
           title: "Laravel",
-          description: "Powerful PHP web frameworks.",
-          icon: 'laravel'
+          description: subContent['technologies']?.['laravel'].description,
+          icon: 'laravel',
+          href: 'technologies/laravel'
         },
         {
           title: "Vue.js & Nuxt.js",
-          description: "Powerful PHP web frameworks.",
-          icon: 'nuxt'
+          description: subContent['technologies']?.['vuenuxt'].description,
+          icon: 'nuxt',
+          href: 'technologies/vue-nuxt'
         },
         {
           title: "Adonis.js",
-          description: "Powerful PHP web frameworks.",
-          icon: 'adonis'
+          description: subContent['technologies']?.['adonisjs'].description,
+          icon: 'adonis',
+          href: 'technologies/adonis-js'
         },
         {
           title: "React.js & React Native",
-          description: "Dynamic user interfaces.",
-          icon: 'react'
+          description: subContent['technologies']?.['react'].description,
+          icon: 'react',
+          href: 'technologies/react'
         },
         {
           title: "Express.js",
-          description: "Dynamic user interfaces.",
-          icon: 'express'
+          description: subContent['technologies']?.['expressjs'].description,
+          icon: 'express',
+          href: 'technologies/express-js'
         },
         {
           title: "Ionic",
-          description: "Dynamic user interfaces.",
-          icon: 'ionic'
+          description: subContent['technologies']?.['ionic'].description,
+          icon: 'ionic',
+          href: 'technologies/ionic'
         },
         {
           title: "Kotlin & Swift",
-          description: "Advanced programming solutions.",
-          icon: 'kotlin'
+          description: subContent['technologies']?.['kotlinswift'].description,
+          icon: 'kotlin',
+          href: 'technologies/kotlin-swift'
         },
         {
           title: "Python",
-          description: "Advanced programming solutions.",
-          icon: 'python'
-        }
+          description: subContent['technologies']?.['python'].description,
+          icon: 'python',
+          href: 'technologies/python'
+        },
+        {
+          title: "WordPress, Shopify, Magento, Joomla",
+          description: subContent['technologies']?.['wordPressshopifymagentojoomla'].description,
+          icon: 'shopify',
+          href: 'technologies/wordPress-shopify-magento-joomla'
+        },
       ]
     },
     industries: {
