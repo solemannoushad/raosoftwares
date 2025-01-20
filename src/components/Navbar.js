@@ -65,7 +65,7 @@ export default function Navbar() {
       id="navbar"
     >
       <div className="logo text-xl text-white tracking-widest">
-        RAOSOFTWARES<span className="text-foreground">.</span>
+        DEVSTELLA<span className="text-foreground">.</span>
       </div>
       <ul className="menu flex">
         {menuItems.map((item, index) =>

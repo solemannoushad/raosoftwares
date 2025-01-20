@@ -8,7 +8,7 @@ function page() {
     const icons = [
         {
             name: 'mail',
-            text: 'info@raosoftwares.com'
+            text: 'info@devstellas.com'
         },
         {
             name: 'phone',
