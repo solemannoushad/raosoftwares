@@ -1,110 +1,127 @@
 "use client"
+
 import React, { useRef, useState } from "react";
 
 export default function Footer() {
-
-  const formRef = useRef();
+  const formRef = useRef(null);
   const [form, setForm] = useState('');
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_wpvgu4c", // Your EmailJS service ID
-        "template_fguxwg8", // Your EmailJS template ID
-        formRef.current, // Pass the form reference
-        "nTql0oKFhwRtQW5z2" // Your public key
-      )
-      .then(
-        () => {
-          console.log("SUCCESS! Message sent.");
-          setForm('')
-        },
-        (error) => {
-          console.error("FAILED...", error);
-        }
-      );
+    if (formRef.current) {
+      emailjs
+        .sendForm(
+          "service_wpvgu4c", // Your EmailJS service ID
+          "template_fguxwg8", // Your EmailJS template ID
+          formRef.current, // Pass the form reference
+          "nTql0oKFhwRtQW5z2" // Your public key
+        )
+        .then(
+          () => {
+            console.log("SUCCESS! Message sent.");
+            setForm('')
+          },
+          (error) => {
+            console.error("FAILED...", error);
+          }
+        );
+    }
   };
 
   const currentYear = '2024'
+
   return (
     <>
-      <secrtion className="text-white flex justify-between py-3 px-10 mx-auto">
-        <div className="flex-1 p-5 footer-about">
-          <div className="footer-logo text-2xl text-white tracking-widest mb-6">
-            DEVSTELLA<span className="text-foreground">.</span>
+      <section className="text-white py-8 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="footer-about">
+            <div className="footer-logo text-2xl text-white tracking-widest mb-6">
+              DEVSTELLA<span className="text-foreground">.</span>
+            </div>
+            <p className="footer-about-desc text-base mb-6">
+              Experience the transformative power of Rao Software Solutions. We
+              specialize in developing custom software that helps businesses
+              thrive in today's competitive environment. With a focus on
+              collaboration and client satisfaction, we deliver tailored solutions
+              that meet your unique needs.
+            </p>
+            <div className="footer-contact flex items-center">
+              <i className="iconoir-message-text mr-2 text-foreground text-lg"></i>
+              <a className="text-base hover:text-foreground transition-colors" href="mailto:info@devstella.com">
+                info@devstella.com
+              </a>
+            </div>
           </div>
-          <p className="footer-about-desc text-base">
-            Experience the transformative power of Rao Software Solutions. We
-            specialize in developing custom software that helps businesses
-            thrive in today’s competitive environment. With a focus on
-            collaboration and client satisfaction, we deliver tailored solutions
-            that meet your unique needs.
-          </p>
-          <div className="footer-contact mt-6 flex items-center">
-            <i className="iconoir-message-text mr-2 text-foreground text-lg"></i>
-            <a className="text-base" href="">
-              info@devstella.com
-            </a>
-          </div>
-        </div>
-        <div className="flex-1 p-5 footer-links items-center flex flex-col">
-          <div>
+
+          <div className="footer-links">
             <div className="footer-heading mb-6 text-xl font-semibold">
               Important Links
             </div>
-            <ul className="footer-links">
-              <li className="mb-4">
-                <a className="text-sm font-normal hover:text-foreground" href="">
+            <ul className="space-y-4">
+              <li>
+                <a className="text-sm font-normal hover:text-foreground transition-colors" href="#">
                   Terms and Conditions
                 </a>
               </li>
-              <li className="mb-4">
-                <a className="text-sm font-normal hover:text-foreground" href="">
+              <li>
+                <a className="text-sm font-normal hover:text-foreground transition-colors" href="#">
                   Privacy Policy
                 </a>
               </li>
-              <li className="mb-4">
-                <a className="text-sm font-normal hover:text-foreground" href="">
+              <li>
+                <a className="text-sm font-normal hover:text-foreground transition-colors" href="#">
                   Human Rights Policy
                 </a>
               </li>
-              <li className="mb-4">
-                <a className="text-sm font-normal hover:text-foreground" href="">
+              <li>
+                <a className="text-sm font-normal hover:text-foreground transition-colors" href="#">
                   Careers
                 </a>
               </li>
             </ul>
           </div>
-        </div>
-        <div className="flex-1 p-5 footer-newsletter">
-          <div className="footer-heading mb-6 text-xl font-semibold">
-            Newsletter
-          </div>
-          <div className="footer-form w-full">
-            <form ref={formRef} className="relative">
-              <input
-                className="bg-background w-full text-white placeholder-gray-400 border-b border-gray-400 focus:outline-none focus:border-gray-500 pb-3 text-base"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter your email"
-                value={form}
-                onChange={(e) => setForm(e.target.value)}
-              />
-              <i className="iconoir-send-diagonal text-2xl absolute text-foreground cursor-pointer" style={{right: '10px'}}></i>
-            </form>
-            <div className="footer-icons mt-5">
-              <i className="iconoir-x text-white mr-2 text-2xl cursor-pointer hover:text-foreground transition-all duration-300"></i>
-              <i className="iconoir-instagram text-white mr-2 text-2xl cursor-pointer hover:text-foreground transition-all duration-300"></i>
-              <i className="iconoir-linkedin text-white mr-2 text-2xl cursor-pointer hover:text-foreground transition-all duration-300"></i>
+
+          <div className="footer-newsletter">
+            <div className="footer-heading mb-6 text-xl font-semibold">
+              Newsletter
+            </div>
+            <div className="footer-form w-full">
+              <form ref={formRef} onSubmit={handleFormSubmit} className="relative mb-6">
+                <input
+                  className="bg-background w-full text-white placeholder-gray-400 border-b border-gray-400 focus:outline-none focus:border-gray-500 pb-3 text-base pr-10"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  value={form}
+                  onChange={(e) => setForm(e.target.value)}
+                />
+                <button 
+                  type="submit" 
+                  className="absolute right-0 bottom-3 text-foreground hover:text-white transition-colors"
+                  aria-label="Send email"
+                >
+                  <i className="iconoir-send-diagonal text-2xl"></i>
+                </button>
+              </form>
+              <div className="footer-icons flex space-x-4">
+                <a href="#" aria-label="Twitter" className="text-white hover:text-foreground transition-colors">
+                  <i className="iconoir-x text-2xl"></i>
+                </a>
+                <a href="#" aria-label="Instagram" className="text-white hover:text-foreground transition-colors">
+                  <i className="iconoir-instagram text-2xl"></i>
+                </a>
+                <a href="#" aria-label="LinkedIn" className="text-white hover:text-foreground transition-colors">
+                  <i className="iconoir-linkedin text-2xl"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </secrtion>
-      <footer>
-        <p className="text-center text-white pb-5">
+      </section>
+      <footer className="py-4">
+        <p className="text-center text-white text-sm">
           Copyright © <span className="text-foreground">{currentYear}</span>{" "}
           DEVSTELLA. All Rights Reserved.
         </p>

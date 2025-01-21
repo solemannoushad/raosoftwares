@@ -3,6 +3,7 @@ import Footer from "@components/Footer";
 import "@styles/globals.css";
 import "@styles/style.css";
 import BackToTop from "@/components/BackToTop";
+import MobileNav from "@/components/MobileNav";
 
 export const metadata = {
   title: "Create Next App",
@@ -20,7 +21,15 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <BackToTop />
-        <Navbar />
+        {/* Desktop Navbar: Visible only on large screens */}
+        <div className="hidden md:block">
+          <Navbar />
+        </div>
+
+        {/* Mobile Navigation: Visible only on medium and smaller screens */}
+        <div className="md:hidden">
+          <MobileNav />
+        </div>
         {children}
         <Footer />
       </body>

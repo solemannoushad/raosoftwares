@@ -33,7 +33,7 @@ function page() {
   return (
     <>
         {loading && <Loading />}
-        <section className="ml-16">
+        <section className="md:ml-16 ml-8">
         <Hero title={"Contact"} heighlight={"Us"} />
         <div>
             <Heading title="Let’s Turn Your Vision" heighlight={"into Reality"} />
@@ -41,7 +41,7 @@ function page() {
             <div className='my-10'>
                 <ContactForm />
             </div>
-            <div className='flex my-8 justify-center'>
+            <div className='flex my-8 justify-center lg:flex-row flex-col'>
                 {icons.map((i) => {
                     return(
                         <div key={i.name} className='flex items-center mx-2 cursor-pointer group'>                        

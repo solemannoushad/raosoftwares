@@ -29,7 +29,7 @@ function page() {
   return (
     <>
       {loading && <Loading />}
-      <section className="ml-16">
+      <section className="md:ml-16 ml-8">
       <Hero title={heroTitle} heighlight={heroHighlight} />
       <div>
         <HeadingMain heading={heading} subHeading={subHeading} />

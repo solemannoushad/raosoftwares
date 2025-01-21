@@ -4,7 +4,7 @@ import Button from "./Button";
 function HeroBg() {
   return (
     <>
-      <div className="h-screen text-white flex flex-col justify-center pr-80 relative z-30">
+      <div className="h-screen text-white flex flex-col justify-center lg:pr-80 relative z-30">
         <h1 className="text-6xl font-semibold mt-10">
           Pioneering Next-Gen <span className="text-foreground">Software</span> Solutions
         </h1>

@@ -18,3 +18,6 @@ export const subMenuItems = [
         child: ['Healthcare', 'Education', 'Retail', 'Media & Publishing']
     },
 ];
+
+let menu = false;
+export default menu;

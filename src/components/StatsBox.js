@@ -74,7 +74,7 @@ function StatsBox() {
   }, [stats])
 
   return (
-    <div ref={boxRef} className="flex bg-white py-10 px-16 items-start justify-between">
+    <div ref={boxRef} className="flex flex-wrap bg-white py-10 px-16 items-start justify-between">
       {stats.map((stat, index) => {
         return (
           <div

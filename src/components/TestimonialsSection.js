@@ -26,11 +26,11 @@ function TestimonialsSection() {
       <Heading title="client" heighlight={"testinomials"} />
       <div className="flex my-10 bg-white w-[95%]">
 
-        <div className="w-1/2 bg-foreground rounded-br-[200px] flex justify-center">
-          <h1 className="text-white text-6xl font-semibold mt-24 px-10 text-center uppercase">What out client's say</h1>
+        <div className="hidden w-1/2 bg-foreground rounded-br-[200px] items-center lg:flex justify-center">
+          <h1 className="text-white text-6xl font-medium   px-10 text-center capitalize">What out clients are saying</h1>
         </div>
 
-        <div className="w-1/2 relative p-6 shadow-md text-center py-10 px-20 bg-white">
+        <div className="w-full lg:w-1/2 relative p-6 shadow-md text-center py-10 px-20 bg-white">
           {/* Arrows for navigation */}
           <div className="absolute top-1/2 left-4 -translate-y-1/2 cursor-pointer" onClick={prevTestimonial}>
             <span className="text-5xl text-black hover:text-foreground transition">&larr;</span>

@@ -1,46 +1,49 @@
-import Link from "next/link";
-import React from "react";
+import Link from "next/link"
+import React from "react"
 
 function Card({ title, description, icon, href }) {
   return (
-    <div className="cursor-pointer py-7 px-10 bg-background inline-block w-[46%] mr-2 my-6 text-white border border-gray-700 transition-all duration-300 ease-in-out hover:shadow-lg group relative overflow-hidden">
+    <div className="cursor-pointer py-5 sm:py-7 px-4 sm:px-6 lg:px-10 bg-background inline-block w-full sm:w-[calc(50%-0.5rem)] lg:w-[46%] mb-4 sm:mr-2 sm:my-6 text-white border border-gray-700 transition-all duration-300 ease-in-out hover:shadow-lg group relative overflow-hidden">
       {/* Icon */}
       {icon ? (
         <img
-          className="w-24 mb-4 transition-transform duration-300 ease-in-out group-hover:scale-110"
+          className="w-16 sm:w-20 lg:w-24 mb-4 transition-transform duration-300 ease-in-out group-hover:scale-110"
           src={`/icons/${icon}.svg`}
           alt=""
         />
       ) : (
         <img
-          className="w-24 mb-4 transition-transform duration-300 ease-in-out group-hover:scale-110"
+          className="w-16 sm:w-20 lg:w-24 mb-4 transition-transform duration-300 ease-in-out group-hover:scale-110"
           src={`/icons/laravel.svg`}
           alt=""
         />
       )}
       {/* Title */}
-      <h1 className="uppercase text-lg font-semibold my-2 transition-colors duration-300 ease-in-out group-hover:text-white">
+      <h1 className="uppercase text-base sm:text-lg font-semibold my-2 transition-colors duration-300 ease-in-out group-hover:text-white">
         {title}
       </h1>
       {/* Description */}
-      <p className="transition-colors duration-300 ease-in-out group-hover:text-white">
-  {description.substring(0, 150)}{description.length > 150 && '...'}
-</p>
+      <p className="text-sm sm:text-base transition-colors duration-300 ease-in-out group-hover:text-white">
+        {description.length > 150 ? `${description.substring(0, 150)}...` : description}
+      </p>
 
       {/* Button */}
-      { href && <Link
-        href={href || "/"}
-        className="mt-4 text-foreground text-lg flex items-center transition-all duration-300 ease-in-out hover:text-white"
-      >
-        Read more
-        <span className="ml-2">
-          <i className="iconoir-arrow-up-right"></i>
-        </span>
-      </Link>}
+      {href && (
+        <Link
+          href={href || "/"}
+          className="mt-4 text-foreground text-base sm:text-lg flex items-center transition-all duration-300 ease-in-out hover:text-white"
+        >
+          Read more
+          <span className="ml-2">
+            <i className="iconoir-arrow-up-right"></i>
+          </span>
+        </Link>
+      )}
       {/* ::after hover effect */}
       <span className="absolute bottom-0 left-0 w-full h-1 bg-foreground transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
     </div>
-  );
+  )
 }
 
-export default Card;
+export default Card
+

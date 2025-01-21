@@ -73,13 +73,13 @@ function page() {
   return (
     <>
       {loading && <Loading />}
-      <section className="ml-16">
+      <section className="md:ml-16 ml-8">
       {/* Hero Section */}
       <Hero title={heroTitle} heighlight={heroHighlight} />
 
       {/* Heading & Description */}
-      <div className="flex justify-between pr-10 my-10">
-        <div className="w-1/2 pr-8">
+      <div className="flex lg:flex-row flex-col-reverse justify-between pr-10 my-10">
+        <div className="lg:w-1/2 w-full pr-8">
           <SubPageHeading heading={heading} subHeading={subHeading} />
           <p className="text-white leading-7 mt-5">{description}</p>
           {content?.techUsed && (
@@ -111,7 +111,7 @@ function page() {
             </>
           )}
         </div>
-        <div className="w-1/2 flex items-center justify-center">
+        <div className="lg:w-1/2 w-full flex items-center justify-center">
           <img
             className={`${
               type && type === "icon" ? "w-48" : "w-full"

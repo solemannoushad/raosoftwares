@@ -44,7 +44,7 @@ function page() {
         </p>
 
         <Heading title="What We" heighlight={"Offer"} />
-        <div className="flex my-10">
+        <div className="flex my-10 flex-wrap">
           <SpecialityCard
             title="Custom Solutions"
             description={
@@ -72,7 +72,7 @@ function page() {
           We build long-term partnerships by prioritizing effective
           communication, shared visions, and delivering unmatched value.
         </p>
-        <div className="flex">
+        <div className="flex flex-wrap">
           <Card
             title="Consulting"
             description={
@@ -88,7 +88,7 @@ function page() {
             icon={"software"}
           />
         </div>
-        <div className="flex">
+        <div className="flex flex-wrap">
           <Card
             title="Data Services"
             description={
