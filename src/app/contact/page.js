@@ -1,9 +1,19 @@
+"use client"
 import ContactForm from '@/components/ContactForm'
 import Heading from '@/components/Heading'
 import Hero from '@/components/Hero'
-import React from 'react'
+import Loading from '@/components/Loading'
+import React, { useEffect, useState } from 'react'
 
 function page() {
+
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+      setTimeout(() => {
+        setLoading(false)
+      } , 2000)
+    } , [])
 
     const icons = [
         {
@@ -21,7 +31,9 @@ function page() {
     ]
 
   return (
-    <section className="ml-16">
+    <>
+        {loading && <Loading />}
+        <section className="ml-16">
         <Hero title={"Contact"} heighlight={"Us"} />
         <div>
             <Heading title="Let’s Turn Your Vision" heighlight={"into Reality"} />
@@ -43,6 +55,7 @@ function page() {
             </div>
         </div>
     </section>
+    </>
   )
 }
 

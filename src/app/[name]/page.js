@@ -3,11 +3,21 @@ import BlogsSection from "@/components/BlogsSection";
 import Card from "@/components/Card";
 import HeadingMain from "@/components/HeadingMain";
 import Hero from "@/components/Hero";
+import Loading from "@/components/Loading";
 import { content } from "@/constants/content";
 import { notFound, useParams } from "next/navigation";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function page() {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    } , 2000)
+  } , [])
+
   const {name} = useParams();
   const pageContent = content[name];
   const {heroTitle, heroHighlight, cards, heading, subHeading} = pageContent;
@@ -17,7 +27,9 @@ function page() {
   }
   
   return (
-    <section className="ml-16">
+    <>
+      {loading && <Loading />}
+      <section className="ml-16">
       <Hero title={heroTitle} heighlight={heroHighlight} />
       <div>
         <HeadingMain heading={heading} subHeading={subHeading} />
@@ -42,6 +54,7 @@ function page() {
       </div>
       <BlogsSection />
     </section>
+    </>
   );
 }
 

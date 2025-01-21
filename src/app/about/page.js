@@ -1,15 +1,27 @@
+"use client"
 import BlogsSection from "@/components/BlogsSection";
 import Card from "@/components/Card";
 import Heading from "@/components/Heading";
 import Hero from "@/components/Hero";
+import Loading from "@/components/Loading";
 import SpecialityCard from "@/components/SpecialityCard";
 import StatsBox from "@/components/StatsBox";
 import Head from "next/head";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function page() {
+
+    const [loading, setLoading] = useState(true);
+  
+    useEffect(() => {
+      setTimeout(() => {
+        setLoading(false)
+      } , 2000)
+    } , [])
+
   return (
     <>
+      {loading && <Loading />}
       <Head>
         <title>About Us</title>
       </Head>

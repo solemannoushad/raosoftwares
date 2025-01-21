@@ -1,10 +1,20 @@
 "use client"
 import Hero from '@/components/Hero';
+import Loading from '@/components/Loading';
 import { blogData } from '@/constants/blogsData';
 import { notFound, useParams } from 'next/navigation';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 function blogDetail() {
+
+    const [loading, setLoading] = useState(true);
+  
+    useEffect(() => {
+      setTimeout(() => {
+        setLoading(false)
+      } , 2000)
+    } , [])
+
     const {blogTitle} = useParams();
     const blogContent = blogData.find((blog) => blog.url === `/blog/${blogTitle}/`);
     const {title, description, image, content} = blogContent;
@@ -14,7 +24,9 @@ function blogDetail() {
     }
     
   return (
-    <div className='mx-28'>
+    <>
+      {loading && <Loading />}
+      <div className='mx-28'>
       <div className='text-center'>
 
       <Hero title={title} />
@@ -25,6 +37,7 @@ function blogDetail() {
         {content}
       </div>
     </div>
+    </>
   )
 }
 

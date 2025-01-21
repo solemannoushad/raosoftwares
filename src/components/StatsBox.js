@@ -74,7 +74,7 @@ function StatsBox() {
   }, [stats])
 
   return (
-    <div ref={boxRef} className="flex bg-slate-800 py-10 px-16 items-start justify-between">
+    <div ref={boxRef} className="flex bg-white py-10 px-16 items-start justify-between">
       {stats.map((stat, index) => {
         return (
           <div
@@ -82,10 +82,10 @@ function StatsBox() {
             ref={(el) => (statRefs.current[index] = el)}
             className="flex flex-col items-center cursor-pointer group"
           >
-            <h1 className="text-4xl font-medium text-white group-hover:text-foreground transition-all duration-300">
+            <h1 className="text-4xl font-medium text-black group-hover:text-foreground transition-all duration-300">
               0
             </h1>
-            <p className="text-lg font-light text-white">{stat.title}</p>
+            <p className="text-lg font-light text-black">{stat.title}</p>
           </div>
         )
       })}

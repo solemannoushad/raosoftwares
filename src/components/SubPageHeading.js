@@ -1,25 +1,20 @@
 "use client"
+
 import React, { useEffect, useRef } from "react"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 gsap.registerPlugin(ScrollTrigger)
 
-function Heading({ title, heighlight }) {
-  const titleRef = useRef(null)
-  const highlightRef = useRef(null)
-
-  const styles = `
-    .text-shadow {
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    }
-  `
+function SubPageHeading({ heading, subHeading }) {
+  const headingRef = useRef(null)
+  const subHeadingRef = useRef(null)
 
   useEffect(() => {
-    const titleElement = titleRef.current
-    const highlightElement = highlightRef.current
+    const headingElement = headingRef.current
+    const subHeadingElement = subHeadingRef.current
 
-    if (titleElement && highlightElement) {
+    if (headingElement && subHeadingElement) {
       // Split text into words and characters
       const splitText = (element) => {
         const words = element.textContent.split(" ")
@@ -41,22 +36,22 @@ function Heading({ title, heighlight }) {
         })
       }
 
-      const titleChars = splitText(titleElement)
-      const highlightChars = splitText(highlightElement)
+      const headingChars = splitText(headingElement)
+      const subHeadingChars = splitText(subHeadingElement)
 
-      gsap.set([titleElement, highlightElement], { perspective: 400 })
+      gsap.set([headingElement, subHeadingElement], { perspective: 400 })
 
       const tl = gsap.timeline({
         scrollTrigger: {
-          trigger: titleElement,
-          start: "top bottom-=100",
-          end: "center center+=200",
+          trigger: headingElement,
+          start: "top bottom-=200",
+          end: "bottom center",
           scrub: 1,
-          toggleActions: "play reverse play reverse",
+          toggleActions: "play none none reverse",
         },
       })
 
-      tl.from(titleChars, {
+      tl.from(headingChars, {
         duration: 0.5,
         opacity: 0,
         scale: 0,
@@ -66,7 +61,7 @@ function Heading({ title, heighlight }) {
         ease: "back",
         stagger: 0.01,
       }).from(
-        highlightChars,
+        subHeadingChars,
         {
           duration: 0.5,
           opacity: 0,
@@ -77,25 +72,22 @@ function Heading({ title, heighlight }) {
           ease: "back",
           stagger: 0.01,
         },
-        "-=0.25",
+        "-=0.5",
       )
     }
-  }, [title, heighlight])
+  }, [heading, subHeading])
 
   return (
-    <>
-      <style>{styles}</style>
-      <div className="flex flex-wrap items-baseline">
-        <h1 ref={titleRef} className="text-white text-4xl uppercase text-shadow mr-2">
-          {title}
-        </h1>
-        <h2 ref={highlightRef} className="text-4xl uppercase text-shadow text-foreground font-semibold">
-          {heighlight}
-        </h2>
-      </div>
-    </>
+    <div className="flex flex-wrap items-baseline">
+      <h1 ref={headingRef} className="text-white text-6xl uppercase mr-4">
+        {heading}
+      </h1>
+      <h2 ref={subHeadingRef} className="text-slate-400 text-6xl uppercase">
+        {subHeading}
+      </h2>
+    </div>
   )
 }
 
-export default Heading
+export default SubPageHeading
 

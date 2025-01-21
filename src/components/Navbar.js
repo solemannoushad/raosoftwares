@@ -39,8 +39,7 @@ export default function Navbar() {
       href: "/solutions",
       dropdown: [
         { name: "Customer Relationship Management", href: "/solutions/customer-relationship-management" },
-        { name: "Enterprise Resource Planning", href: "/solutions/enterprise-resource-planning" },
-        { name: "Inventory Management", href: "/solutions/inventory-management" },
+        { name: "Enterprise Resource Planning", href: "/solutions/enterprise-resource-planning" }
       ],
     },
     {

@@ -15,6 +15,24 @@ function HeadingMain({ heading, subHeading }) {
     const subHeadingElement = subHeadingRef.current
 
     if (headingElement && subHeadingElement) {
+      // Split text into spans
+      const splitText = (element) => {
+        const text = element.textContent
+        element.textContent = ""
+        return [...text].map((char) => {
+          const span = document.createElement("span")
+          span.textContent = char === " " ? "\u00A0" : char
+          span.style.display = "inline-block"
+          element.appendChild(span)
+          return span
+        })
+      }
+
+      const headingChars = splitText(headingElement)
+      const subHeadingChars = splitText(subHeadingElement)
+
+      gsap.set([headingElement, subHeadingElement], { perspective: 400 })
+
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: headingElement,
@@ -25,45 +43,38 @@ function HeadingMain({ heading, subHeading }) {
         },
       })
 
-      tl.fromTo(
-        headingElement,
+      tl.from(headingChars, {
+        duration: 0.5,
+        opacity: 0,
+        scale: 0,
+        y: 80,
+        rotationX: 180,
+        transformOrigin: "0% 50% -50",
+        ease: "back",
+        stagger: 0.01,
+      }).from(
+        subHeadingChars,
         {
+          duration: 0.5,
           opacity: 0,
-          x: -100,
-          rotationY: -45,
-        },
-        {
-          opacity: 1,
-          x: 0,
-          rotationY: 0,
-          duration: 1,
-          ease: "power3.out",
-        },
-      ).fromTo(
-        subHeadingElement,
-        {
-          opacity: 0,
-          x: 100,
-          rotationY: 45,
-        },
-        {
-          opacity: 1,
-          x: 0,
-          rotationY: 0,
-          duration: 1,
-          ease: "power3.out",
+          scale: 0,
+          y: 80,
+          rotationX: 180,
+          transformOrigin: "0% 50% -50",
+          ease: "back",
+          stagger: 0.01,
         },
         "-=0.5",
       )
     }
-  }, [])
+  }, [heading, subHeading])
 
   return (
     <div className="overflow-hidden">
-      <h1 ref={headingRef} className="text-white uppercase text-6xl opacity-0">
+      <h1 ref={headingRef} className="text-white uppercase text-6xl">
         {heading}
       </h1>
-      <h2 ref={subHeadingRef} className="text-slate-400 uppercase text-6xl opacity-0">
+      <h2 ref={subHeadingRef} className="text-slate-400 uppercase text-6xl">
         {subHeading}
       </h2>
     </div>

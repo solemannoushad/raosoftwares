@@ -852,20 +852,20 @@ export const content = {
       {
         title: "Finance & Banking",
         description: subContent["industries"]?.["financebanking"].description,
-        icon: "media",
+        icon: "finance",
         href: "/industries/finance-banking",
       },
       {
         title: "Real Estate",
         description: subContent["industries"]?.["realestate"].description,
-        icon: "media",
+        icon: "estate",
         href: "/industries/real-estate",
       },
       {
         title: "Logistics & Supply Chain",
         description:
           subContent["industries"]?.["logisticssupplychain"].description,
-        icon: "media",
+        icon: "logistics",
         href: "/industries/logistics-supply-chain",
       },
     ],
@@ -953,19 +953,19 @@ export const content = {
       {
         title: "Digital Marketing",
         description: subContent["services"]?.["digitalmarketing"].description,
-        icon: "app-development",
+        icon: "media",
         href: "/services/digital-marketing",
       },
       {
         title: "Human Resourcing",
         description: subContent["services"]?.["humanresourcing"].description,
-        icon: "app-development",
+        icon: "hr",
         href: "/services/human-resourcing",
       },
       {
         title: "IT Consulting",
         description: subContent["services"]?.["itconsulting"].description,
-        icon: "app-development",
+        icon: "it",
         href: "/services/it-consulting",
       },
     ],
@@ -1010,11 +1010,6 @@ export const content = {
         title: "Enterprise Resource Planning",
         description: "Optimizing workflows with custom ERP solutions.",
         icon: "erp",
-      },
-      {
-        title: "Inventory Management",
-        description: "Streamlining stock control and operations.",
-        icon: "inventory",
       },
     ],
   },

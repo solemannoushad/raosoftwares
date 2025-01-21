@@ -1,11 +1,22 @@
 "use client";
 import Hero from "@/components/Hero";
+import Loading from "@/components/Loading";
+import SubPageHeading from "@/components/SubPageHeading";
 import { subContent } from "@/constants/content";
 import { removeHyphens } from "@/utils/helper";
 import { notFound, useParams } from "next/navigation";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function page() {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false)
+    } , 2000)
+  } , [])
+
   const { name, subName } = useParams();
   const content = subContent[name]?.[removeHyphens(subName)];
   if (!content) {
@@ -60,16 +71,16 @@ function page() {
   };
 
   return (
-    <section className="ml-16">
+    <>
+      {loading && <Loading />}
+      <section className="ml-16">
       {/* Hero Section */}
       <Hero title={heroTitle} heighlight={heroHighlight} />
 
       {/* Heading & Description */}
       <div className="flex justify-between pr-10 my-10">
         <div className="w-1/2 pr-8">
-          <h1 className="text-white text-6xl uppercase">
-            {heading} <span className="text-slate-400">{subHeading}</span>{" "}
-          </h1>
+          <SubPageHeading heading={heading} subHeading={subHeading} />
           <p className="text-white leading-7 mt-5">{description}</p>
           {content?.techUsed && (
             <>
@@ -127,6 +138,7 @@ function page() {
         </div>
       </div>
     </section>
+    </>
   );
 }
 

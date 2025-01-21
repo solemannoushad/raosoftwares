@@ -6,15 +6,10 @@ function HeroBg() {
     <>
       <div className="h-screen text-white flex flex-col justify-center pr-80 relative z-30">
         <h1 className="text-6xl font-semibold mt-10">
-          Empowering <span className="text-foreground">Businesses</span> Through
-          Innovation
+          Pioneering Next-Gen <span className="text-foreground">Software</span> Solutions
         </h1>
         <p className="my-5 text-justify pr-14">
-          Experience the transformative power of DevStella Solutions. We
-          specialize in developing custom software that helps businesses thrive
-          in today’s competitive environment. With a focus on collaboration and
-          client satisfaction, we deliver tailored solutions that meet your
-          unique needs.
+        Empowering businesses to thrive with innovative, custom software tailored for future growth.
         </p>
         <div className="mt-8">
           <Button title={"Explore Our Services"} href={"/services"} />
@@ -23,7 +18,7 @@ function HeroBg() {
       <div className="absolute top-0 left-0 w-full h-screen fade z-20"></div>
       <div className="absolute top-0 left-0 w-screen h-screen z-10">
         <video className="w-screen h-full object-cover" autoPlay muted loop>
-          <source src="/hero-bg1.mp4" type="video/mp4" />
+          <source src="/hero-bg.mp4" type="video/mp4" />
         </video>
       </div>
     </>
