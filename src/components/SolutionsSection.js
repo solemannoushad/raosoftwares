@@ -2,6 +2,7 @@ import React from 'react'
 import Heading from './Heading'
 import Card from './Card'
 import { content } from '@/constants/content'
+import Link from 'next/link';
 
 function SolutionsSection() {
 
@@ -24,7 +25,7 @@ function SolutionsSection() {
             )
           })
         }
-
+      <h2 className="text-white text-center w-full tracking-wide">BRING THEM TOGETHER AND YOU OVERCOME THE ORDINARY. <Link className="text-foreground" href={'/solutions'}>VIEW MORE SOLUTIONS</Link></h2>
       </div>
     </div>
   )

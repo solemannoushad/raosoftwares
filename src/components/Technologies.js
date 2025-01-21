@@ -2,6 +2,7 @@ import React from "react";
 import Heading from "./Heading";
 import Card from "./Card";
 import { content } from "@/constants/content";
+import Link from "next/link";
 
 const Technologies = () => {
   const cards = content["technologies"].cards.slice(0, 4);
@@ -21,6 +22,7 @@ const Technologies = () => {
             />
           );
         })}
+      <h2 className="text-white text-center w-full tracking-wide">BRING THEM TOGETHER AND YOU OVERCOME THE ORDINARY. <Link className="text-foreground" href={'/technologies'}>VIEW MORE TECHNOLOGIES</Link></h2>
       </div>
     </div>
   );
