@@ -58,7 +58,7 @@ function Heading({ title, heighlight }) {
 
       tl.from(titleChars, {
         duration: 0.5,
-        opacity: 0,
+        opacity: 1,
         scale: 0,
         y: 80,
         rotationX: 180,
@@ -69,7 +69,7 @@ function Heading({ title, heighlight }) {
         highlightChars,
         {
           duration: 0.5,
-          opacity: 0,
+          opacity: 1,
           scale: 0,
           y: 80,
           rotationX: 180,

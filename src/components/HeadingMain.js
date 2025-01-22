@@ -45,7 +45,7 @@ function HeadingMain({ heading, subHeading }) {
 
       tl.from(headingChars, {
         duration: 0.5,
-        opacity: 0,
+        opacity: 1,
         scale: 0,
         y: 80,
         rotationX: 180,
@@ -56,7 +56,7 @@ function HeadingMain({ heading, subHeading }) {
         subHeadingChars,
         {
           duration: 0.5,
-          opacity: 0,
+          opacity: 1,
           scale: 0,
           y: 80,
           rotationX: 180,
