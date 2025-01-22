@@ -50,7 +50,7 @@ function Heading({ title, heighlight }) {
         scrollTrigger: {
           trigger: titleElement,
           start: "top bottom-=100",
-          end: "center center+=200",
+          end: "bottom center",
           scrub: 1,
           toggleActions: "play reverse play reverse",
         },
