@@ -12,6 +12,10 @@ import React, { useEffect, useState } from "react";
 function page() {
 
     const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+      document.title = "About Us - Devstella";
+    }, []);
   
     useEffect(() => {
       setTimeout(() => {

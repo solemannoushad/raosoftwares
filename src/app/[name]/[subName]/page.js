@@ -17,6 +17,10 @@ function page() {
     } , 2000)
   } , [])
 
+  useEffect(() => {
+    document.title = `${heroTitle} ${heroHighlight} - Devstella`;
+  }, []);
+
   const { name, subName } = useParams();
   const content = subContent[name]?.[removeHyphens(subName)];
   if (!content) {

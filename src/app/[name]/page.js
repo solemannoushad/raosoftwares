@@ -13,6 +13,11 @@ function page() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    document.title = `${name.charAt(0).toUpperCase()}${name.slice(1)} - Devstella`;
+
+      }, []);
+
+  useEffect(() => {
     setTimeout(() => {
       setLoading(false)
     } , 2000)

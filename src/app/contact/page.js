@@ -7,6 +7,10 @@ import React, { useEffect, useState } from 'react'
 
 function page() {
 
+    useEffect(() => {
+          document.title = "Contact Us - Devstella";
+        }, []);
+
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {

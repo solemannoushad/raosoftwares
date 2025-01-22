@@ -8,6 +8,10 @@ import React, { useEffect, useState } from 'react'
 function blogDetail() {
 
     const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+          document.title = `${title} - Devstella`;
+        }, []);
   
     useEffect(() => {
       setTimeout(() => {
