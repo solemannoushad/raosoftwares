@@ -30,14 +30,14 @@ function blogDetail() {
   return (
     <>
       {loading && <Loading />}
-      <div className='mx-28'>
+      <div className='md:mx-28 mx-10'>
       <div className='text-center'>
 
       <Hero title={title} />
       </div>
       <div className='flex flex-col items-center'>
-        <img className='w-[600px] h-[600px] object-contain ' src={`/images/${image}`} />
-        <p className='text-white my-10'>{description}</p>
+        <img className='w-[600px] object-contain ' src={`/images/${image}`} />
+        <p className='text-white my-10 text-justify'>{description}</p>
         {content}
       </div>
     </div>
