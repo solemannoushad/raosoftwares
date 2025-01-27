@@ -86,7 +86,7 @@ function Heading({ title, heighlight }) {
     <>
       <style>{styles}</style>
       <div className="flex flex-wrap items-baseline mt-5">
-        <h1 ref={titleRef} className="text-white text-4xl uppercase text-shadow">
+        <h1 ref={titleRef} className="text-white text-4xl uppercase text-shadow mr-1">
           {title}
         </h1>
         <h2 ref={highlightRef} className="text-4xl uppercase text-shadow text-foreground font-semibold">
