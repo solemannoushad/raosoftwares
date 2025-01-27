@@ -6,7 +6,7 @@ function Specialities() {
   return (
     <section>
       <Heading title="Our" heighlight={"Core Specialties"} />
-      <div className="flex my-10 flex-wrap">
+      <div className="flex my-10 flex-wrap justify-center items-center">
         <SpecialityCard
           title={"Consulting"}
           description={

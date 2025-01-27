@@ -27,7 +27,7 @@ export default function Home() {
       <Head>
         <title>DevStella</title>
       </Head>
-      <section className="md:ml-16 ml-8">
+      <section className="md:ml-16 mx-5">
         <HeroBg />
         <AboutSection />
         <Specialities />

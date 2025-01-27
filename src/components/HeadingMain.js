@@ -15,16 +15,24 @@ function HeadingMain({ heading, subHeading }) {
     const subHeadingElement = subHeadingRef.current
 
     if (headingElement && subHeadingElement) {
-      // Split text into spans
+      // Split text into words and characters
       const splitText = (element) => {
-        const text = element.textContent
+        const words = element.textContent.split(" ")
         element.textContent = ""
-        return [...text].map((char) => {
-          const span = document.createElement("span")
-          span.textContent = char === " " ? "\u00A0" : char
-          span.style.display = "inline-block"
-          element.appendChild(span)
-          return span
+        return words.flatMap((word) => {
+          const wordSpan = document.createElement("span")
+          wordSpan.style.display = "inline-block"
+          wordSpan.style.whiteSpace = "nowrap"
+          const chars = [...word].map((char) => {
+            const charSpan = document.createElement("span")
+            charSpan.textContent = char
+            charSpan.style.display = "inline-block"
+            wordSpan.appendChild(charSpan)
+            return charSpan
+          })
+          element.appendChild(wordSpan)
+          element.appendChild(document.createTextNode(" "))
+          return chars
         })
       }
 
@@ -45,7 +53,7 @@ function HeadingMain({ heading, subHeading }) {
 
       tl.from(headingChars, {
         duration: 0.5,
-        opacity: 1,
+        opacity: 0,
         scale: 0,
         y: 80,
         rotationX: 180,
@@ -56,7 +64,7 @@ function HeadingMain({ heading, subHeading }) {
         subHeadingChars,
         {
           duration: 0.5,
-          opacity: 1,
+          opacity: 0,
           scale: 0,
           y: 80,
           rotationX: 180,
@@ -67,11 +75,11 @@ function HeadingMain({ heading, subHeading }) {
         "-=0.5",
       )
     }
-  }, [heading, subHeading])
+  }, [])
 
   return (
-    <div className="overflow-hidden">
-      <h1 ref={headingRef} className="text-white uppercase text-6xl">
+    <div className="flex flex-wrap items-baseline">
+      <h1 ref={headingRef} className="text-white uppercase text-6xl mr-4">
         {heading}
       </h1>
       <h2 ref={subHeadingRef} className="text-slate-400 uppercase text-6xl">
