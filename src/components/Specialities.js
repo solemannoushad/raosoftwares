@@ -5,7 +5,7 @@ import SpecialityCard from "./SpecialityCard";
 function Specialities() {
   return (
     <section>
-      <Heading title="Our" heighlight={"Core Specialties"} />
+      <Heading title="Our" heighlight={"Core Specialities"} />
       <div className="flex my-10 flex-wrap justify-center items-center">
         <SpecialityCard
           title={"Consulting"}
