@@ -6,7 +6,7 @@ function HeroBg() {
     <>
       <div className="h-screen text-white flex flex-col justify-center lg:pr-80 relative z-30">
         <h1 className="text-6xl font-semibold mt-10">
-          Pioneering Next-Gen <span className="text-foreground">Software</span> Solutions
+          Pioneering <span className="text-foreground">Next-Gen</span> Software Solutions
         </h1>
         <p className="my-5 text-justify pr-14">
         Empowering businesses to thrive with innovative, custom software tailored for future growth.

@@ -36,7 +36,7 @@ function blogDetail() {
       <Hero title={title} />
       </div>
       <div className='flex flex-col items-center'>
-        <img className='w-[600px] object-contain ' src={`/images/${image}`} />
+        <img className='w-[600px] object-contain' src={`/images/${image}`} />
         <p className='text-white my-10 text-justify'>{description}</p>
         {content}
       </div>

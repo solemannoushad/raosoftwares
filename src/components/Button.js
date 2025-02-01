@@ -37,7 +37,7 @@ function Button({ title, href, onClick }) {
   return (
     <Link
       ref={buttonRef}
-      className="relative cursor-pointer inline-block text-lg font-medium py-4 px-6 rounded-sm bg-foreground align-middle uppercase overflow-hidden group text-white hover:text-foreground transition-colors duration-300 ease-in-out opacity-0"
+      className="relative cursor-pointer inline-block text-lg font-medium py-4 px-6 rounded-full bg-foreground align-middle uppercase overflow-hidden group text-white hover:text-foreground transition-colors duration-300 ease-in-out opacity-0"
       href={href || ""}
       onClick={onClick}
     >
