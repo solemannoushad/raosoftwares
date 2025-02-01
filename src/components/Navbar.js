@@ -79,11 +79,11 @@ export default function Navbar() {
                 <i className="iconoir-nav-arrow-down ml-1 text-foreground text-lg"></i>
               </Link>
               <ul
-                className="dropdown absolute text-black bg-white py-3 px-5 b-10 text-left opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200"
+                className="dropdown absolute bg-gradient-to-br from-gray-800/50 to-gray-900/30 backdrop-blur-[10px] rounded-md text-white py-3 px-5 b-10 text-left opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200"
                 style={{ width: "17rem", left: "0%", top: "170%" }}
               >
                 {item.dropdown.map((subItem, subIndex) => (
-                  <li key={subIndex} className="my-4 border-b pb-2">
+                  <li key={subIndex} className="my-4 border-b border-b-slate-600 pb-2">
                     <Link
                       href={subItem.href}
                       className="text-sm hover:text-foreground"
