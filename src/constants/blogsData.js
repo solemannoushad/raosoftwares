@@ -143,7 +143,7 @@ export const blogData = [
     url: '/blog/flutter-app-performance/',
     title: "Supercharge Flutter App Performance: Eliminate UI Freezes with Dart Isolates",
     description:
-      "",
+      "The struggle with frozen user interfaces (UIs) in apps can be frustrating. Flutter developers often face this issue when performing heavy tasks that block the main thread, leading to a poor user experience. Fortunately, Dart isolates offer a solution to keep UIs responsive while handling demanding operations.",
     image: "flutter-blog.png",
     content: (
       <div className="text-white">
