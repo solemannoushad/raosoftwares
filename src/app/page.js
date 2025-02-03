@@ -4,8 +4,10 @@ import BlogsSection from "@/components/BlogsSection";
 import HeroBg from "@/components/HeroBg";
 import IndustriesSection from "@/components/IndustriesSection";
 import Loading from "@/components/Loading";
+import ServicesSection from "@/components/ServicesSection";
 import SolutionsSection from "@/components/SolutionsSection";
 import Specialities from "@/components/Specialities";
+import TeamSection from "@/components/TeamSection";
 import Technologies from "@/components/Technologies";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import Head from "next/head";
@@ -27,12 +29,14 @@ export default function Home() {
       <Head>
         <title>DevStella</title>
       </Head>
-      <section className="md:ml-16 mx-5">
+      <section className="md:px-16 px-5">
         <HeroBg />
         <AboutSection />
+        <ServicesSection />
         <Specialities />
         <Technologies />
         <SolutionsSection />
+        <TeamSection />
         <TestimonialsSection />
         <BlogsSection />
       </section>
