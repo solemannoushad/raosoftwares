@@ -37,7 +37,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="footer-about">
             <div className="footer-logo text-2xl text-white tracking-widest mb-6">
-              DEVSTELLA<span className="text-foreground">.</span>
+              <img src="/icons/devstella-logo1.svg" className="w-24" alt="" />
             </div>
             <p className="footer-about-desc text-base mb-6">
               Experience the transformative power of Rao Software Solutions. We

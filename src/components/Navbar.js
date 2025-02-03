@@ -64,7 +64,7 @@ export default function Navbar() {
       id="navbar"
     >
       <div className="logo text-xl text-white tracking-widest">
-        DEVSTELLA<span className="text-foreground">.</span>
+        <img src="/icons/devstella-logo1.svg" className="w-20" alt="" />
       </div>
       <ul className="menu flex">
         {menuItems.map((item, index) =>
