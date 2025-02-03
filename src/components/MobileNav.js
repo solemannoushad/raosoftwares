@@ -91,7 +91,7 @@ export default function MobileNav() {
     <nav className="fixed top-0 left-0 w-full z-50">
       <div className="px-4 py-3 flex justify-between items-center bg-black">
         <div className="logo text-xl text-white tracking-widest">
-          DEVSTELLA<span className="text-foreground">.</span>
+          <img src="/icons/devstella-logo1.svg" className="w-20" alt="" />
         </div>
         <button onClick={toggleMenu} className="text-white text-2xl z-40">
           <i className={`iconoir-${isMenuOpen ? "xmark" : "menu"}`}></i>
