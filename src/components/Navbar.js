@@ -63,9 +63,9 @@ export default function Navbar() {
       className="px-7 py-5 flex justify-between items-center bg-background fixed w-full top-0 bg-black z-40"
       id="navbar"
     >
-      <div className="logo text-xl text-white tracking-widest">
+      <Link href={"/"} className="logo text-xl text-white tracking-widest">
         <img src="/icons/devstella-logo1.svg" className="w-20" alt="" />
-      </div>
+      </Link>
       <ul className="menu flex">
         {menuItems.map((item, index) =>
           item.dropdown ? (
