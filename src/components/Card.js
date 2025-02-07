@@ -1,5 +1,4 @@
 import Link from "next/link"
-import React from "react"
 
 function Card({ title, description, icon, href }) {
   return (
@@ -39,8 +38,11 @@ function Card({ title, description, icon, href }) {
           </span>
         </Link>
       )}
-      {/* ::after hover effect */}
-      <span className="absolute bottom-0 left-0 w-full h-1 bg-foreground transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
+      {/* Hover effect borders */}
+      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-foreground transition-all duration-300 ease-in-out group-hover:w-full"></span>
+      <span className="absolute bottom-0 left-0 w-0.5 h-0 bg-foreground transition-all duration-300 ease-in-out group-hover:h-full delay-150"></span>
+      <span className="absolute top-0 left-0 w-0 h-0.5 bg-foreground transition-all duration-300 ease-in-out group-hover:w-full delay-300"></span>
+      <span className="absolute bottom-0 right-0 w-0.5 h-0 bg-foreground transition-all duration-300 ease-in-out group-hover:h-full delay-450"></span>
     </div>
   )
 }
