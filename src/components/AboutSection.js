@@ -22,7 +22,7 @@ function AboutSection() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: section,
-          start: "top bottom-=250",
+          start: "top bottom-=20",
           end: "bottom top",
           scrub: true,
         },
