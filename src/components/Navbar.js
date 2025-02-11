@@ -79,7 +79,7 @@ export default function Navbar() {
                 <i className="iconoir-nav-arrow-down ml-1 text-foreground text-lg"></i>
               </Link>
               <ul
-                className="dropdown absolute bg-gradient-to-br from-gray-800/50 to-gray-900/30 backdrop-blur-[10px] rounded-md text-white py-3 px-5 b-10 text-left opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200"
+                className="dropdown absolute bg-gradient-to-br from-gray-800/50 to-gray-900/30 backdrop-blur-[10px] rounded-[.475rem] text-white py-3 px-5 b-10 text-left opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200"
                 style={{ width: "17rem", left: "0%", top: "170%" }}
               >
                 {item.dropdown.map((subItem, subIndex) => (

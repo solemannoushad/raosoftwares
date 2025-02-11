@@ -24,7 +24,7 @@ function Button({ title, href, onClick }) {
           duration: 0.5,
           scrollTrigger: {
             trigger: buttonRef.current,
-            start: "top bottom-=100", // Start animation earlier
+            start: "top bottom-=10", // Start animation earlier
             end: "center center+=100", // End animation sooner
             scrub: 1, // Smooth scrubbing, takes 1 second to catch up to the scrollbar
             toggleActions: "play none none reverse",
