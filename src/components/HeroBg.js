@@ -4,12 +4,12 @@ import Button from "./Button";
 function HeroBg() {
   return (
     <>
-      <div className="h-screen text-white flex flex-col justify-center lg:pr-80 relative z-30">
-        <h1 className="text-6xl font-semibold mt-10">
-          Pioneering <span className="text-foreground">Next-Gen</span> Software Solutions
+      <div className="h-screen text-white flex flex-col justify-center items-center text-center relative z-30 md:px-48">
+        <h1 className="text-6xl font-semibold mt-10 text-center capitalize">
+          AI for everyone, everywhere, together.
         </h1>
-        <p className="my-5 text-justify pr-14">
-        Empowering businesses to thrive with innovative, custom software tailored for future growth.
+        <p className="my-5 text-xl text-center pr-14">
+          Pioneering Next-Gen software Solutions
         </p>
         <div className="mt-8">
           <Button title={"Explore Our Services"} href={"/services"} />

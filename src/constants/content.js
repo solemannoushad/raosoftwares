@@ -74,15 +74,20 @@ export const subContent = {
       techUsed:
         "Python, TensorFlow, PyTorch, Scikit-learn, OpenCV, Keras, NLP, Reinforcement Learning, Neural Networks, Cloud AI Services.",
       tags: [
-        "AIProducts",
-        "MLDevelopment",
-        "DataDrivenInsights",
-        "PredictiveAnalytics",
+        "Machine learning",
+        "Deep learning",
+        "Gen AI",
         "NLP",
-        "Chatbots",
-        "ImageRecognition",
-        "SmartSolutions",
-        "Automation",
+        "Computer Vision",
+        "Prediction",
+        "Object detection",
+        "Regration",
+        "Classification",
+        "Artificial intelligence Agent",
+        "Rag Solution",
+        "Automaton",
+        "Custom model",
+        "Price Prediction",
       ],
     },
     digitalmarketing: {
@@ -971,29 +976,51 @@ export const content = {
     ],
     content: (
       <div>
-  <h2 className="text-2xl font-bold text-white">Why Choose DevStella?</h2>
-  <p className="text-white mt-4">
-    At DevStella, we distinguish ourselves by combining deep technical expertise with a client-centric approach to deliver solutions that create measurable business value. We understand that every business has unique challenges, and we tailor our services to address these specific needs. Our commitment to excellence and continuous innovation ensures that our clients not only meet their current objectives but also anticipate and adapt to future challenges. With a proven track record of successful projects and satisfied clients, we are your trusted partner in driving digital transformation and achieving sustainable business success.
-  </p>
-  <h3 className="text-xl font-semibold text-white mt-6">Commitment to Quality:</h3>
-  <p className="text-white">
-    We ensure that every project we take on is built to the highest standards, backed by rigorous testing and continuous improvement.
-  </p>
-  <h3 className="text-xl font-semibold text-white mt-6">Collaborative Approach:</h3>
-  <p className="text-white">
-    Our team works closely with clients, fostering open communication and transparency throughout the entire process.
-  </p>
-  <h3 className="text-xl font-semibold text-white mt-6">Tailored Solutions:</h3>
-  <p className="text-white">
-    We provide custom-built solutions that address your unique business needs, offering scalability and flexibility.
-  </p>
-  <h3 className="text-xl font-semibold text-white mt-6">Let’s Build the Future Together</h3>
-  <p className="text-white mt-4">
-    At DevStella, we are more than just a service provider – we are your partner in innovation. Let us help you transform your ideas into cutting-edge digital solutions that empower your business to thrive. Reach out to us today to discuss how we can bring your vision to life.
-  </p>
-</div>
-
-    )
+        <h2 className="text-2xl font-bold text-white">Why Choose DevStella?</h2>
+        <p className="text-white mt-4">
+          At DevStella, we distinguish ourselves by combining deep technical
+          expertise with a client-centric approach to deliver solutions that
+          create measurable business value. We understand that every business
+          has unique challenges, and we tailor our services to address these
+          specific needs. Our commitment to excellence and continuous innovation
+          ensures that our clients not only meet their current objectives but
+          also anticipate and adapt to future challenges. With a proven track
+          record of successful projects and satisfied clients, we are your
+          trusted partner in driving digital transformation and achieving
+          sustainable business success.
+        </p>
+        <h3 className="text-xl font-semibold text-white mt-6">
+          Commitment to Quality:
+        </h3>
+        <p className="text-white">
+          We ensure that every project we take on is built to the highest
+          standards, backed by rigorous testing and continuous improvement.
+        </p>
+        <h3 className="text-xl font-semibold text-white mt-6">
+          Collaborative Approach:
+        </h3>
+        <p className="text-white">
+          Our team works closely with clients, fostering open communication and
+          transparency throughout the entire process.
+        </p>
+        <h3 className="text-xl font-semibold text-white mt-6">
+          Tailored Solutions:
+        </h3>
+        <p className="text-white">
+          We provide custom-built solutions that address your unique business
+          needs, offering scalability and flexibility.
+        </p>
+        <h3 className="text-xl font-semibold text-white mt-6">
+          Let’s Build the Future Together
+        </h3>
+        <p className="text-white mt-4">
+          At DevStella, we are more than just a service provider – we are your
+          partner in innovation. Let us help you transform your ideas into
+          cutting-edge digital solutions that empower your business to thrive.
+          Reach out to us today to discuss how we can bring your vision to life.
+        </p>
+      </div>
+    ),
   },
   solutions: {
     heroTitle: "Our",

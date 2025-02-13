@@ -77,7 +77,7 @@ function page() {
   return (
     <>
       {loading && <Loading />}
-      <section className="md:ml-16 ml-8">
+      <section className="md:px-16 px-5 lg:px-20 xl:px-40 2xl:px-60">
       {/* Hero Section */}
       <Hero title={heroTitle} heighlight={heroHighlight} />
 
@@ -134,7 +134,7 @@ function page() {
             [...content.tags, ...content.tags].map((tag, index) => (
               <p
                 key={index}
-                className="tag text-foreground font-bold text-4xl py-6 px-7 border border-foreground uppercase mx-3"
+                className="tag text-foreground font-bold text-2xl py-4 px-3 border border-foreground uppercase mx-2"
               >
                 {tag}
               </p>

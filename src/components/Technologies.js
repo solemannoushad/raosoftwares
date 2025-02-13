@@ -1,31 +1,56 @@
-import React from "react";
-import Heading from "./Heading";
-import Card from "./Card";
-import { content } from "@/constants/content";
-import Link from "next/link";
+"use client"
+
+import { useState, useEffect, useRef } from "react"
+import { content } from "@/constants/content"
+import SpecialityCard from "./SpecialityCard"
+import Heading from "./Heading"
 
 const Technologies = () => {
-  const cards = content["technologies"].cards.slice(0, 4);
+  const cards = content["technologies"].cards
+  const containerRef = useRef(null)
+  const [scrollPosition, setScrollPosition] = useState(0)
+
+  useEffect(() => {
+    const container = containerRef.current
+    if (!container) return
+
+    const scrollWidth = container.scrollWidth
+    const clientWidth = container.clientWidth
+
+    const scroll = () => {
+      setScrollPosition((prevPosition) => {
+        let newPosition = prevPosition + 1
+        if (newPosition >= scrollWidth / 2) {
+          newPosition = 0
+        }
+        container.scrollLeft = newPosition
+        return newPosition
+      })
+    }
+
+    const intervalId = setInterval(scroll, 15) // Adjust the interval for smoother/faster scrolling
+
+    return () => clearInterval(intervalId)
+  }, [])
 
   return (
-    <div>
-      <Heading title="Technologies We" heighlight={"Excel In"} />
-      <div className="my-10 flex flex-wrap">
-        {cards.map((card) => {
-          return (
-            <Card
-              key={card.title}
-              title={card.title}
-              description={card.description}
-              icon={card.icon}
-              href={card.href}
-            />
-          );
-        })}
-      <h2 className="text-white text-center w-full tracking-wide">BRING THEM TOGETHER AND YOU OVERCOME THE ORDINARY. <Link className="text-foreground" href={'/technologies'}>VIEW MORE TECHNOLOGIES</Link></h2>
+    <>
+      <Heading title="Technologies We " heighlight={"Excel In"} />
+    
+    <div className="overflow-hidden">
+      <div
+        ref={containerRef}
+        className="flex overflow-x-hidden my-10 transition-all duration-500 ease-linear"
+        style={{ width: "200%" }}
+      >
+        {[...cards, ...cards].map((card, index) => (
+          <SpecialityCard key={`${card.title}-${index}`} title={card.title} icon={card.icon} href={card.href} />
+        ))}
       </div>
     </div>
-  );
-};
+    </>
+  )
+}
 
-export default Technologies;
+export default Technologies
+

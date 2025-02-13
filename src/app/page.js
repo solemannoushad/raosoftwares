@@ -29,13 +29,11 @@ export default function Home() {
       <Head>
         <title>DevStella</title>
       </Head>
-      <section className="md:px-16 px-5">
+      <section className="md:px-16 px-5 lg:px-20 xl:px-40 2xl:px-60">
         <HeroBg />
         <AboutSection />
         <ServicesSection />
-        <Specialities />
         <Technologies />
-        <SolutionsSection />
         <TeamSection />
         <TestimonialsSection />
         <BlogsSection />

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import BlogsSection from "@/components/BlogsSection";
 import Card from "@/components/Card";
 import Heading from "@/components/Heading";
@@ -10,107 +10,103 @@ import Head from "next/head";
 import React, { useEffect, useState } from "react";
 
 function page() {
+  const [loading, setLoading] = useState(true);
 
-    const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    document.title = "About Us - Devstella";
+  }, []);
 
-    useEffect(() => {
-      document.title = "About Us - Devstella";
-    }, []);
-  
-    useEffect(() => {
-      setTimeout(() => {
-        setLoading(false)
-      } , 2000)
-    } , [])
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
 
   return (
     <>
       {loading && <Loading />}
-      <Head>
-        <title>About Us</title>
-      </Head>
       <Hero title="our" heighlight="company" />
-      <section className="mx-16">
-        <Heading title="Who We" heighlight={"Are?"} />
-        <p className="text-white my-8">
-          Rao Software Solutions stands at the forefront of custom software
-          development, transforming intricate enterprise systems and
-          streamlining business processes to empower success. With a steadfast
-          commitment to collaboration and customer satisfaction, we are your
-          trusted partner for all software-related needs. Unlock your potential
-          with Rao Software Solutions.
-        </p>
+      <section className="md:px-16 px-5 lg:px-20 xl:px-40 2xl:px-60 leading-8">
+        <div className="my-16">
+          <Heading title="Discover our " heighlight={"story"} />
+          <p className="text-white my-8">
+            Welcome to Devstella, where innovation meets heart. Our journey began
+            not in a boardroom, but around a family dinner table, where a group of
+            friends and family, all passionate about technology, dreamt of making
+            a difference. We saw the potential of AI to transform lives and
+            decided to bring that magic to everyone, everywhere. At Devstella, we
+            believe that technology should be accessible and beneficial to all.
+            That's why we provide AI solutions tailored to every need and
+            format—from mobile apps to websites, desktop software to camera-based
+            systems. Our goal is to empower businesses and individuals alike,
+            helping them navigate the ever-changing digital landscape with ease
+            and confidence. Our approach is deeply rooted in our shared values of
+            innovation, excellence, and community. We work closely with our
+            clients, understanding their unique challenges and aspirations, to
+            deliver customized solutions that truly make a difference. Whether
+            you're a startup with a big dream or an established enterprise looking
+            to stay ahead, we're here to support you every step of the way. What
+            sets us apart is our human touch. We're more than just a tech company;
+            we're a family of innovators dedicated to making the world a better
+            place, one AI solution at a time. Our story is one of passion,
+            collaboration, and a shared vision to bring the magic of AI to
+            everyone.
+          </p>
+        </div>
 
-        <Heading title="Our" heighlight={"Mission"} />
-        <p className="text-white my-8">
-          From web and mobile app development to ERP and CRM systems, we provide
-          a full suite of solutions.
-        </p>
+        <div className="my-16">
+          <Heading title="Who We" heighlight={" Are?"} />
+          <p className="text-white my-8">
+            Rao Software Solutions stands at the forefront of custom software
+            development, transforming intricate enterprise systems and
+            streamlining business processes to empower success. With a steadfast
+            commitment to collaboration and customer satisfaction, we are your
+            trusted partner for all software-related needs. Unlock your potential
+            with Rao Software Solutions.
+          </p>
+        </div>
 
-        <Heading title="What We" heighlight={"Offer"} />
-        <div className="flex my-10 flex-wrap">
-          <SpecialityCard
-            title="Custom Solutions"
-            description={
-              "Expert developers and business analysts create tailored software to meet your unique needs."
-            }
-            icon={"solutions"}
-          />
-          <SpecialityCard
-            title="Comprehensive Services"
-            description={
-              "Expert developers and business analysts create tailored software to meet your unique needs."
-            }
-            icon={"services"}
-          />
-          <SpecialityCard
-            title="Reliable Support"
-            description={
-              "Our ongoing maintenance services keep your systems running smoothly."
-            }
-            icon={"support"}
-          />
+        <div className="my-16">
+          <Heading title="Devstella" heighlight={" Mission"} />
+          <p className="text-white my-8">
+            From web and mobile app development to ERP and CRM systems, we provide
+            a full suite of solutions.
+          </p>
         </div>
-        <Heading title="Our" heighlight={"Approach"} />
-        <p className="text-white my-8">
-          We build long-term partnerships by prioritizing effective
-          communication, shared visions, and delivering unmatched value.
-        </p>
-        <div className="flex flex-wrap">
-          <Card
-            title="Consulting"
-            description={
-              "Expert guidance for web, mobile, and desktop development using cutting-edge technologies."
-            }
-            icon={"consulting"}
-          />
-          <Card
-            title="Software Development"
-            description={
-              "Robust and scalable applications tailored to business requirements.."
-            }
-            icon={"software"}
-          />
+
+        <div className="my-16">
+          <Heading title="How We" heighlight={" Serve"} />
+          <div className="flex my-10 flex-wrap">
+            <SpecialityCard
+              title="Custom Solutions"
+              description={
+                "Expert developers and business analysts create tailored software to meet your unique needs."
+              }
+              icon={"solutions"}
+            />
+            <SpecialityCard
+              title="Comprehensive Services"
+              description={
+                "Expert developers and business analysts create tailored software to meet your unique needs."
+              }
+              icon={"services"}
+            />
+            <SpecialityCard
+              title="Reliable Support"
+              description={
+                "Our ongoing maintenance services keep your systems running smoothly."
+              }
+              icon={"support"}
+            />
+          </div>
         </div>
-        <div className="flex flex-wrap">
-          <Card
-            title="Data Services"
-            description={
-              "Cloud integration and management solutions with AWS, Google Cloud, and Azure."
-            }
-            icon={"data"}
-          />
-          <Card
-            title="Cybersecurity"
-            description={
-              "Protecting digital assets with comprehensive risk management solutions."
-            }
-            icon={"security"}
-          />
-        </div>
-        <Heading title="Why" heighlight={"Choose Us?"} />
-        <div className="my-8">
-          <StatsBox />
+
+        
+        <div className="my-16">
+          <Heading title="Why" heighlight={"Choose Us?"} />
+          <div className="my-8">
+            <StatsBox />
+          </div>
         </div>
         <div>
           <BlogsSection />
