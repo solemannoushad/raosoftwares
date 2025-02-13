@@ -845,13 +845,13 @@ export const content = {
       {
         title: "Retail",
         description: subContent["industries"]?.["retail"].description,
-        icon: "shopping",
+        icon: "retail",
         href: "/industries/retail",
       },
       {
         title: "Media & Publishing",
         description: subContent["industries"]?.["mediapublishing"].description,
-        icon: "media",
+        icon: "media-publishing",
         href: "/industries/media-publishing",
       },
       {
@@ -1021,23 +1021,5 @@ export const content = {
         </p>
       </div>
     ),
-  },
-  solutions: {
-    heroTitle: "Our",
-    heroHighlight: "Solutions",
-    heading: "CRAFTING BESPOKE SOLUTIONS",
-    subHeading: "FOR EVERY CHALLENGE",
-    cards: [
-      {
-        title: "Customer Relationship Management",
-        description: "Revolutionizing customer interactions.",
-        icon: "crm",
-      },
-      {
-        title: "Enterprise Resource Planning",
-        description: "Optimizing workflows with custom ERP solutions.",
-        icon: "erp",
-      },
-    ],
   },
 };
