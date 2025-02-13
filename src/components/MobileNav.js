@@ -39,14 +39,6 @@ export default function MobileNav() {
       ],
     },
     {
-      name: "Solutions",
-      href: "/solutions",
-      dropdown: [
-        { name: "Customer Relationship Management", href: "/solutions/customer-relationship-management" },
-        { name: "Enterprise Resource Planning", href: "/solutions/enterprise-resource-planning" },
-      ],
-    },
-    {
       name: "Industries",
       href: "/industries",
       dropdown: [

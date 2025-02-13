@@ -1,71 +1,89 @@
-"use client"
+"use client";
 
-import React, { useState } from "react"
-import { testinomials } from "@/constants/testinomials"
-import Heading from "./Heading"
+import React, { useState, useEffect } from "react";
+import { testinomials } from "@/constants/testinomials";
+import Heading from "./Heading";
+import TestimonialCard from "./TestinomialCard";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/autoplay"
+
+// import required modules
+import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 
 function TestimonialsSection() {
-  const [current, setCurrent] = useState(0)
 
-  const nextTestimonial = () => {
-    setCurrent((prev) => (prev + 1) % testinomials.length)
-  }
+  const [slidesPerView, setSlidesPerView] = useState(1)
 
-  const prevTestimonial = () => {
-    setCurrent((prev) => (prev - 1 + testinomials.length) % testinomials.length)
-  }
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setSlidesPerView(3)
+      } else if (window.innerWidth <= 1024) {
+        setSlidesPerView(1)
+      } else {
+        setSlidesPerView(1)
+      }
+    }
 
-  const setTestimonial = (index) => {
-    setCurrent(index)
-  }
-
-  const currentTestimonial = testinomials[current]
+    handleResize() // Set initial value
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
 
   return (
     <div className="w-full my-20">
-      <Heading title="client" heighlight={"testinomials"} />
-      <div className="flex my-10 bg-white w-[95%]">
-
-        <div className="hidden w-1/2 bg-foreground rounded-br-[200px] items-center lg:flex justify-center">
-          <h1 className="text-white text-6xl font-medium   px-10 text-center capitalize">What out clients are saying</h1>
-        </div>
-
-        <div className="w-full lg:w-1/2 relative p-6 shadow-md text-center py-10 px-20 bg-white">
-          {/* Arrows for navigation */}
-          <div className="absolute top-1/2 left-4 -translate-y-1/2 cursor-pointer" onClick={prevTestimonial}>
-            <span className="text-5xl text-black hover:text-foreground transition">&larr;</span>
-          </div>
-          <div className="absolute top-1/2 right-4 -translate-y-1/2 cursor-pointer" onClick={nextTestimonial}>
-            <span className="text-5xl text-black hover:text-foreground transition">&rarr;</span>
-          </div>
-          {/* Testimonial Content */}
-          <div>
-            <h3 className="text-2xl font-semibold text-black">
-              {currentTestimonial.title}
-            </h3>
-            <p className="mt-4 text-black italic text-xl">
-              "{currentTestimonial.comment}"
-            </p>
-            <p className="mt-6 font-medium text-black">
-              - {currentTestimonial.person}
-            </p>
-          </div>
-          {/* Dots for navigation */}
-          <div className="flex justify-center mt-8 space-x-2">
-            {testinomials.map((_, index) => (
-              <span
-                key={index}
-                className={`w-3 h-3 rounded-full cursor-pointer ${
-                  index === current ? "bg-foreground" : "bg-gray-300"
-                } transition`}
-                onClick={() => setTestimonial(index)}
-              />
-            ))}
-          </div>
-        </div>
+      <Heading
+        title="Don't just take our words for it – "
+        heighlight={"Take theirs!"}
+      />
+      <div className="my-10 flex">
+        <Swiper
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={slidesPerView}
+          spaceBetween={30}
+          loop={true}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: false,
+          }}
+          speed={1000}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          pagination={true}
+          modules={[EffectCoverflow, Pagination, Autoplay]}
+          className="mySwiper"
+        >
+          {testinomials.map((t) => {
+            return (
+              <SwiperSlide>
+                <TestimonialCard
+                  key={t.title}
+                  name={t.person}
+                  title={t.title}
+                  imageUrl={t.img}
+                  testimonial={t.comment}
+                />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
     </div>
-  )
+  );
 }
 
-export default TestimonialsSection
+export default TestimonialsSection;

@@ -35,14 +35,6 @@ export default function Navbar() {
       ],
     },
     {
-      name: "Solutions",
-      href: "/solutions",
-      dropdown: [
-        { name: "Customer Relationship Management", href: "/solutions/customer-relationship-management" },
-        { name: "Enterprise Resource Planning", href: "/solutions/enterprise-resource-planning" }
-      ],
-    },
-    {
       name: "Industries",
       href: "/industries",
       dropdown: [
@@ -60,7 +52,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className="px-7 py-5 flex justify-between items-center bg-background fixed w-full top-0 bg-black z-40"
+      className="px-7 lg:px-20 xl:px-32 2xl:px-40 py-5 flex justify-between items-center bg-background fixed w-full top-0 bg-black z-40"
       id="navbar"
     >
       <Link href={"/"} className="logo text-xl text-white tracking-widest">
@@ -72,7 +64,7 @@ export default function Navbar() {
             <li key={index} className="relative group">
               {/* Separate href for dropdown-link */}
               <Link
-                className="dropdown-link mx-2 text-white text-sm flex items-center font-regular hover:text-foreground"
+                className="dropdown-link mx-2 text-white text-base flex items-center font-regular hover:text-foreground"
                 href={item.href}
               >
                 {item.name}{" "}

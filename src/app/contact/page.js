@@ -37,7 +37,7 @@ function page() {
   return (
     <>
         {loading && <Loading />}
-        <section className="md:ml-16 ml-8">
+        <section className="md:px-16 px-5 lg:px-20 xl:px-40 2xl:px-60">
         <Hero title={"Contact"} heighlight={"Us"} />
         <div>
             <Heading title="Let’s Turn Your Vision" heighlight={"into Reality"} />

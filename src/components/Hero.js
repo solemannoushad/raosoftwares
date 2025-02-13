@@ -4,7 +4,7 @@ import Heading from "./Heading";
 function Hero({ title, heighlight }) {
   return (
     <>
-      <div className="h-screen flex items-center relative justify-center z-30">
+      <div className="h-screen flex items-center relative justify-center z-30 mb-16">
         <Heading title={title} heighlight={heighlight} />
       </div>
       <div className="absolute top-0 left-0 w-full h-screen fade z-20"></div>
