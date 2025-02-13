@@ -57,7 +57,7 @@ function page() {
         <div className="my-16">
           <Heading title="Who We" heighlight={" Are?"} />
           <p className="text-white my-8">
-            Rao Software Solutions stands at the forefront of custom software
+            Devstella Solutions stands at the forefront of custom software
             development, transforming intricate enterprise systems and
             streamlining business processes to empower success. With a steadfast
             commitment to collaboration and customer satisfaction, we are your
@@ -69,8 +69,7 @@ function page() {
         <div className="my-16">
           <Heading title="Devstella" heighlight={" Mission"} />
           <p className="text-white my-8">
-            From web and mobile app development to ERP and CRM systems, we provide
-            a full suite of solutions.
+          Our mission is to unite through innovation and elevate lives.
           </p>
         </div>
 

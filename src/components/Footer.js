@@ -33,6 +33,7 @@ export default function Footer() {
 
   return (
     <>
+      <img src="/icons/footer-bg.svg" className="w-full h-full" alt="" />
       <section className="text-white py-8 px-4 sm:px-6 lg:px-8 mt-16">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="footer-about">

@@ -9,12 +9,12 @@ export default function Navbar() {
       name: "Services",
       href: "/services",
       dropdown: [
-        { name: "Social Media Marketing", href: "/services/social-media-marketing" },
+        { name: "AI & ML Product Development", href: "/services/ai-ml-development" },
+        { name: "Human Resourcing", href: "/services/human-resourcing" },
         { name: "Mobile Application Development", href: "/services/mobile-app-development" },
         { name: "Web Application Development", href: "/services/web-app-development" },
-        { name: "AI & ML Product Development", href: "/services/ai-ml-development" },
+        { name: "Social Media Marketing", href: "/services/social-media-marketing" },
         { name: "Digital Marketing", href: "/services/digital-marketing" },
-        { name: "Human Resourcing", href: "/services/human-resourcing" },
         { name: "IT Consulting", href: "/services/it-consulting" },
       ],
     },
@@ -22,15 +22,15 @@ export default function Navbar() {
       name: "Technologies",
       href: "/technologies",
       dropdown: [
+        { name: "Python", href: "/technologies/python" },
         { name: "Flutter", href: "/technologies/flutter" },
+        { name: "React.js & React Native", href: "/technologies/react" },
         { name: "Laravel", href: "/technologies/laravel" },
         { name: "Vue.js & Nuxt.js", href: "/technologies/vue-nuxt" },
         { name: "Adonis.js", href: "/technologies/adonis-js" },
-        { name: "React.js & React Native", href: "/technologies/react" },
         { name: "Express.js", href: "/technologies/express-js" },
         { name: "Ionic", href: "/technologies/ionic" },
         { name: "Kotlin & Swift", href: "/technologies/kotlin-swift" },
-        { name: "Python", href: "/technologies/python" },
         { name: "WordPress, Shopify, Magento, Joomla", href: "/technologies/wordPress-shopify-magento-joomla" },
       ],
     },
@@ -89,7 +89,7 @@ export default function Navbar() {
           ) : (
             <li key={index}>
               <Link
-                className="mx-2 text-white text-sm flex items-center font-regular hover:text-foreground"
+                className="mx-2 text-white text-base flex items-center font-regular hover:text-foreground"
                 href={item.href}
               >
                 {item.name}

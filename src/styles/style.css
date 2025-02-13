@@ -6,9 +6,7 @@ nav{
     border-bottom: 1px solid #484848;
 }
 
-.footer-about-desc{
-    color: #b4b4b4;
-}
+
 
 .dropdown{
     transition: all .3s ease-in-out;
@@ -86,6 +84,16 @@ nav{
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.swiper-pagination {
+  margin-top: 6rem;
+}
+
+.footer {
+  background-image: url('/icons/footer-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* .inner-swipe {
