@@ -8,9 +8,9 @@ function BlogsSection() {
   const blogs = blogData;
 
   return (
-    <div>
+    <div className='my-10'>
       <Heading title="Our" heighlight={"Blogs"} />
-      <div className='mt-10 mb-20 flex overflow-x-scroll scrollbar-hidden'>
+      <div className='my-24 flex overflow-x-scroll scrollbar-hidden'>
         {
           blogs.map((blog) => {
             return(

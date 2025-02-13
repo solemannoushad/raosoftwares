@@ -42,7 +42,7 @@ function TestimonialsSection() {
         title="Don't just take our words for it – "
         heighlight={"Take theirs!"}
       />
-      <div className="my-10 flex justify-center">
+      <div className="my-24 flex justify-center">
         <Swiper
           effect={"coverflow"}
           grabCursor={true}

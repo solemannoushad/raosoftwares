@@ -705,10 +705,22 @@ export const content = {
     subHeading: "CUTTING-EDGE TECHNOLOGIES",
     cards: [
       {
+        title: "Python",
+        description: subContent["technologies"]?.["python"].description,
+        icon: "python",
+        href: "technologies/python",
+      },
+      {
         title: "Flutter",
         description: subContent["technologies"]?.["flutter"].description,
         icon: "flutter",
         href: "technologies/flutter",
+      },
+      {
+        title: "React.js & React Native",
+        description: subContent["technologies"]?.["react"].description,
+        icon: "react",
+        href: "technologies/react",
       },
       {
         title: "Laravel",
@@ -729,12 +741,6 @@ export const content = {
         href: "technologies/adonis-js",
       },
       {
-        title: "React.js & React Native",
-        description: subContent["technologies"]?.["react"].description,
-        icon: "react",
-        href: "technologies/react",
-      },
-      {
         title: "Express.js",
         description: subContent["technologies"]?.["expressjs"].description,
         icon: "express",
@@ -751,12 +757,6 @@ export const content = {
         description: subContent["technologies"]?.["kotlinswift"].description,
         icon: "kotlin",
         href: "technologies/kotlin-swift",
-      },
-      {
-        title: "Python",
-        description: subContent["technologies"]?.["python"].description,
-        icon: "python",
-        href: "technologies/python",
       },
       {
         title: "WordPress, Shopify, Magento, Joomla",
@@ -930,17 +930,16 @@ export const content = {
     subHeading: "transformational and optimal performance",
     cards: [
       {
-        title: "Social Media Marketing",
-        description:
-          subContent["services"]?.["socialmediamarketing"].description,
-        icon: "social-media",
-        href: "/services/social-media-marketing",
+        title: "AI & ML Product Development",
+        description: subContent["services"]?.["aimldevelopment"].description,
+        icon: "ai",
+        href: "/services/ai-ml-development",
       },
       {
-        title: "Web Application Development",
-        description: subContent["services"]?.["webappdevelopment"].description,
-        icon: "web",
-        href: "/services/web-app-development",
+        title: "Human Resourcing",
+        description: subContent["services"]?.["humanresourcing"].description,
+        icon: "hr",
+        href: "/services/human-resourcing",
       },
       {
         title: "Mobile Application Development",
@@ -950,22 +949,23 @@ export const content = {
         href: "/services/mobile-app-development",
       },
       {
-        title: "AI & ML Product Development",
-        description: subContent["services"]?.["aimldevelopment"].description,
-        icon: "ai",
-        href: "/services/ai-ml-development",
+        title: "Web Application Development",
+        description: subContent["services"]?.["webappdevelopment"].description,
+        icon: "web",
+        href: "/services/web-app-development",
+      },
+      {
+        title: "Social Media Marketing",
+        description:
+          subContent["services"]?.["socialmediamarketing"].description,
+        icon: "social-media",
+        href: "/services/social-media-marketing",
       },
       {
         title: "Digital Marketing",
         description: subContent["services"]?.["digitalmarketing"].description,
         icon: "media",
         href: "/services/digital-marketing",
-      },
-      {
-        title: "Human Resourcing",
-        description: subContent["services"]?.["humanresourcing"].description,
-        icon: "hr",
-        href: "/services/human-resourcing",
       },
       {
         title: "IT Consulting",

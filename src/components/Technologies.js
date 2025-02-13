@@ -35,12 +35,12 @@ const Technologies = () => {
 
   return (
     <>
-      <Heading title="Technologies We " heighlight={"Excel In"} />
+      <Heading title="Tech We " heighlight={"Excel In"} />
     
-    <div className="overflow-hidden">
+    <div className="overflow-hidden my-2">
       <div
         ref={containerRef}
-        className="flex overflow-x-hidden my-10 transition-all duration-500 ease-linear"
+        className="flex overflow-x-hidden my-14 transition-all duration-500 ease-linear"
         style={{ width: "200%" }}
       >
         {[...cards, ...cards].map((card, index) => (
