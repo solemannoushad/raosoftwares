@@ -22,7 +22,7 @@ function page() {
     const icons = [
         {
             name: 'mail',
-            text: 'info@devstellas.com'
+            text: 'info@devstella.com'
         },
         {
             name: 'phone',

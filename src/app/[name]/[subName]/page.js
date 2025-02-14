@@ -134,7 +134,7 @@ function page() {
             [...content.tags, ...content.tags].map((tag, index) => (
               <p
                 key={index}
-                className="tag text-foreground font-bold text-2xl py-4 px-3 border border-foreground uppercase mx-2"
+                className="tag text-foreground font-bold text-lg py-2 px-3 mr-3 border border-foreground uppercase mx-2"
               >
                 {tag}
               </p>
