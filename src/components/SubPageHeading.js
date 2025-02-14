@@ -78,7 +78,7 @@ function SubPageHeading({ heading, subHeading }) {
   }, [heading, subHeading])
 
   return (
-    <div className="flex flex-wrap items-baseline">
+    <div className="flex flex-wrap items-baseline my-10">
       <h1 ref={headingRef} className="text-white text-6xl uppercase mr-4">
         {heading}
       </h1>

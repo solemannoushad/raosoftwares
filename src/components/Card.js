@@ -2,7 +2,7 @@ import Link from "next/link"
 
 function Card({ title, description, icon, href }) {
   return (
-    <div className="cursor-pointer py-5 sm:py-7 px-4 sm:px-6 lg:px-10 bg-background inline-block w-full sm:w-[calc(50%-0.5rem)] lg:w-[46%] mb-4 sm:mr-2 sm:my-6 text-white border border-gray-700 transition-all duration-300 ease-in-out hover:shadow-lg group relative overflow-hidden">
+    <div className="cursor-pointer py-5 sm:py-7 px-4 sm:px-6 lg:px-10 bg-background inline-block w-full sm:w-[calc(50%-0.5rem)] lg:w-[46%] mb-4 mr-2 lg:mr-10 sm:my-6 text-white border border-gray-700 transition-all duration-300 ease-in-out hover:shadow-lg group relative overflow-hidden">
       {/* Icon */}
       {icon ? (
         <img

@@ -78,7 +78,7 @@ function HeadingMain({ heading, subHeading }) {
   }, [])
 
   return (
-    <div className="flex flex-wrap items-baseline">
+    <div className="flex flex-wrap items-baseline my-10">
       <h1 ref={headingRef} className="text-white uppercase text-6xl mr-4">
         {heading}
       </h1>
