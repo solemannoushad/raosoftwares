@@ -1,13 +1,14 @@
 "use client"
 
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react"
+import emailjs from "@emailjs/browser"
 
 export default function Footer() {
-  const formRef = useRef(null);
-  const [form, setForm] = useState('');
+  const formRef = useRef(null)
+  const [form, setForm] = useState("")
 
   const handleFormSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     if (formRef.current) {
       emailjs
@@ -15,50 +16,49 @@ export default function Footer() {
           "service_wpvgu4c", // Your EmailJS service ID
           "template_fguxwg8", // Your EmailJS template ID
           formRef.current, // Pass the form reference
-          "nTql0oKFhwRtQW5z2" // Your public key
+          "nTql0oKFhwRtQW5z2", // Your public key
         )
         .then(
           () => {
-            console.log("SUCCESS! Message sent.");
-            setForm('')
+            console.log("SUCCESS! Message sent.")
+            setForm("")
           },
           (error) => {
-            console.error("FAILED...", error);
-          }
-        );
+            console.error("FAILED...", error)
+          },
+        )
     }
-  };
+  }
 
-  const currentYear = '2024'
+  const currentYear = "2024"
 
   return (
     <>
-      <img src="/icons/footer-bg.svg" className="w-full h-full" alt="" />
+      <div className="relative w-full h-full">
+        <img src="/icons/footer-bg.svg" className="w-full h-full" alt="" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#101113] via-transparent to-[#101113] pointer-events-none"></div>
+      </div>
       <section className="text-white py-8 px-4 sm:px-6 lg:px-8 mt-16">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="footer-about">
             <div className="footer-logo text-2xl text-white tracking-widest mb-6">
               <img src="/icons/devstella-logo1.svg" className="w-24" alt="" />
             </div>
             <p className="footer-about-desc text-base mb-6">
-              Experience the transformative power of Rao Software Solutions. We
-              specialize in developing custom software that helps businesses
-              thrive in today's competitive environment. With a focus on
-              collaboration and client satisfaction, we deliver tailored solutions
-              that meet your unique needs.
+              Experience the transformative power of Rao Software Solutions. We specialize in developing custom software
+              that helps businesses thrive in today's competitive environment. With a focus on collaboration and client
+              satisfaction, we deliver tailored solutions that meet your unique needs.
             </p>
-            <div className="footer-contact flex items-center">
+            {/* <div className="footer-contact flex items-center">
               <i className="iconoir-message-text mr-2 text-foreground text-lg"></i>
               <a className="text-base hover:text-foreground transition-colors" href="mailto:info@devstella.com">
                 info@devstella.com
               </a>
-            </div>
+            </div> */}
           </div>
 
           <div className="footer-links">
-            <div className="footer-heading mb-6 text-xl font-semibold">
-              Important Links
-            </div>
+            <div className="footer-heading mb-6 text-xl font-semibold">Important Links</div>
             <ul className="space-y-4">
               <li>
                 <a className="text-sm font-normal hover:text-foreground transition-colors" href="#">
@@ -83,10 +83,44 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="footer-newsletter">
-            <div className="footer-heading mb-6 text-xl font-semibold">
-              Newsletter
+          <div className="footer-contact-info">
+            <div className="footer-heading mb-6 text-xl font-semibold">Get In Touch</div>
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <i className="iconoir-phone text-xl"></i>
+                <a href="tel:+12678000191" className="text-sm font-normal hover:text-foreground transition-colors">
+                  +123-456-7890
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <i className="iconoir-mail text-xl"></i>
+                <a
+                  href="mailto:info@xevensolutions.com"
+                  className="text-sm font-normal hover:text-foreground transition-colors break-all"
+                >
+                  info@devstella.com
+                </a>
+              </div>
+              <div className="h-px bg-gray-700 my-6"></div>
+              <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <i className="iconoir-map-pin text-xl"></i>
+                  <span className="text-sm">Pakistan</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <i className="iconoir-map-pin text-xl"></i>
+                  <span className="text-sm">United Kingdom</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <i className="iconoir-map-pin text-xl"></i>
+                  <span className="text-sm">United States</span>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div className="footer-newsletter">
+            <div className="footer-heading mb-6 text-xl font-semibold">Newsletter</div>
             <div className="footer-form w-full">
               <form ref={formRef} onSubmit={handleFormSubmit} className="relative mb-6">
                 <input
@@ -98,8 +132,8 @@ export default function Footer() {
                   value={form}
                   onChange={(e) => setForm(e.target.value)}
                 />
-                <button 
-                  type="submit" 
+                <button
+                  type="submit"
                   className="absolute right-0 bottom-3 text-foreground hover:text-white transition-colors"
                   aria-label="Send email"
                 >
@@ -123,10 +157,10 @@ export default function Footer() {
       </section>
       <footer className="py-4">
         <p className="text-center text-white text-sm">
-          Copyright © <span className="text-foreground">{currentYear}</span>{" "}
-          DEVSTELLA. All Rights Reserved.
+          Copyright © <span className="text-foreground">{currentYear}</span> DEVSTELLA. All Rights Reserved.
         </p>
       </footer>
     </>
-  );
+  )
 }
+

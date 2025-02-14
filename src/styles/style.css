@@ -31,7 +31,7 @@ nav{
   
   .marquee {
     display: flex;
-    animation: slide 25s linear infinite;
+    animation: slide 35s linear infinite;
     white-space: nowrap;
   }
   

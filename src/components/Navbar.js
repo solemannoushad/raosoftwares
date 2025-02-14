@@ -52,7 +52,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className="px-7 lg:px-20 xl:px-32 2xl:px-40 py-5 flex justify-between items-center bg-background fixed w-full top-0 bg-black z-40"
+      className="px-7 lg:px-20 xl:px-52 2xl:px-80 py-5 flex justify-between items-center bg-background fixed w-full top-0 bg-black z-40"
       id="navbar"
     >
       <Link href={"/"} className="logo text-xl text-white tracking-widest">
