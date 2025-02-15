@@ -1,10 +1,12 @@
 "use client"
 import Link from "next/link"
 import React, { useState, useEffect } from "react"
+import { useRouter } from "next/navigation"
 
 export default function MobileNav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState(null)
+  const router = useRouter()
 
   const menuItems = [
     { name: "Home", href: "/" },
@@ -68,14 +70,21 @@ export default function MobileNav() {
 
   useEffect(() => {
     setIsMenuOpen(false)
-  } , [])
+  }, [])
+
+  const handleNavigation = (href) => {
+    setIsMenuOpen(false)
+    router.push(href)
+  }
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
     setOpenDropdown(null)
   }
 
-  const toggleDropdown = (name) => {
+  const toggleDropdown = (e, name) => {
+    e.preventDefault()
+    e.stopPropagation()
     setOpenDropdown(openDropdown === name ? null : name)
   }
 
@@ -99,50 +108,52 @@ export default function MobileNav() {
               <li key={index} className="py-2">
                 {item.dropdown ? (
                   <div>
-                    <Link
-                      href={item.href}
-                      className="w-full inline text-left text-white text-lg font-semibold flex justify-between items-center"
+                    <button
+                      onClick={() => handleNavigation(item.href)}
+                      className="w-full text-left text-white text-lg font-semibold flex justify-between items-center"
                     >
                       {item.name}
                       <i
-                        onClick={() => toggleDropdown(item.name)}
+                        onClick={(e) => toggleDropdown(e, item.name)}
                         className={`iconoir-nav-arrow-down text-foreground text-lg transition-transform duration-300 ${openDropdown === item.name ? "rotate-180" : ""}`}
                       ></i>
-                    </Link>
+                    </button>
                     <ul
                       className={`mt-2 ml-4 space-y-2 overflow-hidden transition-max-height duration-300 ease-in-out ${openDropdown === item.name ? "max-h-96" : "max-h-0"}`}
                     >
                       {item.dropdown.map((subItem, subIndex) => (
                         <li key={subIndex}>
-                          <Link
-                            href={subItem.href}
+                          <button
+                            onClick={() => handleNavigation(subItem.href)}
                             className="text-gray-300 hover:text-white transition-colors duration-300"
                           >
                             {subItem.name}
-                          </Link>
+                          </button>
                         </li>
                       ))}
                     </ul>
                   </div>
                 ) : (
-                  <Link href={item.href} className="text-white text-lg font-semibold">
+                  <button
+                    onClick={() => handleNavigation(item.href)}
+                    className="text-white text-lg font-semibold"
+                  >
                     {item.name}
-                  </Link>
+                  </button>
                 )}
               </li>
             ))}
           </ul>
           <div className="mt-8 mb-4">
-            <Link
-              href="/contact"
+            <button
+              onClick={() => handleNavigation("/contact")}
               className="block w-full text-center bg-foreground text-white font-semibold py-3 px-4 rounded-full hover:bg-opacity-90 transition-colors duration-300"
             >
               Schedule Free Consultation
-            </Link>
+            </button>
           </div>
         </div>
       </div>
     </nav>
   )
 }
-
