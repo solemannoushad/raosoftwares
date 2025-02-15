@@ -69,9 +69,8 @@ function TestimonialsSection() {
         >
           {testinomials.map((t) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide key={t.title}>
                 <TestimonialCard
-                  key={t.title}
                   name={t.person}
                   title={t.title}
                   imageUrl={t.img}
