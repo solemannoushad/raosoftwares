@@ -46,7 +46,7 @@ const AnimatedNotification = ({ message = "", duration = 5000, isVisible, setIsV
         opacity: isVisible ? 1 : 0,
         transform: isVisible ? "translateX(0)" : "translateX(100%)",
       }}
-      className="z-40"
+      className="z-50"
     >
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "8px" }}>
         <div style={{ flex: 1 }}>{message}</div>
