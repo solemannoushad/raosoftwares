@@ -2,11 +2,8 @@
 import AboutSection from "@/components/AboutSection";
 import BlogsSection from "@/components/BlogsSection";
 import HeroBg from "@/components/HeroBg";
-import IndustriesSection from "@/components/IndustriesSection";
 import Loading from "@/components/Loading";
 import ServicesSection from "@/components/ServicesSection";
-import SolutionsSection from "@/components/SolutionsSection";
-import Specialities from "@/components/Specialities";
 import TeamSection from "@/components/TeamSection";
 import Technologies from "@/components/Technologies";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -14,18 +11,16 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-
-  const [loading, setLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
-      setLoading(false)
-    } , 2000)
-  } , [])
+    const timer = setTimeout(() => setIsLoading(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
-      {loading && <Loading />}
+      {isLoading && <Loading />}
       <Head>
         <title>DevStella</title>
       </Head>

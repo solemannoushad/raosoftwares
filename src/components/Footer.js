@@ -1,39 +1,51 @@
-"use client"
+"use client";
 
-import { useRef, useState } from "react"
-import emailjs from "@emailjs/browser"
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import AnimatedNotification from "./Notification";
 
 export default function Footer() {
-  const formRef = useRef(null)
-  const [form, setForm] = useState("")
+  const formRef = useRef(null);
+  const [form, setForm] = useState("");
+  const [isVisible, setIsVisible] = useState(false);
+  const [msg, setMsg] = useState('');
 
   const handleFormSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     if (formRef.current) {
       emailjs
         .sendForm(
-          "service_wpvgu4c", // Your EmailJS service ID
-          "template_fguxwg8", // Your EmailJS template ID
-          formRef.current, // Pass the form reference
-          "nTql0oKFhwRtQW5z2", // Your public key
+          "service_wpvgu4c",
+          "template_fguxwg8",
+          formRef.current,
+          "nTql0oKFhwRtQW5z2",
         )
         .then(
           () => {
-            console.log("SUCCESS! Message sent.")
-            setForm("")
+            console.log("SUCCESS! Message sent.");
+            setForm("");
+            setMsg("Subscribed successfully");
+            setIsVisible(true);
           },
           (error) => {
-            console.error("FAILED...", error)
+            console.error("FAILED...", error);
+            setMsg("Failed to subscribe. Please try again.");
+            setIsVisible(true);
           },
-        )
+        );
     }
-  }
+  };
 
-  const currentYear = "2024"
+  const currentYear = "2024";
 
   return (
     <>
+      <AnimatedNotification 
+        message={msg} 
+        isVisible={isVisible} 
+        setIsVisible={setIsVisible} 
+      />
       <div className="relative w-full h-full">
         <img src="/icons/footer-bg.svg" className="w-full h-full" alt="" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#101113] via-transparent to-[#101113] pointer-events-none"></div>
@@ -49,12 +61,6 @@ export default function Footer() {
               that helps businesses thrive in today's competitive environment. With a focus on collaboration and client
               satisfaction, we deliver tailored solutions that meet your unique needs.
             </p>
-            {/* <div className="footer-contact flex items-center">
-              <i className="iconoir-message-text mr-2 text-foreground text-lg"></i>
-              <a className="text-base hover:text-foreground transition-colors" href="mailto:info@devstella.com">
-                info@devstella.com
-              </a>
-            </div> */}
           </div>
 
           <div className="footer-links">
@@ -131,6 +137,7 @@ export default function Footer() {
                   placeholder="Enter your email"
                   value={form}
                   onChange={(e) => setForm(e.target.value)}
+                  required
                 />
                 <button
                   type="submit"
@@ -161,6 +168,5 @@ export default function Footer() {
         </p>
       </footer>
     </>
-  )
+  );
 }
-
