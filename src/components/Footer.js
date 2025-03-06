@@ -51,7 +51,7 @@ export default function Footer() {
         setIsVisible={setIsVisible} 
       />
       <div className="relative w-full h-full">
-        <img src="/icons/footer-bg.svg" className="w-full h-full" alt="" />
+        <img src="/icons/footer-bg.svg" className="w-full h-full rotate-180" alt="" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#101113] via-transparent to-[#101113] pointer-events-none"></div>
       </div>
       <section className="text-white py-8 px-4 sm:px-6 lg:px-8 mt-16">

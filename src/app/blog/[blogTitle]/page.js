@@ -1,48 +1,27 @@
-"use client"
-import Hero from '@/components/Hero';
-import Loading from '@/components/Loading';
-import { blogData } from '@/constants/blogsData';
-import { notFound, useParams } from 'next/navigation';
-import React, { useEffect, useState } from 'react'
+import { notFound } from "next/navigation";
+import { blogData } from "@/constants/blogsData";
+import BlogDetailClient from "./blogDetailClient";
 
-function blogDetail() {
-
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-          document.title = `${title} - Devstella`;
-        }, []);
-  
-    useEffect(() => {
-      setTimeout(() => {
-        setLoading(false)
-      } , 2000)
-    } , [])
-
-    const {blogTitle} = useParams();
-    const blogContent = blogData.find((blog) => blog.url === `/blog/${blogTitle}/`);
-    const {title, description, image, content} = blogContent;
-
-    if(!blogContent){
-      notFound();
-    }
-    
-  return (
-    <>
-      {loading && <Loading />}
-      <div className='md:mx-28 mx-10 lg:mx-36 xl:mx-52'>
-      <div className='text-center'>
-
-      <Hero title={title} />
-      </div>
-      <div className='flex flex-col'>
-        <img className='w-[600px] object-contain' src={`/images/${image}`} />
-        <p className='text-white my-10 text-justify'></p>
-        {content}
-      </div>
-    </div>
-    </>
-  )
+export async function generateStaticParams() {
+  return [
+    { blogTitle: "impact-of-deepseek" },
+    { blogTitle: "flutter-app-performance" },
+    { blogTitle: "recruitment-and-selection-process" },
+    { blogTitle: "start-app-dev" },
+  ];
 }
 
-export default blogDetail
+export default async function Page({ params }) {
+  const { blogTitle } = params;
+  console.log(blogTitle);
+
+  const blogContent = blogData.find(
+    (blog) => blog.url.replace("/blog/", "").replace("/", "") === blogTitle
+  );
+
+  if (!blogContent) {
+    notFound();
+  }
+
+  return <BlogDetailClient blogContent={blogContent} />;
+}

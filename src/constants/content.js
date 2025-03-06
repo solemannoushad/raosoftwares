@@ -930,16 +930,16 @@ export const content = {
     subHeading: "transformational and optimal performance",
     cards: [
       {
-        title: "AI & ML Product Development",
-        description: subContent["services"]?.["aimldevelopment"].description,
-        icon: "ai",
-        href: "/services/ai-ml-development",
-      },
-      {
         title: "Human Resourcing",
         description: subContent["services"]?.["humanresourcing"].description,
         icon: "hr",
         href: "/services/human-resourcing",
+      },
+      {
+        title: "AI & ML Product Development",
+        description: subContent["services"]?.["aimldevelopment"].description,
+        icon: "ai",
+        href: "/services/ai-ml-development",
       },
       {
         title: "Mobile Application Development",
@@ -953,13 +953,6 @@ export const content = {
         description: subContent["services"]?.["webappdevelopment"].description,
         icon: "web",
         href: "/services/web-app-development",
-      },
-      {
-        title: "Social Media Marketing",
-        description:
-          subContent["services"]?.["socialmediamarketing"].description,
-        icon: "social-media",
-        href: "/services/social-media-marketing",
       },
       {
         title: "Digital Marketing",

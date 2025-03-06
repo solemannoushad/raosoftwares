@@ -37,7 +37,7 @@ const Technologies = () => {
     <>
       <Heading title="Tech We " heighlight={"Excel In"} />
     
-    <div className="overflow-hidden my-2">
+    <div className="overflow-hidden my-8">
       <div
         ref={containerRef}
         className="flex overflow-x-hidden my-14 transition-all duration-500 ease-linear"

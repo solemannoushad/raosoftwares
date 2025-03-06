@@ -15,11 +15,10 @@ export default function MobileNav() {
       name: "Services",
       href: "/services",
       dropdown: [
-        { name: "AI & ML Product Development", href: "/services/ai-ml-development" },
         { name: "Human Resourcing", href: "/services/human-resourcing" },
+        { name: "AI & ML Product Development", href: "/services/ai-ml-development" },
         { name: "Mobile Application Development", href: "/services/mobile-app-development" },
         { name: "Web Application Development", href: "/services/web-app-development" },
-        { name: "Social Media Marketing", href: "/services/social-media-marketing" },
         { name: "Digital Marketing", href: "/services/digital-marketing" },
         { name: "IT Consulting", href: "/services/it-consulting" },
       ],

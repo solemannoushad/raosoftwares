@@ -37,7 +37,7 @@ function TestimonialsSection() {
   }, [])
 
   return (
-    <div className="w-full my-20">
+    <div className="w-full my-24">
       <Heading
         title="Don't just take our words for it – "
         heighlight={"Take theirs!"}
