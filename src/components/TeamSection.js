@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function TeamSection() {
   return (
-    <div className="w-full my-16">
+    <div className="w-full my-24">
       <Heading title={"Meet"} heighlight={"our team"} />
       <div className="flex my-16 items-center justify-center">
         <img src="/images/team.svg" />

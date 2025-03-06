@@ -29,7 +29,7 @@ function ServicesSection() {
   ]
 
   return (
-    <div className="w-full px-4 sm:px-6 lg:px-8 my-16">
+    <div className="w-full px-4 sm:px-6 lg:px-8 my-24">
       <Heading title={"Our"} heighlight={"Services"} />
       <div className="flex items-center justify-center flex-col relative my-8">
         <img src="/icons/devstella.svg" className="absolute top-10" alt="Devstella" />

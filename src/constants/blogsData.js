@@ -1,4 +1,3 @@
-import { CodeBlock, dracula } from "react-code-blocks";
 
 export const blogData = [
   {
@@ -242,10 +241,9 @@ export const blogData = [
           </li>
         </ol>
 
-        <h4>Code Example: Loading JSON Data with Isolates</h4>
+        {/* <h4>Code Example: Loading JSON Data with Isolates</h4>
         <pre className="bg-gray-800 p-4 rounded-lg overflow-x-auto my-8 ">
-          {/* <code className="text-sm text-gray-200">
-        </code> */}
+ 
         <CodeBlock
   text={`Future<List<Movie>> loadMovies() async {
   isLoading = true;
@@ -264,7 +262,7 @@ List<Movie> parseMovies(String jsonString) {
   wrapLines
   theme={dracula}
 />
-        </pre>
+        </pre> */}
 
         <h3 className="font-semibold mt-4">Troubleshooting Common Issues</h3>
         <ul>

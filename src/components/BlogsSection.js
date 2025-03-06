@@ -8,7 +8,7 @@ function BlogsSection() {
   const blogs = blogData;
 
   return (
-    <div className='my-10'>
+    <div className='mb-10 mt-16'>
       <Heading title="Our" heighlight={"Blogs"} />
       <div className='my-24 flex overflow-x-scroll scrollbar-hidden'>
         {

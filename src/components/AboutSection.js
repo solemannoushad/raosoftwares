@@ -69,7 +69,7 @@ function AboutSection() {
   return (
     <div
       ref={sectionRef}
-      className="flex flex-col lg:flex-row my-16 min-h-screen justify-center items-center"
+      className="flex flex-col lg:flex-row my-24 min-h-screen justify-center items-center"
     >
       <div className="about-section-left w-full lg:w-1/2 px-4 lg:px-10 overflow-hidden mb-8 lg:mb-0">
         <img
