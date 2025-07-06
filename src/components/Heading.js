@@ -49,33 +49,34 @@ function Heading({ title, heighlight }) {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: titleElement,
-          start: "top bottom-=100",
-          end: "bottom center",
-          scrub: 1,
+          start: "top bottom-=300",
+          end: "bottom 30%",
+          scrub: 0.05,
           toggleActions: "play reverse play reverse",
+          markers: true
         },
       })
 
       tl.from(titleChars, {
-        duration: 0.5,
+        duration: 1,
         opacity: 1,
         scale: 0,
         y: 80,
         rotationX: 180,
         transformOrigin: "0% 50% -50",
         ease: "back",
-        stagger: 0.01,
+        stagger: 0.05,
       }).from(
         highlightChars,
         {
-          duration: 0.5,
+          duration: 1,
           opacity: 1,
           scale: 0,
           y: 80,
           rotationX: 180,
           transformOrigin: "0% 50% -50",
           ease: "back",
-          stagger: 0.01,
+          stagger: 0.05,
         },
         "-=0.25",
       )
