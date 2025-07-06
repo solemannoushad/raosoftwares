@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation"
 export default function MobileNav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState(null)
+  const [scrolled, setScrolled] = useState(false);
   const router = useRouter()
 
   const menuItems = [
@@ -56,6 +57,14 @@ export default function MobileNav() {
   ]
 
   useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = "hidden"
     } else {
@@ -89,7 +98,7 @@ export default function MobileNav() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50">
-      <div className="px-4 py-3 flex justify-between items-center bg-black">
+      <div className={`px-4 py-3 flex justify-between items-center transition-colors duration-300 ${scrolled ? "bg-black/90" : "bg-transparent"}`}>
         <div className="logo text-xl text-white tracking-widest">
           <img src="/icons/devstella-logo1.svg" className="w-20" alt="" />
         </div>

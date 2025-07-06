@@ -1,7 +1,18 @@
+'use client'
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const menuItems = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
@@ -50,8 +61,9 @@ export default function Navbar() {
   ];
 
   return (
-    <nav
-      className="px-7 lg:px-20 xl:px-52 2xl:px-80 py-5 flex justify-between items-center bg-background fixed w-full top-0 bg-black z-40"
+    <header className={`w-full flex justify-center px-7 py-5 fixed top-0 z-40 transition-colors duration-300 ${scrolled ? "bg-black/90" : ""}`}>
+      <nav 
+      className=" max-w-7xl mx-auto flex justify-between items-center  w-full "
       id="navbar"
     >
       <Link href={"/"} className="logo text-xl text-white tracking-widest">
@@ -100,12 +112,13 @@ export default function Navbar() {
       <div className="relative group border-2 rounded-full cursor-pointer border-foreground p-3 overflow-hidden">
         <div className="absolute inset-0 bg-foreground transform scale-0 group-hover:scale-100 transition-transform duration-300 rounded-full"></div>
         <Link
-          className="relative text-foreground font-semibold uppercase text-sm group-hover:text-white transition-colors duration-300"
+          className="relative text-foreground font-semibold uppercase text-xs lg:text-sm group-hover:text-white transition-colors duration-300"
           href="/contact"
         >
           Schedule Free Consultation
         </Link>
       </div>
     </nav>
+    </header>
   );
 }

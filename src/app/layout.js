@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning className="text-[16px] 2xl:text-[24px]">
+    <html lang="en" suppressHydrationWarning className="text-[16px]">
       <head>
         <link
           rel="stylesheet"
@@ -40,12 +40,12 @@ export default function RootLayout({ children }) {
       <body>
         <BackToTop />
         {/* Desktop Navbar: Visible only on large screens */}
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <Navbar />
         </div>
 
         {/* Mobile Navigation: Visible only on medium and smaller screens */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <MobileNav />
         </div>
         {children}
