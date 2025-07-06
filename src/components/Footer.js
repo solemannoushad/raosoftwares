@@ -100,8 +100,13 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <i className="iconoir-phone text-xl"></i>
-                <a href="tel:+12678000191" className="text-sm font-normal hover:text-foreground transition-colors">
-                  +123-456-7890
+                <a
+                  href="https://wa.me/447459170475"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-normal hover:text-foreground transition-colors"
+                >
+                  +447459170475
                 </a>
               </div>
               <div className="flex items-center gap-3">
@@ -126,6 +131,10 @@ export default function Footer() {
                 <div className="flex items-center gap-3">
                   <i className="iconoir-map-pin text-xl"></i>
                   <span className="text-sm">United States</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <i className="iconoir-map-pin text-xl"></i>
+                  <span className="text-sm">Saudi Arabia</span>
                 </div>
               </div>
             </div>
@@ -160,7 +169,7 @@ export default function Footer() {
                 <a href="#" aria-label="Instagram" className="text-white hover:text-foreground transition-colors">
                   <i className="iconoir-instagram text-2xl"></i>
                 </a>
-                <a href="#" aria-label="LinkedIn" className="text-white hover:text-foreground transition-colors">
+                <a href="https://www.linkedin.com/company/devstella" target="_blank" aria-label="LinkedIn" className="text-white hover:text-foreground transition-colors">
                   <i className="iconoir-linkedin text-2xl"></i>
                 </a>
               </div>

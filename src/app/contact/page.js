@@ -26,7 +26,7 @@ function page() {
         },
         {
             name: 'phone',
-            text: '+123-456-7890'
+            text: '+447459170475'
         },
         {
             name: 'map-pin',
