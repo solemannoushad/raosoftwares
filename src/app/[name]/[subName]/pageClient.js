@@ -71,14 +71,14 @@ export default function PageClient({ name, subName, content }) {
           portffolioData && portffolioData.map((el, index) => {
             const {heading, details, pic} = el;
             return(
-              <div className={`flex ${index %2 == 0 ? "lg:flex-row-reverse" : "lg:flex-row"} flex-col-reverse justify-between pr-10 my-10`}>
-              <div className="lg:w-1/2 w-full pr-8 flex flex-col ">
+              <div key={heading} className={`flex ${index %2 == 0 ? "lg:flex-row-reverse" : "lg:flex-row"} flex-col-reverse justify-between pr-10 my-10`}>
+              <div className="lg:w-1/2 w-full pr-8 flex flex-col justify-center">
                 <Heading title={heading} heighlight={""} />
                 <p className="text-white leading-7 mt-5">{details}</p>
               </div>
               <div className="lg:w-1/2 w-full flex items-center justify-center">
                 <img
-                  className={`w-1/2 object-contain`}
+                  className={`${heroTitle === "Mobile Application" ? "w-1/2" : "w-full"} object-contain`}
                   src={`/images/${pic}`}
                   alt=""
                 />

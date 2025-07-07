@@ -10,6 +10,23 @@ export const subContent = {
         "At DevStella, we provide robust, scalable, and secure web application development services tailored to the unique needs of your business. Our team of seasoned developers builds custom web solutions using the latest technologies to ensure your application remains reliable, fast, and adaptive to future demands. With a focus on AI integration, we enhance your web applications with machine learning models, predictive analytics, and personalized user experiences, giving your business a competitive edge. Our solutions feature responsive designs, real-time data processing, secure payment gateways, and seamless e-commerce functionalities that adhere to industry best practices, enabling you to stay ahead of market trends.",
       techUsed:
         " React, Angular, Node.js, Laravel, Django, Python, AI/ML Integration, PostgreSQL, MySQL, GraphQL, Cloud Services (AWS, Azure).",
+        portffolioData: [
+          {
+            heading: "Bizfinx79",
+            details: "Bizfinx79 is a modern accounting and tax services platform designed to simplify business finance for individuals, entrepreneurs, and small enterprises. With a strong focus on transparency, compliance, and efficiency, we offer tailored solutions that help you stay on top of your finances while meeting all regulatory requirements.From smart bookkeeping and income tax filing to business advisory and financial reporting, Bizfinx79 ensures you're equipped with everything you need to thrive — whether you're just starting out or scaling fast.",
+            pic: 'webd1.png'
+          },
+          {
+            heading: "ShekelStack",
+            details: "ShekelStack is a modern financial solutions platform designed to fuel business growth through high-limit, 0% interest credit. Our service helps entrepreneurs and small businesses access personalized funding plans, with no interest burden — enabling them to scale smarter and faster. With over 168K+ active users, ShekelStack stands out by offering expert financial guidance, real-time support, and easy access to capital without traditional loan barriers.",
+            pic: 'webd2.png'
+          },
+          {
+            heading: "CreditLeap",
+            details: "CreditLeap is the smarter way to scale your business. We provide instant access to zero-interest business credit designed to accelerate your success without the financial strain of traditional loans. Our system offers intelligent funding strategies, personalized to your goals — no red tape, no lengthy approvals.With a clean dashboard, transparent limits, and expert financial insights, CreditLeap empowers founders, freelancers, and startups to leap ahead of the curve and take full control of their financial runway.",
+            pic: 'webd3.png'
+          },
+        ],
       tags: [
         "Custom Web Apps",
         "AI Integration",
@@ -79,6 +96,23 @@ export const subContent = {
         "DevStella is at the forefront of AI and ML product development, creating intelligent solutions that help businesses harness the power of data to optimize operations and enhance customer experiences. We design customized AI-driven applications ranging from predictive analytics engines to personalized recommendation systems. Our AI models offer actionable insights that allow you to make data-driven decisions, while machine learning models continuously improve based on user behavior. We also integrate Natural Language Processing (NLP) for chatbots, sentiment analysis, and text classification, as well as advanced image recognition and computer vision for various industry-specific applications.",
       techUsed:
         "Python, TensorFlow, PyTorch, Scikit-learn, OpenCV, Keras, NLP, Reinforcement Learning, Neural Networks, Cloud AI Services.",
+        portffolioData: [
+          {
+            heading: "Cv Extractor",
+            details: "Cv Extractor allows users to upload PDF or DOCX resumes and automatically extracts structured data such as names, contact details, education, skills, and experience. It streamlines recruitment processes by transforming raw CV files into organized, actionable insights. The sleek, dark-themed interface adds a modern, professional look, perfectly suited for HR tech platforms or SaaS products.",
+            pic: 'aiml1.png'
+          },
+          {
+            heading: "Geo Intel",
+            details: "GeoIntel is an AI-driven geospatial intelligence platform designed to analyze high-resolution satellite imagery and extract meaningful urban data. This tool utilizes advanced computer vision and deep learning algorithms to Automatically detect and outline buildings in densely populated areas .Classify infrastructure types (residential, commercial, industrial) .Measure land use efficiency and urban sprawl .Track development over time using time-series satellite data",
+            pic: 'aiml2.png'
+          },
+          {
+            heading: "AutoVision AI",
+            details: "AutoVision AI is an advanced artificial intelligence system designed for real-time car lane detection and vehicle speed estimation. It utilizes cutting-edge deep learning models for semantic segmentation and object detection to interpret live or recorded dashcam footage during both daytime and nighttime driving conditions.This tool is aimed at enhancing driver-assistance systems (ADAS), supporting autonomous vehicle research, and providing real-time traffic analytics for safety-critical applications. The project is built to handle diverse environments, enabling it to function robustly in urban, highway, and low-light conditions.",
+            pic: 'aiml3.png'
+          },
+        ],
       tags: [
         "Machine learning",
         "Deep learning",
