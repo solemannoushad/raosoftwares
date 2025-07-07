@@ -52,7 +52,7 @@ export default function Footer() {
         isVisible={isVisible} 
         setIsVisible={setIsVisible} 
       />
-      <div className="relative w-full h-full">
+      <div className="relative w-full h-full mt-20">
       <Image src="/rocket-gif.gif" alt="Rocket" width={300} height={300} className="absolute z-40 -bottom-10" style={{ objectFit: "contain" }} priority unoptimized />
         <img src="/icons/footer-bg.svg" className="w-full h-full rotate-180" alt="" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#101113] via-transparent to-[#101113] pointer-events-none"></div>
