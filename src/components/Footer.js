@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import AnimatedNotification from "./Notification";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   const formRef = useRef(null);
@@ -73,24 +74,19 @@ export default function Footer() {
             <div className="footer-heading mb-6 text-xl font-semibold">Important Links</div>
             <ul className="space-y-4">
               <li>
-                <a className="text-sm font-normal hover:text-foreground transition-colors" href="#">
+                <Link className="text-sm font-normal hover:text-foreground transition-colors" href="/terms-and-condition">
                   Terms and Conditions
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-sm font-normal hover:text-foreground transition-colors" href="#">
+                <Link className="text-sm font-normal hover:text-foreground transition-colors" href="/privacy-policy">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="text-sm font-normal hover:text-foreground transition-colors" href="#">
+                <Link className="text-sm font-normal hover:text-foreground transition-colors" href="/human-rights-policy">
                   Human Rights Policy
-                </a>
-              </li>
-              <li>
-                <a className="text-sm font-normal hover:text-foreground transition-colors" href="#">
-                  Careers
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
