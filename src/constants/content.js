@@ -1,26 +1,5 @@
 export const subContent = {
   services: {
-    socialmediamarketing: {
-      heroTitle: "Social",
-      heroHighlight: "Media Marketing",
-      heading: "Social Media Marketing",
-      subHeading: "WITH devstella",
-      image: "social-media.png",
-      description:
-        "Our social media marketing services are designed to amplify your brand’s online presence and engage your target audience through data-driven strategies. By leveraging sophisticated targeting methods, we craft personalized content that resonates with your audience and fosters authentic engagement. Our approach combines organic social media management with paid campaigns, using advanced analytics to optimize content and maximize ROI. From community management to influencer partnerships and paid ad strategies, we ensure that your brand consistently reaches and engages the right audience at the optimal time, driving conversions and growth.",
-      techUsed:
-        "Google Analytics, Hootsuite, Buffer, Facebook Ads Manager, Instagram Insights, Twitter Analytics, LinkedIn Ads, SEMrush.",
-      tags: [
-        "Brand Engagement",
-        "Targeted Marketing",
-        "Audience Insights",
-        "Data Driven Campaigns",
-        "InfluencerMarketing",
-        "Social Media Growth",
-        "Paid Ads",
-        "Content Creation",
-      ],
-    },
     webappdevelopment: {
       heroTitle: "Web Application",
       heroHighlight: "Development",
@@ -52,6 +31,33 @@ export const subContent = {
         "We specialize in developing feature-rich mobile applications for both iOS and Android platforms, focusing on delivering exceptional user experiences. Our team integrates cutting-edge AI and machine learning technologies to enhance app functionality, making them smarter, faster, and more intuitive. Whether it's a business app, gaming app, or social platform, we craft solutions that are optimized for performance, user engagement, and seamless integration with third-party APIs. Our apps are designed for scalability and efficiency, ensuring that your mobile strategy grows alongside your business. With advanced features like offline functionality, push notifications, in-app purchases, and geolocation, we ensure your app stands out in the competitive mobile market.",
       techUsed:
         "Flutter, Swift, Kotlin, Firebase, AI/ML, RESTful APIs, GraphQL, In-App Analytics.",
+      portffolioData: [
+        {
+          heading: "Scrapyard – E-Commerce Bidding Platform for Scrap & Bulk Products",
+          details: "Scrapyard is a next-generation e-commerce bidding application that connects buyers and sellers through a competitive and transparent online bidding system. Designed to facilitate the buying and selling of products, Scrapyard specializes in enabling individuals and businesses to sell scrap materials in bulk, encouraging sustainable resource management and eco-friendly recycling practices. The platform offers real-time bidding, easy product listing, secure transactions, and a user-friendly interface, making it the ideal marketplace for scrap dealers, industrial recyclers, and green businesses. Whether you're offloading surplus inventory or purchasing reusable materials, Scrapyard is your go-to solution for bulk scrap trading and online bidding for scrap materials.",
+          pic: 'mobi1.png'
+        },
+        {
+          heading: "Fastpro Database – All-in-One Client Data & Task Management App",
+          details: "Fastpro Database is a robust client data management app designed to centralize and streamline your business operations. This comprehensive solution allows businesses to efficiently manage client information, call records, and company task tracking, all from a single platform. With features like integrated voice recording, secure record-keeping, and smart search capabilities, Fastpro Database ensures fast and accurate retrieval of critical business data. Ideal for sales teams, support centers, and administrative departments, this powerful business data management software boosts productivity, improves client communication, and enhances workflow transparency. Fastpro Database is your trusted tool for business process optimization and digital record management.",
+          pic: 'mobi2.png'
+        },
+        {
+          heading: "SportX – Smart Court Booking & Scheduling App",
+          details: "SportX is a powerful court booking application designed to simplify and automate the reservation process for sports courts and event spaces. With real-time slot availability, users can effortlessly book courts for tennis, basketball, badminton, and other sports anytime, anywhere. The app features intelligent slot management, automated booking reminders, and flexible scheduling, ensuring users never miss a game. SportX helps facility owners maximize court utilization, reduce no-shows, and improve overall operational efficiency. Whether you're managing a sports complex, community center, or school gym, SportX is your all-in-one solution for sports court booking software.",
+          pic: 'mobi3.png'
+        },
+        {
+          heading: "BanerApp",
+          details: "Bannerapp is a modern, secure, and user-friendly messaging application designed to transform the way you connect and communicate. With its sleek orange-themed interface and intuitive layout, Bannerapp offers a fresh alternative to traditional chat apps. Whether you're messaging friends, family, or colleagues, the app delivers real-time conversations, smart contact syncing, encrypted messaging, and effortless media sharing—all optimized for speed and reliability. Its vibrant design and streamlined features make it perfect for both personal and professional use. If you're looking for a stylish, secure, and high-performance messaging solution, Bannerapp is the ideal choice. Download now on iOS and Android and experience the future of messaging",
+          pic: 'mobi4.png'
+        },
+        {
+          heading: "Attentifier",
+          details: "Attentifier is an innovative AI-powered attendance verification app designed to streamline and secure the process of marking attendance using advanced facial recognition technology. Ideal for workplaces, educational institutions, and event management, Attentifier ensures seamless identity verification through a smart, intuitive interface. With just one tap on the sleek VERIFY button, users can authenticate their presence accurately and in real time. The app not only eliminates manual errors and buddy punching but also enhances efficiency and accountability. Optimized for performance and privacy, Attentifier leverages artificial intelligence to offer a modern, contactless attendance solution — making it the ultimate choice for organizations seeking a reliable and scalable attendance management system.",
+          pic: 'mobi5.png'
+        },
+      ],
       tags: [
         "Mobile App Development",
         "Cross Platform",
@@ -95,7 +101,7 @@ export const subContent = {
       heroHighlight: "Marketing",
       heading: "Digital Marketing",
       subHeading: "WITH devstella",
-      image: "digital.png",
+      image: "digital.jpg",
       description:
         "DevStella offers a comprehensive suite of digital marketing services to ensure your brand stands out in a crowded digital space. We use a holistic approach that combines SEO, SEM, email marketing, content marketing, and paid advertising to drive traffic and increase conversions. Our team of experts leverages advanced data analytics to continuously monitor and optimize campaigns, ensuring that your marketing budget is used efficiently to deliver measurable results. We specialize in customer journey mapping, conversion rate optimization (CRO), and ROI maximization, enabling your business to achieve sustainable growth.",
       techUsed:
