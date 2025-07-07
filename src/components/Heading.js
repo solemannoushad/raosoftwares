@@ -99,4 +99,3 @@ function Heading({ title, heighlight }) {
 }
 
 export default Heading
-

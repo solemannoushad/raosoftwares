@@ -145,7 +145,7 @@ export default function Footer() {
             <div className="footer-form w-full">
               <form ref={formRef} onSubmit={handleFormSubmit} className="relative mb-6">
                 <input
-                  className="bg-background w-full text-white placeholder-gray-400 border-b border-gray-400 focus:outline-none focus:border-gray-500 pb-3 text-base pr-10"
+                  className="autofill:bg-black bg-background  w-full text-white placeholder-gray-400 border-b border-gray-400 focus:outline-none focus:border-gray-500 pb-3 text-base pr-10"
                   type="email"
                   name="email"
                   id="email"
