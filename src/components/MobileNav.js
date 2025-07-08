@@ -100,7 +100,9 @@ export default function MobileNav() {
     <nav className="fixed top-0 left-0 w-full z-50">
       <div className={`px-4 py-3 flex justify-between items-center transition-colors duration-300 ${scrolled ? "bg-black/90" : "bg-transparent"}`}>
         <div className="logo text-xl text-white tracking-widest">
-          <img src="/icons/devstella-logo1.svg" className="w-20" alt="" />
+        <Link href={"/"} className="logo text-xl text-white tracking-widest">
+        <img src="/icons/devstella-logo1.svg" className="w-20" alt="" />
+      </Link>
         </div>
         <button onClick={toggleMenu} className="text-white text-2xl z-40">
           <i className={`iconoir-${isMenuOpen ? "xmark" : "menu"}`}></i>
