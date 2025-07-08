@@ -90,6 +90,16 @@
   margin-top: 6rem;
 }
 
+.swiper-pagination-bullet {
+  background: #ffffff !important;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ffffff !important;
+  opacity: 1;
+}
+
 .footer {
   background-image: url('/icons/footer-bg.svg');
   background-repeat: no-repeat;
