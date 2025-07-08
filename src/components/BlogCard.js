@@ -20,6 +20,8 @@ function BlogCard({ blog }) {
           height={500}
           alt={`Devstella - ${title}`}
           loading="lazy"
+          placeholder="blur"
+          blurDataURL={`/images/${image}`}
         />
       </div>
       <div className="content bg-white w-[40%]  p-2 flex flex-col justify-end">

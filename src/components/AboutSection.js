@@ -81,6 +81,8 @@ function AboutSection() {
           width={500}
           height={500}
           loading="lazy"
+          placeholder="blur"
+          blurDataURL="/images/about.jpg"
         />
       </div>
       <div

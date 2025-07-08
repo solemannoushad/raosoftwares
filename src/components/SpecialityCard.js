@@ -16,6 +16,8 @@ function SpecialityCard({ title, description, icon, href }) {
           width={100}
           height={100}
           loading='lazy'
+          placeholder='blur'
+          blurDataURL={`/icons/${icon}.svg`}
         />
       </div>
       {/* Title */}
