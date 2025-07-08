@@ -141,7 +141,7 @@ export default function Footer() {
             <div className="footer-form w-full">
               <form ref={formRef} onSubmit={handleFormSubmit} className="relative mb-6">
                 <input
-                  className="autofill:bg-black bg-background  w-full text-white placeholder-gray-400 border-b border-gray-400 focus:outline-none focus:border-gray-500 pb-3 text-base pr-10"
+                  className="bg-background w-full text-white placeholder-gray-400 border-b border-gray-400 focus:outline-none focus:border-gray-500 pb-3 text-base pr-10 autofill:bg-background"
                   type="email"
                   name="email"
                   id="email"
@@ -149,6 +149,12 @@ export default function Footer() {
                   value={form}
                   onChange={(e) => setForm(e.target.value)}
                   required
+                  autoComplete="email"
+                  style={{
+                    WebkitBoxShadow: "0 0 0 1000px var(--background) inset",
+                    boxShadow: "0 0 0 1000px var(--background) inset",
+                    WebkitTextFillColor: "white"
+                  }}
                 />
                 <button
                   type="submit"

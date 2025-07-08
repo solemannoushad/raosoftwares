@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -11,10 +12,14 @@ function BlogCard({ blog }) {
             Explore
           </Link>
         </div>
-        <img
+
+        <Image
           src={`/images/${image}`}
           className="inverted-radius rounded-xl w-full object-cover h-full"
-          alt=""
+          width={500}
+          height={500}
+          alt={`Devstella - ${title}`}
+          loading="lazy"
         />
       </div>
       <div className="content bg-white w-[40%]  p-2 flex flex-col justify-end">
