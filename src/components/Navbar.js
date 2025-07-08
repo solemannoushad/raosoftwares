@@ -62,7 +62,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className={`w-full flex justify-center px-7 py-5 fixed top-0 z-40 transition-colors duration-300 ${scrolled ? "bg-black/90" : ""}`}>
+    <header className={`w-full flex justify-center px-7 fixed top-0 z-40 duration-300 ${scrolled ? "bg-gradient-to-br from-gray-800/50 to-gray-900/30 backdrop-blur-[10px] py-5" : "py-7"}`}>
       <nav 
       className=" max-w-7xl mx-auto flex justify-between items-center  w-full "
       id="navbar"
