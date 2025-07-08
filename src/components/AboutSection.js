@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Heading from "./Heading";
 import Button from "./Button";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -72,11 +73,14 @@ function AboutSection() {
       className="flex flex-col lg:flex-row my-24 min-h-screen justify-center items-center"
     >
       <div className="about-section-left w-full lg:w-1/2 px-4 lg:px-10 overflow-hidden mb-8 lg:mb-0">
-        <img
+        <Image
           ref={imgRef}
           src="/images/about.jpg"
-          alt="About our company"
+          alt="About Devstella - Software solutions agency"
           className="w-auto h-auto object-contain"
+          width={500}
+          height={500}
+          loading="lazy"
         />
       </div>
       <div

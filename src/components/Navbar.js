@@ -1,4 +1,5 @@
 'use client'
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
@@ -67,7 +68,7 @@ export default function Navbar() {
       id="navbar"
     >
       <Link href={"/"} className="logo text-xl text-white tracking-widest">
-        <img src="/icons/devstella-logo1.svg" className="w-20" alt="" />
+        <Image src="/icons/devstella-logo1.svg" className="w-20" alt="Devstella software solutions" width={500} height={500} loading="eager" />
       </Link>
       <ul className="menu flex">
         {menuItems.map((item, index) =>

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -8,27 +9,19 @@ function SpecialityCard({ title, description, icon, href }) {
     >
       {/* Icon */}
       <div className="icon mb-4 transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:rotate-360">
-      <img
+        <Image 
           className="w-24 h-24 mb-4 transition-transform duration-300 ease-in-out group-hover:scale-110"
           src={`/icons/${icon}.svg`}
-          alt=""
+          alt={title}
+          width={100}
+          height={100}
+          loading='lazy'
         />
       </div>
       {/* Title */}
       <h1 className="text-foreground text-center font-semibold text-xl mb-2 transition-colors duration-300 ease-in-out">
         {title}
       </h1>
-      {/* {href && (
-        <Link
-          href={href || "/"}
-          className="mt-4 text-foreground text-base sm:text-lg flex items-center transition-all duration-300 ease-in-out hover:text-white"
-        >
-          Read more
-          <span className="ml-2">
-            <i className="iconoir-arrow-up-right"></i>
-          </span>
-        </Link>
-      )} */}
       {/* Description */}
       <p className="text-center transition-colors duration-300 ease-in-out group-hover:text-white">
         {description}

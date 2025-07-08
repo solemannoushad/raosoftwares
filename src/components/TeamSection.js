@@ -1,14 +1,14 @@
 import React from "react";
 import Heading from "./Heading";
-import Button from "./Button";
 import Link from "next/link";
+import Image from "next/image";
 
 function TeamSection() {
   return (
     <div className="w-full my-24">
       <Heading title={"Meet"} heighlight={"our team"} />
       <div className="flex my-16 items-center justify-center">
-        <img src="/images/team.svg" />
+        <Image src="/images/team.svg" alt="Devstella Team" width={1000} height={1000} loading="lazy" />
         <div className="absolute mb-16">
           <Link
             href={"/contact"}
