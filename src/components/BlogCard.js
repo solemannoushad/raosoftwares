@@ -13,15 +13,10 @@ function BlogCard({ blog }) {
           </Link>
         </div>
 
-        <Image
+        <img
           src={`/images/${image}`}
           className="inverted-radius rounded-xl w-full object-cover h-full"
-          width={500}
-          height={500}
           alt={`Devstella - ${title}`}
-          loading="lazy"
-          placeholder="blur"
-          blurDataURL={`/images/${image}`}
         />
       </div>
       <div className="content bg-white w-[40%]  p-2 flex flex-col justify-end">
