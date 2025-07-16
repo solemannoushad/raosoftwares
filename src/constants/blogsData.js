@@ -4,7 +4,7 @@ export const blogData = [
     url: "/blog/impact-of-deepseek/",
     title: "The Impact of DeepSeek: A New Era for AI",
     description: "",
-    image: "deepseek.jpg",
+    image: "deepseek.webp",
     content: (
       <div className="text-white">
         <h2 className="text-2xl font-bold">
@@ -149,7 +149,7 @@ export const blogData = [
       "Supercharge Flutter App Performance: Eliminate UI Freezes with Dart Isolates",
     description:
       "The struggle with frozen user interfaces (UIs) in apps can be frustrating. Flutter developers often face this issue when performing heavy tasks that block the main thread, leading to a poor user experience. Fortunately, Dart isolates offer a solution to keep UIs responsive while handling demanding operations.",
-    image: "flutter-blog.png",
+    image: "flutter-blog.webp",
     content: (
       <div className="text-white">
         <h2 className="text-2xl font-bold">
@@ -359,7 +359,7 @@ List<Movie> parseMovies(String jsonString) {
     url: "/blog/recruitment-and-selection-process/",
     title: "Recruitment and Selection Process: A Comprehensive Guide",
     description: "",
-    image: "recruitment.png",
+    image: "recruitment.webp",
     content: (
       <div className="text-white">
         <h2 className="text-2xl font-bold">
@@ -579,7 +579,7 @@ List<Movie> parseMovies(String jsonString) {
     url: "/blog/start-app-dev/",
     title: "How to Start App Development: A Complete Roadmap for 2024",
     description: "",
-    image: "app-dev-blog.jpg",
+    image: "app-dev-blog.webp",
     content: (
       <div className="text-white">
         <h2 className="text-2xl font-bold">

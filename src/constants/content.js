@@ -5,7 +5,7 @@ export const subContent = {
       heroHighlight: "Development",
       heading: "web application development",
       subHeading: "WITH devstella",
-      image: "web.png",
+      image: "web.webp",
       description:
         "At DevStella, we provide robust, scalable, and secure web application development services tailored to the unique needs of your business. Our team of seasoned developers builds custom web solutions using the latest technologies to ensure your application remains reliable, fast, and adaptive to future demands. With a focus on AI integration, we enhance your web applications with machine learning models, predictive analytics, and personalized user experiences, giving your business a competitive edge. Our solutions feature responsive designs, real-time data processing, secure payment gateways, and seamless e-commerce functionalities that adhere to industry best practices, enabling you to stay ahead of market trends.",
       techUsed:
@@ -14,17 +14,17 @@ export const subContent = {
           {
             heading: "Bizfinx79",
             details: "Bizfinx79 is a modern accounting and tax services platform designed to simplify business finance for individuals, entrepreneurs, and small enterprises. With a strong focus on transparency, compliance, and efficiency, we offer tailored solutions that help you stay on top of your finances while meeting all regulatory requirements.From smart bookkeeping and income tax filing to business advisory and financial reporting, Bizfinx79 ensures you're equipped with everything you need to thrive — whether you're just starting out or scaling fast.",
-            pic: 'webd1.png'
+            pic: 'webd1.webp'
           },
           {
             heading: "ShekelStack",
             details: "ShekelStack is a modern financial solutions platform designed to fuel business growth through high-limit, 0% interest credit. Our service helps entrepreneurs and small businesses access personalized funding plans, with no interest burden — enabling them to scale smarter and faster. With over 168K+ active users, ShekelStack stands out by offering expert financial guidance, real-time support, and easy access to capital without traditional loan barriers.",
-            pic: 'webd2.png'
+            pic: 'webd2.webp'
           },
           {
             heading: "CreditLeap",
             details: "CreditLeap is the smarter way to scale your business. We provide instant access to zero-interest business credit designed to accelerate your success without the financial strain of traditional loans. Our system offers intelligent funding strategies, personalized to your goals — no red tape, no lengthy approvals.With a clean dashboard, transparent limits, and expert financial insights, CreditLeap empowers founders, freelancers, and startups to leap ahead of the curve and take full control of their financial runway.",
-            pic: 'webd3.png'
+            pic: 'webd3.webp'
           },
         ],
       tags: [
@@ -43,7 +43,7 @@ export const subContent = {
       heroHighlight: "Development",
       heading: "mobile application development",
       subHeading: "WITH devstella",
-      image: "mobile.png",
+      image: "mobile.webp",
       description:
         "We specialize in developing feature-rich mobile applications for both iOS and Android platforms, focusing on delivering exceptional user experiences. Our team integrates cutting-edge AI and machine learning technologies to enhance app functionality, making them smarter, faster, and more intuitive. Whether it's a business app, gaming app, or social platform, we craft solutions that are optimized for performance, user engagement, and seamless integration with third-party APIs. Our apps are designed for scalability and efficiency, ensuring that your mobile strategy grows alongside your business. With advanced features like offline functionality, push notifications, in-app purchases, and geolocation, we ensure your app stands out in the competitive mobile market.",
       techUsed:
@@ -52,27 +52,27 @@ export const subContent = {
         {
           heading: "Scrapyard – E-Commerce Bidding Platform for Scrap & Bulk Products",
           details: "Scrapyard is a next-generation e-commerce bidding application that connects buyers and sellers through a competitive and transparent online bidding system. Designed to facilitate the buying and selling of products, Scrapyard specializes in enabling individuals and businesses to sell scrap materials in bulk, encouraging sustainable resource management and eco-friendly recycling practices. The platform offers real-time bidding, easy product listing, secure transactions, and a user-friendly interface, making it the ideal marketplace for scrap dealers, industrial recyclers, and green businesses. Whether you're offloading surplus inventory or purchasing reusable materials, Scrapyard is your go-to solution for bulk scrap trading and online bidding for scrap materials.",
-          pic: 'mobi1.png'
+          pic: 'mobi1.webp'
         },
         {
           heading: "Fastpro Database – All-in-One Client Data & Task Management App",
           details: "Fastpro Database is a robust client data management app designed to centralize and streamline your business operations. This comprehensive solution allows businesses to efficiently manage client information, call records, and company task tracking, all from a single platform. With features like integrated voice recording, secure record-keeping, and smart search capabilities, Fastpro Database ensures fast and accurate retrieval of critical business data. Ideal for sales teams, support centers, and administrative departments, this powerful business data management software boosts productivity, improves client communication, and enhances workflow transparency. Fastpro Database is your trusted tool for business process optimization and digital record management.",
-          pic: 'mobi2.png'
+          pic: 'mobi2.webp'
         },
         {
           heading: "SportX – Smart Court Booking & Scheduling App",
           details: "SportX is a powerful court booking application designed to simplify and automate the reservation process for sports courts and event spaces. With real-time slot availability, users can effortlessly book courts for tennis, basketball, badminton, and other sports anytime, anywhere. The app features intelligent slot management, automated booking reminders, and flexible scheduling, ensuring users never miss a game. SportX helps facility owners maximize court utilization, reduce no-shows, and improve overall operational efficiency. Whether you're managing a sports complex, community center, or school gym, SportX is your all-in-one solution for sports court booking software.",
-          pic: 'mobi3.png'
+          pic: 'mobi3.webp'
         },
         {
           heading: "BanerApp",
           details: "Bannerapp is a modern, secure, and user-friendly messaging application designed to transform the way you connect and communicate. With its sleek orange-themed interface and intuitive layout, Bannerapp offers a fresh alternative to traditional chat apps. Whether you're messaging friends, family, or colleagues, the app delivers real-time conversations, smart contact syncing, encrypted messaging, and effortless media sharing—all optimized for speed and reliability. Its vibrant design and streamlined features make it perfect for both personal and professional use. If you're looking for a stylish, secure, and high-performance messaging solution, Bannerapp is the ideal choice. Download now on iOS and Android and experience the future of messaging",
-          pic: 'mobi4.png'
+          pic: 'mobi4.webp'
         },
         {
           heading: "Attentifier",
           details: "Attentifier is an innovative AI-powered attendance verification app designed to streamline and secure the process of marking attendance using advanced facial recognition technology. Ideal for workplaces, educational institutions, and event management, Attentifier ensures seamless identity verification through a smart, intuitive interface. With just one tap on the sleek VERIFY button, users can authenticate their presence accurately and in real time. The app not only eliminates manual errors and buddy punching but also enhances efficiency and accountability. Optimized for performance and privacy, Attentifier leverages artificial intelligence to offer a modern, contactless attendance solution — making it the ultimate choice for organizations seeking a reliable and scalable attendance management system.",
-          pic: 'mobi5.png'
+          pic: 'mobi5.webp'
         },
       ],
       tags: [
@@ -91,7 +91,7 @@ export const subContent = {
       heroHighlight: "Development",
       heading: "AI & ML development",
       subHeading: "WITH devstella",
-      image: "ai.png",
+      image: "ai.webp",
       description:
         "DevStella is at the forefront of AI and ML product development, creating intelligent solutions that help businesses harness the power of data to optimize operations and enhance customer experiences. We design customized AI-driven applications ranging from predictive analytics engines to personalized recommendation systems. Our AI models offer actionable insights that allow you to make data-driven decisions, while machine learning models continuously improve based on user behavior. We also integrate Natural Language Processing (NLP) for chatbots, sentiment analysis, and text classification, as well as advanced image recognition and computer vision for various industry-specific applications.",
       techUsed:
@@ -100,17 +100,17 @@ export const subContent = {
           {
             heading: "Cv Extractor",
             details: "Cv Extractor allows users to upload PDF or DOCX resumes and automatically extracts structured data such as names, contact details, education, skills, and experience. It streamlines recruitment processes by transforming raw CV files into organized, actionable insights. The sleek, dark-themed interface adds a modern, professional look, perfectly suited for HR tech platforms or SaaS products.",
-            pic: 'aiml1.png'
+            pic: 'aiml1.webp'
           },
           {
             heading: "Geo Intel",
             details: "GeoIntel is an AI-driven geospatial intelligence platform designed to analyze high-resolution satellite imagery and extract meaningful urban data. This tool utilizes advanced computer vision and deep learning algorithms to Automatically detect and outline buildings in densely populated areas .Classify infrastructure types (residential, commercial, industrial) .Measure land use efficiency and urban sprawl .Track development over time using time-series satellite data",
-            pic: 'aiml2.png'
+            pic: 'aiml2.webp'
           },
           {
             heading: "AutoVision AI",
             details: "AutoVision AI is an advanced artificial intelligence system designed for real-time car lane detection and vehicle speed estimation. It utilizes cutting-edge deep learning models for semantic segmentation and object detection to interpret live or recorded dashcam footage during both daytime and nighttime driving conditions.This tool is aimed at enhancing driver-assistance systems (ADAS), supporting autonomous vehicle research, and providing real-time traffic analytics for safety-critical applications. The project is built to handle diverse environments, enabling it to function robustly in urban, highway, and low-light conditions.",
-            pic: 'aiml3.png'
+            pic: 'aiml3.webp'
           },
         ],
       tags: [
@@ -135,7 +135,7 @@ export const subContent = {
       heroHighlight: "Marketing",
       heading: "Digital Marketing",
       subHeading: "WITH devstella",
-      image: "digital.jpg",
+      image: "digital.webp",
       description:
         "DevStella offers a comprehensive suite of digital marketing services to ensure your brand stands out in a crowded digital space. We use a holistic approach that combines SEO, SEM, email marketing, content marketing, and paid advertising to drive traffic and increase conversions. Our team of experts leverages advanced data analytics to continuously monitor and optimize campaigns, ensuring that your marketing budget is used efficiently to deliver measurable results. We specialize in customer journey mapping, conversion rate optimization (CRO), and ROI maximization, enabling your business to achieve sustainable growth.",
       techUsed:
@@ -156,7 +156,7 @@ export const subContent = {
       heroHighlight: "Resourcing",
       heading: "Human Resourcing",
       subHeading: "WITH devstella",
-      image: "hr.png",
+      image: "hr.webp",
       description:
         "At DevStella, we offer tailored human resources services designed to help businesses build efficient, effective teams. We specialize in talent acquisition, streamlining the hiring process to ensure you find the right candidates quickly and effectively. We also provide workforce management solutions, offering tools to enhance employee satisfaction, retention, and productivity. From recruitment and onboarding to employee training and performance management, we cover all aspects of human resource management to help your organization achieve operational excellence.",
       techUsed:
@@ -176,7 +176,7 @@ export const subContent = {
       heroHighlight: "Consulting",
       heading: "IT Consulting",
       subHeading: "WITH devstella",
-      image: "it.png",
+      image: "it.webp",
       description:
         "DevStella’s IT consulting services offer strategic advice to help businesses leverage technology effectively and align their IT infrastructure with business objectives. Our team provides end-to-end support, from cloud migration and data security to infrastructure optimization and digital transformation. We specialize in cybersecurity solutions, ensuring that your data is secure from cyber threats, and assist with technology audits to identify gaps and opportunities for improvement. Our expertise in emerging technologies like blockchain, AI, and IoT helps future-proof your organization’s IT strategy, providing a solid foundation for long-term growth.",
       techUsed:
@@ -543,7 +543,7 @@ export const subContent = {
       heroHighlight: "Healthcare",
       heading: "innovative healthcare solutions",
       subHeading: "WITH devstella",
-      image: "healthcare.png",
+      image: "healthcare.webp",
       description:
         "In the healthcare industry, DevStella is at the forefront of delivering cutting-edge software solutions that enhance patient care and operational efficiency. We leverage AI, machine learning, and cloud computing to create applications that provide real-time insights, improve decision-making, and streamline administrative tasks. From telemedicine platforms to patient management systems, we are transforming healthcare through technology.",
       contents: [
@@ -571,7 +571,7 @@ export const subContent = {
       heroHighlight: "Education",
       heading: "innovative education solutions",
       subHeading: "WITH devstella",
-      image: "education.png",
+      image: "education.webp",
       description:
         "DevStella is empowering the education sector by creating robust and scalable e-learning platforms that enhance both teaching and learning experiences. We design custom solutions that provide educators with the tools they need to deliver engaging and interactive content while helping students access personalized learning experiences.",
       contents: [
@@ -599,7 +599,7 @@ export const subContent = {
       heroHighlight: "retail",
       heading: "innovative retail solutions",
       subHeading: "WITH devstella",
-      image: "retail.png",
+      image: "retail.webp",
       description:
         "The retail industry is rapidly evolving with digital transformation, and DevStella is here to help businesses stay ahead of the competition. Our e-commerce solutions streamline operations, enhance customer experiences, and drive growth. Whether it's creating high-performance e-commerce websites or mobile apps, we enable businesses to succeed in the digital retail landscape.",
       contents: [
@@ -627,7 +627,7 @@ export const subContent = {
       heroHighlight: "Publishing",
       heading: "innovative media & publishing solutions",
       subHeading: "WITH devstella",
-      image: "media-publishing.png",
+      image: "media-publishing.webp",
       description:
         "In the media and publishing industry, DevStella helps businesses elevate their digital and print media strategies through custom applications, content management systems (CMS), and digital marketing solutions. Our team creates solutions that streamline content creation, distribution, and monetization, helping media organizations stay competitive in a fast-paced environment.",
       contents: [
@@ -655,7 +655,7 @@ export const subContent = {
       heroHighlight: "Banking",
       heading: "innovative finance banking solutions",
       subHeading: "WITH devstella",
-      image: "finance-banking.png",
+      image: "finance-banking.webp",
       description:
         "The finance and banking industries are being transformed by technology, and DevStella is at the heart of this revolution. Our solutions help financial institutions provide secure, efficient, and personalized services to their customers, all while ensuring compliance with regulatory standards.",
       contents: [
@@ -683,7 +683,7 @@ export const subContent = {
       heroHighlight: "Estate",
       heading: "innovative real estate solutions",
       subHeading: "WITH devstella",
-      image: "real-estate.png",
+      image: "real-estate.webp",
       description:
         "In the real estate industry, DevStella provides innovative solutions that improve property management, real estate transactions, and customer engagement. We create tools that enhance the buying, selling, and renting processes, providing real estate professionals with the tools to manage properties efficiently and engage with potential clients.",
       contents: [
@@ -711,7 +711,7 @@ export const subContent = {
       heroHighlight: "Supply chain",
       heading: "innovative logistics & supply chain solutions",
       subHeading: "WITH devstella",
-      image: "logistics.png",
+      image: "logistics.webp",
       description:
         "Efficient logistics and supply chain management are key to the success of any business. DevStella provides software solutions that optimize inventory tracking, shipment routing, and order fulfillment, ensuring that businesses can operate smoothly and cost-effectively.",
       contents: [
