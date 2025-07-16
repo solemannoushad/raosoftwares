@@ -1,20 +1,23 @@
 import Link from "next/link"
+import CustomImage from "./CustomImage"
 
 function Card({ title, description, icon, href }) {
   return (
     <div className="cursor-pointer py-5 sm:py-7 px-4 sm:px-6 lg:px-10 bg-background inline-block w-full sm:w-[calc(50%-0.5rem)] lg:w-[46%] mb-4 mr-2 lg:mr-10 sm:my-6 text-white border border-gray-700 transition-all duration-300 ease-in-out hover:shadow-lg group relative overflow-hidden">
       {/* Icon */}
       {icon ? (
-        <img
+        <CustomImage
           className="w-16 sm:w-20 lg:w-24 mb-4 transition-transform duration-300 ease-in-out group-hover:scale-110"
           src={`/icons/${icon}.svg`}
-          alt=""
+          width={150}
+          height={150}
         />
       ) : (
-        <img
+        <CustomImage
           className="w-16 sm:w-20 lg:w-24 mb-4 transition-transform duration-300 ease-in-out group-hover:scale-110"
           src={`/icons/laravel.svg`}
-          alt=""
+          width={150}
+          height={150}
         />
       )}
       {/* Title */}

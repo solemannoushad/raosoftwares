@@ -1,4 +1,3 @@
-import Image from "next/image"
 
 const TestimonialCard = ({ name, title, testimonial, imageUrl }) => {
   return (

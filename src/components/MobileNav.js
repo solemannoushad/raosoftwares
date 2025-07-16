@@ -2,6 +2,7 @@
 import Link from "next/link"
 import React, { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
+import CustomImage from "./CustomImage"
 
 export default function MobileNav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -101,7 +102,7 @@ export default function MobileNav() {
       <div className={`px-4 py-3 flex justify-between items-center transition-colors duration-300 ${scrolled ? "bg-gradient-to-br from-gray-800/50 to-gray-900/30 backdrop-blur-[10px] py-5" : "py-7"}`}>
         <div className="logo text-xl text-white tracking-widest">
         <Link href={"/"} className="logo text-xl text-white tracking-widest">
-        <img src="/icons/devstella-logo1.svg" className="w-20" alt="" />
+        <CustomImage src="/icons/devstella-logo1.svg" className="w-20" alt="Devstella" width={150} height={150} loading="eager" />
       </Link>
         </div>
         <button onClick={toggleMenu} className="text-white text-2xl z-40">

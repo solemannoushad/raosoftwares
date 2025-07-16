@@ -1,6 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
+import CustomImage from './CustomImage';
 
 function SpecialityCard({ title, description, icon, href }) {
   return (
@@ -9,15 +8,12 @@ function SpecialityCard({ title, description, icon, href }) {
     >
       {/* Icon */}
       <div className="icon mb-4 transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:rotate-360">
-        <Image 
+        <CustomImage 
           className="w-24 h-24 mb-4 transition-transform duration-300 ease-in-out group-hover:scale-110"
           src={`/icons/${icon}.svg`}
           alt={title}
           width={100}
           height={100}
-          loading='lazy'
-          placeholder='blur'
-          blurDataURL={`/icons/${icon}.svg`}
         />
       </div>
       {/* Title */}

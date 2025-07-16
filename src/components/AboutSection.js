@@ -5,7 +5,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Heading from "./Heading";
 import Button from "./Button";
-import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -78,6 +77,7 @@ function AboutSection() {
           src="/images/about.webp"
           alt="About Devstella - Software solutions agency"
           className="w-auto h-auto object-contain"
+          loading="eager"
         />
       </div>
       <div

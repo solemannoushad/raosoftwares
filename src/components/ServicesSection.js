@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Heading from "./Heading"
+import CustomImage from "./CustomImage"
 
 function ServicesSection() {
   const services = [
@@ -33,7 +34,7 @@ function ServicesSection() {
     <div className="w-full px-4 sm:px-6 lg:px-8 my-24">
       <Heading title={"Our"} heighlight={"Services"} />
       <div className="flex items-center justify-center flex-col relative my-8">
-        <Image src="/icons/devstella.svg" className="absolute top-10" alt="Devstella" width={600} height={600} loading="lazy" placeholder="blur" blurDataURL="/icons/devstella.svg" />
+        <CustomImage src="/icons/devstella.svg" className="absolute top-10" alt="Devstella" loading="lazy"  />
         <div className="mt-40 sm:mt-52 md:mt-64 lg:mt-72 mb-10 w-full">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (

@@ -1,4 +1,5 @@
 "use client";
+import CustomImage from "@/components/CustomImage";
 import Heading from "@/components/Heading";
 import Hero from "@/components/Hero";
 import SubPageHeading from "@/components/SubPageHeading";
@@ -52,7 +53,7 @@ export default function PageClient({ name, subName, content }) {
               ))}
           </div>
           <div className="lg:w-1/2 w-full flex items-center justify-center">
-            <img
+            <CustomImage
               className={`${type === "icon" ? "w-48" : "w-full"} object-contain`}
               src={`/${type === "icon" ? "icons" : "images"}/${image}`}
               alt=""
@@ -70,7 +71,7 @@ export default function PageClient({ name, subName, content }) {
                 <p className="text-white leading-7 mt-5">{details}</p>
               </div>
               <div className="lg:w-1/2 w-full flex items-center justify-center">
-                <img
+                <CustomImage
                   className={`${heroTitle === "Mobile Application" ? "w-1/2" : "w-full"} object-contain`}
                   src={`/images/${pic}`}
                   alt=""
