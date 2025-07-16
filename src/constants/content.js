@@ -543,7 +543,8 @@ export const subContent = {
       heroHighlight: "Healthcare",
       heading: "innovative healthcare solutions",
       subHeading: "WITH devstella",
-      image: "healthcare.webp",
+      type: "icon",
+      image: "health.svg",
       description:
         "In the healthcare industry, DevStella is at the forefront of delivering cutting-edge software solutions that enhance patient care and operational efficiency. We leverage AI, machine learning, and cloud computing to create applications that provide real-time insights, improve decision-making, and streamline administrative tasks. From telemedicine platforms to patient management systems, we are transforming healthcare through technology.",
       contents: [
@@ -571,7 +572,8 @@ export const subContent = {
       heroHighlight: "Education",
       heading: "innovative education solutions",
       subHeading: "WITH devstella",
-      image: "education.webp",
+      type: "icon",
+      image: "education.svg",
       description:
         "DevStella is empowering the education sector by creating robust and scalable e-learning platforms that enhance both teaching and learning experiences. We design custom solutions that provide educators with the tools they need to deliver engaging and interactive content while helping students access personalized learning experiences.",
       contents: [
@@ -599,7 +601,8 @@ export const subContent = {
       heroHighlight: "retail",
       heading: "innovative retail solutions",
       subHeading: "WITH devstella",
-      image: "retail.webp",
+      type: "icon",
+      image: "retail.svg",
       description:
         "The retail industry is rapidly evolving with digital transformation, and DevStella is here to help businesses stay ahead of the competition. Our e-commerce solutions streamline operations, enhance customer experiences, and drive growth. Whether it's creating high-performance e-commerce websites or mobile apps, we enable businesses to succeed in the digital retail landscape.",
       contents: [
@@ -627,7 +630,8 @@ export const subContent = {
       heroHighlight: "Publishing",
       heading: "innovative media & publishing solutions",
       subHeading: "WITH devstella",
-      image: "media-publishing.webp",
+      type: "icon",
+      image: "media-publishing.svg",
       description:
         "In the media and publishing industry, DevStella helps businesses elevate their digital and print media strategies through custom applications, content management systems (CMS), and digital marketing solutions. Our team creates solutions that streamline content creation, distribution, and monetization, helping media organizations stay competitive in a fast-paced environment.",
       contents: [
@@ -655,7 +659,8 @@ export const subContent = {
       heroHighlight: "Banking",
       heading: "innovative finance banking solutions",
       subHeading: "WITH devstella",
-      image: "finance-banking.webp",
+      type: "icon",
+      image: "finance.svg",
       description:
         "The finance and banking industries are being transformed by technology, and DevStella is at the heart of this revolution. Our solutions help financial institutions provide secure, efficient, and personalized services to their customers, all while ensuring compliance with regulatory standards.",
       contents: [
@@ -683,7 +688,8 @@ export const subContent = {
       heroHighlight: "Estate",
       heading: "innovative real estate solutions",
       subHeading: "WITH devstella",
-      image: "real-estate.webp",
+      type: "icon",
+      image: "estate.svg",
       description:
         "In the real estate industry, DevStella provides innovative solutions that improve property management, real estate transactions, and customer engagement. We create tools that enhance the buying, selling, and renting processes, providing real estate professionals with the tools to manage properties efficiently and engage with potential clients.",
       contents: [
@@ -711,7 +717,8 @@ export const subContent = {
       heroHighlight: "Supply chain",
       heading: "innovative logistics & supply chain solutions",
       subHeading: "WITH devstella",
-      image: "logistics.webp",
+      type: "icon",
+      image: "logistics.svg",
       description:
         "Efficient logistics and supply chain management are key to the success of any business. DevStella provides software solutions that optimize inventory tracking, shipment routing, and order fulfillment, ensuring that businesses can operate smoothly and cost-effectively.",
       contents: [

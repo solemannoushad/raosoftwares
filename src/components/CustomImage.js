@@ -22,7 +22,6 @@ function CustomImage({
         priority={priority}
         placeholder={placeholder}
         { ...(placeholder === "blur" ? { blurDataURL: "" } : {}) }
-        
     />
   )
 }
