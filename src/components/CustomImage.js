@@ -4,8 +4,8 @@ import React from 'react'
 function CustomImage({
     src,
     alt = "Devstella",
-    width,
-    height,
+    width = 500,
+    height = 500,
     className,
     loading = "lazy",
     priority = false,

@@ -75,7 +75,7 @@ function AboutSection() {
       <div className="about-section-left w-full lg:w-1/2 px-4 lg:px-10 overflow-hidden mb-8 lg:mb-0">
         <img
           ref={imgRef}
-          src="/images/about.jpg"
+          src="/images/about.webp"
           alt="About Devstella - Software solutions agency"
           className="w-auto h-auto object-contain"
         />
