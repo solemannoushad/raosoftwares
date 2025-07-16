@@ -57,6 +57,8 @@ export default function PageClient({ name, subName, content }) {
               className={`${type === "icon" ? "w-48" : "w-full"} object-contain`}
               src={`/${type === "icon" ? "icons" : "images"}/${image}`}
               alt=""
+              loading="eager"
+              priority={true}
             />
           </div>
         </div>
@@ -75,6 +77,8 @@ export default function PageClient({ name, subName, content }) {
                   className={`${heroTitle === "Mobile Application" ? "w-1/2" : "w-full"} object-contain`}
                   src={`/images/${pic}`}
                   alt=""
+                  loading="eager"
+                  priority={true}
                 />
               </div>
             </div>
