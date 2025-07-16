@@ -4,6 +4,7 @@ import "@styles/globals.css";
 import "@styles/style.css";
 import BackToTop from "@/components/BackToTop";
 import MobileNav from "@/components/MobileNav";
+import GlobalLoader from "@/components/GlobalLoader";
 
 export const metadata = {
   title: "Devstella - Pioneering Next-Gen Software Solutions",
@@ -48,6 +49,7 @@ export default function RootLayout({ children }) {
         <div className="lg:hidden">
           <MobileNav />
         </div>
+        <GlobalLoader />
         {children}
         <Footer />
       </body>

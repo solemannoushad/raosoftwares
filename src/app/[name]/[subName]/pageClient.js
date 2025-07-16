@@ -1,18 +1,12 @@
 "use client";
 import Heading from "@/components/Heading";
 import Hero from "@/components/Hero";
-import Loading from "@/components/Loading";
 import SubPageHeading from "@/components/SubPageHeading";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 export default function PageClient({ name, subName, content }) {
-  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  }, []);
+
 
   useEffect(() => {
     document.title = `${content.heroTitle} ${content.heroHighlight} - Devstella`;
@@ -33,7 +27,6 @@ export default function PageClient({ name, subName, content }) {
 
   return (
     <>
-      {loading && <Loading />}
       <section className="md:px-16 px-5 lg:px-20 xl:px-40 2xl:px-60">
         {/* Hero Section */}
         <Hero title={heroTitle} heighlight={heroHighlight} />

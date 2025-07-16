@@ -1,15 +1,9 @@
 'use client'
 import Hero from '@/components/Hero';
-import Loading from '@/components/Loading';
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 
 function page() {
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-      setTimeout(() => {
-        setLoading(false);
-      }, 2000);
-    }, []);
+
   
 
   useEffect(() => {
@@ -18,7 +12,6 @@ function page() {
 
   return (
     <>
-    {loading && <Loading />}
       <Hero title="Privacy " heighlight="Policy" />
       <div className="px-6 py-10 max-w-4xl mx-auto text-white bg-background mt-8">
         <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>

@@ -1,30 +1,21 @@
 "use client";
 import BlogsSection from "@/components/BlogsSection";
-import Card from "@/components/Card";
 import Heading from "@/components/Heading";
 import Hero from "@/components/Hero";
-import Loading from "@/components/Loading";
 import SpecialityCard from "@/components/SpecialityCard";
 import StatsBox from "@/components/StatsBox";
-import Head from "next/head";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 function page() {
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     document.title = "About Us - Devstella";
   }, []);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  }, []);
+
 
   return (
     <>
-      {loading && <Loading />}
       <Hero title="our" heighlight="company" />
       <section className="md:px-16 px-5 lg:px-20 xl:px-40 2xl:px-60 leading-8">
         <div className="my-16">

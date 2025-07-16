@@ -2,8 +2,7 @@
 import ContactForm from '@/components/ContactForm'
 import Heading from '@/components/Heading'
 import Hero from '@/components/Hero'
-import Loading from '@/components/Loading'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 
 function page() {
 
@@ -11,13 +10,7 @@ function page() {
           document.title = "Contact Us - Devstella";
         }, []);
 
-    const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-      setTimeout(() => {
-        setLoading(false)
-      } , 2000)
-    } , [])
 
     const icons = [
         {
@@ -36,7 +29,6 @@ function page() {
 
   return (
     <>
-        {loading && <Loading />}
         <section className="md:px-16 px-5 lg:px-20 xl:px-40 2xl:px-60">
         <Hero title={"Contact"} heighlight={"Us"} />
         <div>
