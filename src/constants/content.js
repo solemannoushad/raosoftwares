@@ -98,9 +98,9 @@ export const subContent = {
         "Python, TensorFlow, PyTorch, Scikit-learn, OpenCV, Keras, NLP, Reinforcement Learning, Neural Networks, Cloud AI Services.",
         portffolioData: [
           {
-            heading: "Cv Extractor",
-            details: "Cv Extractor allows users to upload PDF or DOCX resumes and automatically extracts structured data such as names, contact details, education, skills, and experience. It streamlines recruitment processes by transforming raw CV files into organized, actionable insights. The sleek, dark-themed interface adds a modern, professional look, perfectly suited for HR tech platforms or SaaS products.",
-            pic: 'aiml1.webp'
+            heading: "AutoVision AI",
+            details: "AutoVision AI is an advanced artificial intelligence system designed for real-time car lane detection and vehicle speed estimation. It utilizes cutting-edge deep learning models for semantic segmentation and object detection to interpret live or recorded dashcam footage during both daytime and nighttime driving conditions.This tool is aimed at enhancing driver-assistance systems (ADAS), supporting autonomous vehicle research, and providing real-time traffic analytics for safety-critical applications. The project is built to handle diverse environments, enabling it to function robustly in urban, highway, and low-light conditions.",
+            pic: 'aiml3.webp'
           },
           {
             heading: "Geo Intel",
@@ -108,9 +108,9 @@ export const subContent = {
             pic: 'aiml2.webp'
           },
           {
-            heading: "AutoVision AI",
-            details: "AutoVision AI is an advanced artificial intelligence system designed for real-time car lane detection and vehicle speed estimation. It utilizes cutting-edge deep learning models for semantic segmentation and object detection to interpret live or recorded dashcam footage during both daytime and nighttime driving conditions.This tool is aimed at enhancing driver-assistance systems (ADAS), supporting autonomous vehicle research, and providing real-time traffic analytics for safety-critical applications. The project is built to handle diverse environments, enabling it to function robustly in urban, highway, and low-light conditions.",
-            pic: 'aiml3.webp'
+            heading: "Cv Extractor",
+            details: "Cv Extractor allows users to upload PDF or DOCX resumes and automatically extracts structured data such as names, contact details, education, skills, and experience. It streamlines recruitment processes by transforming raw CV files into organized, actionable insights. The sleek, dark-themed interface adds a modern, professional look, perfectly suited for HR tech platforms or SaaS products.",
+            pic: 'aiml1.webp'
           },
         ],
       tags: [

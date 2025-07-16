@@ -51,7 +51,7 @@ function Heading({ title, heighlight }) {
           trigger: titleElement,
           start: "top bottom-=100",
           end: "bottom center",
-          scrub: 0.05,
+          scrub: 2,
           toggleActions: "play reverse play reverse",
           markers: false
         },

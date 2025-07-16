@@ -35,9 +35,13 @@ export default function PageClient({ name, subName, content }) {
         {/* Heading & Description */}
         <div className="flex lg:flex-row flex-col-reverse justify-between pr-10 my-10">
           <div className="lg:w-1/2 w-full pr-8">
-            <SubPageHeading heading={heading} subHeading={subHeading} />
-            <p className="text-white leading-7 mt-5">{description}</p>
-            <p className="text-white leading-7 mt-5">{techUsed}</p>
+          <SubPageHeading heading={heading} subHeading={subHeading} />
+            {!portffolioData && (
+              <>
+                <p className="text-white leading-7 mt-5">{description}</p>
+                <p className="text-white leading-7 mt-5">{techUsed}</p>
+              </>
+            )}
             {contents &&
               contents.map((c) => (
                 <div key={c.heading} className="my-4">
@@ -52,7 +56,7 @@ export default function PageClient({ name, subName, content }) {
                 </div>
               ))}
           </div>
-          <div className="lg:w-1/2 w-full flex items-center justify-center">
+          { !portffolioData && <div className="lg:w-1/2 w-full flex items-center justify-center">
             <CustomImage
               className={`${type === "icon" ? "w-48" : "w-full"} object-contain`}
               src={`/${type === "icon" ? "icons" : "images"}/${image}`}
@@ -60,17 +64,18 @@ export default function PageClient({ name, subName, content }) {
               loading="eager"
               priority={true}
             />
-          </div>
+          </div>}
         </div>
+
 
         {
           portffolioData && portffolioData.map((el, index) => {
             const {heading, details, pic} = el;
             return(
-              <div key={heading} className={`flex ${index %2 == 0 ? "lg:flex-row-reverse" : "lg:flex-row"} flex-col-reverse justify-between pr-10 my-10`}>
+              <div key={heading} className={`flex ${index %2 == 0 ? "lg:flex-row" : "lg:flex-row-reverse"} flex-col-reverse justify-between pr-10 my-10`}>
               <div className="lg:w-1/2 w-full pr-8 flex flex-col justify-center">
                 <Heading title={heading} heighlight={""} />
-                <p className="text-white leading-7 mt-5">{details}</p>
+                <p className="text-white leading-10 mt-5">{details}</p>
               </div>
               <div className="lg:w-1/2 w-full flex items-center justify-center">
                 <CustomImage
@@ -84,6 +89,15 @@ export default function PageClient({ name, subName, content }) {
             </div>
             )
           })
+        }
+
+        {
+          portffolioData && (
+            <div className="text-center">
+            <p className="text-white leading-7 mt-5">{description}</p>
+            <p className="text-white leading-7 mt-5">{techUsed}</p>
+            </div>
+          )
         }
 
         <div className="marquee-container my-20">

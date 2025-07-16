@@ -45,9 +45,10 @@ function SubPageHeading({ heading, subHeading }) {
         scrollTrigger: {
           trigger: headingElement,
           start: "top bottom-=200",
-          end: "bottom center",
-          scrub: 1,
+          end: "bottom 20%",
+          scrub: 2,
           toggleActions: "play none none reverse",
+          markers: false
         },
       })
 
