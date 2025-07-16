@@ -43,7 +43,7 @@ function ServicesSection() {
                 className="cursor-pointer relative z-10 flex flex-col items-center gap-3 group mx-auto my-8"
               >
                 <div className="bg-zinc-800 p-6 sm:p-8 rounded-2xl w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-                  <Image src={`/icons/${service.icon}.svg`} alt="Devstella Services" className="w-12 sm:w-14 md:w-16" width={100} height={100} loading="lazy" placeholder="blur" blurDataURL={`/icons/${service.icon}.svg`} />
+                  <CustomImage src={`/icons/${service.icon}.svg`} alt="Devstella Services" className="w-12 sm:w-14 md:w-16" width={100} height={100} />
                 </div>
                 <p className="text-white text-center text-xs sm:text-sm md:text-base whitespace-pre-line">
                   {service.name}

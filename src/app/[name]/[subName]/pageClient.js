@@ -103,7 +103,7 @@ export default function PageClient({ name, subName, content }) {
         <div className="marquee-container my-20">
         <div className="marquee">
           {content?.tags &&
-            [...content.tags, ...content.tags].map((tag, index) => (
+            [...content.tags, ...content.tags, ...content.tags, ...content.tags].map((tag, index) => (
               <p
                 key={index}
                 className="tag text-foreground font-bold text-lg py-2 px-3 mr-3 border border-foreground uppercase mx-2"
