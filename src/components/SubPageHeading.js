@@ -1,8 +1,9 @@
 "use client"
 
-import React, { useEffect, useRef } from "react"
+import React, { useRef } from "react"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -10,7 +11,7 @@ function SubPageHeading({ heading, subHeading }) {
   const headingRef = useRef(null)
   const subHeadingRef = useRef(null)
 
-  useEffect(() => {
+  useGSAP(() => {
     const headingElement = headingRef.current
     const subHeadingElement = subHeadingRef.current
 
