@@ -1,6 +1,5 @@
-"use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { testinomials } from "@/constants/testinomials";
 import Heading from "./Heading";
 import TestimonialCard from "./TestinomialCard";
@@ -18,23 +17,7 @@ import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 
 function TestimonialsSection() {
 
-  const [slidesPerView, setSlidesPerView] = useState(1)
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 1024) {
-        setSlidesPerView(3)
-      } else if (window.innerWidth <= 1024) {
-        setSlidesPerView(1)
-      } else {
-        setSlidesPerView(1)
-      }
-    }
-
-    handleResize() // Set initial value
-    window.addEventListener("resize", handleResize)
-    return () => window.removeEventListener("resize", handleResize)
-  }, [])
+  // Removed useState and useEffect for slidesPerView
 
   return (
     <div className="w-full my-24">
@@ -47,7 +30,15 @@ function TestimonialsSection() {
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={slidesPerView}
+          // Use Swiper's breakpoints for responsive slidesPerView
+          breakpoints={{
+            1024: {
+              slidesPerView: 3,
+            },
+            0: {
+              slidesPerView: 1,
+            },
+          }}
           spaceBetween={30}
           loop={true}
           autoplay={{

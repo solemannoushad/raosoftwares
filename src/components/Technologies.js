@@ -15,7 +15,6 @@ const Technologies = () => {
     if (!container) return
 
     const scrollWidth = container.scrollWidth
-    const clientWidth = container.clientWidth
     let newPosition = scrollPositionRef.current + 1
     if (newPosition >= scrollWidth / 2) {
       newPosition = 0
