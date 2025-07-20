@@ -1,10 +1,10 @@
-"use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Heading from "./Heading";
 import Button from "./Button";
+import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,7 +13,7 @@ function AboutSection() {
   const sectionRef = useRef(null);
   const contentRef = useRef(null);
 
-  useEffect(() => {
+  useGSAP(() => {
     const img = imgRef.current;
     const section = sectionRef.current;
     const content = contentRef.current;

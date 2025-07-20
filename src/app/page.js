@@ -6,16 +6,12 @@ import ServicesSection from "@/components/ServicesSection";
 import TeamSection from "@/components/TeamSection";
 import Technologies from "@/components/Technologies";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import Head from "next/head";
 
 export default function Home() {
 
 
   return (
     <>
-      <Head>
-        <title>DevStella</title>
-      </Head>
       <section className="md:px-16 px-5 lg:px-20 xl:px-40 2xl:px-60">
         <HeroBg />
         <AboutSection />
