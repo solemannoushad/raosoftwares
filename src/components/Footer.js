@@ -118,10 +118,6 @@ export default function Footer() {
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <i className="iconoir-map-pin text-xl"></i>
-                  <span className="text-sm">Pakistan</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <i className="iconoir-map-pin text-xl"></i>
                   <span className="text-sm">United Kingdom</span>
                 </div>
                 <div className="flex items-center gap-3">
