@@ -43,7 +43,7 @@ export default function Footer() {
     }
   };
 
-  const currentYear = "2024";
+  const currentYear = "2025";
 
   return (
     <>
